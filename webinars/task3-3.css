@@ -1,0 +1,25 @@
+h1 {
+	color:red;
+}
+p:not(.faust) {
+	font-size: 200%;
+	color: maroon;
+}
+
+em {
+	color:blue;
+	font-weight:bold;
+}
+
+em:first-child {
+	background-color:fuchsia;
+}
+
+em:last-child {
+	font-family:sans-serif;
+	background-color:aqua;
+}
+
+em:only-child {
+	background-color:teal;
+}
