@@ -1,0 +1,73 @@
+<html lang="ru">
+ <head>
+  <meta charset="utf-8">
+  <title>Чекбоксы</title>
+  <link rel="stylesheet" type="text/css" href="task2-3-advanced.css">
+ </head>
+ <body>
+  <h1>Форма для заполнения</h1>
+  <form name="Application" action="/">
+   <label for="name">Имя</label>
+   <input type="text" id="name" name="firstname"></input></br>
+   <br>
+   <label for="surname">Фамилия</label>
+   <input type="text" id="surname" name="surname"></input></br>
+   <br>
+   <label for="email">Ваш электронный адрес</label>
+   <input type="text" id="email" name="email"></input></br>
+   <br>
+   <label for="password">Пароль</label>
+   <input type="password" id="password" name="password"></input></br>
+   <br>
+   <span>Выберите Ваш пол<span></br>
+   <br>
+   <input type="radio" id="male" class="radio1" name="sex" value="male"></input>
+   <label for="male">Мужчина</label>
+   <input type="radio" id="female" class="radio1" name="sex" value="female"></input>
+   <label for="female">Женщина</label></br>
+   <br>
+   <span>Дата рождения</span>
+   <select>
+    <option>January</option>
+	<option>February</option>
+	<option>March</option>
+	<option>April</option>
+	<option>May</option>
+	<option>June</option>
+	<option>July</option>
+	<option>August</option>
+	<option>September</option>
+	<option>October</option>
+	<option>November</option>
+	<option>December</option>
+   </select>
+   <select>
+    <option>1989</option>
+	<option>1990</option>
+	<option>1991</option>
+	<option>1992</option>
+   </select>
+   <br>
+   <br>
+   <span>Умения и навыки</span><br/>
+   <fieldset>
+    <legend style="font weight: bold">Tech Skills</legend>
+	<input type="checkbox" id="html" value="html"><label for="html">HTML</label><br>
+	<input type="checkbox" id="css" value="css"><label for="css">CSS</label><br>
+	<input type="checkbox" id="js" value="javascript"><label for="js">JavaScript</label><br>
+	<input type="checkbox" id="git" value="git"><label for="git">GIT</label><br>
+	<legend style="font weight: bold">Soft Skills</legend>
+	<input type="checkbox" id="tm" value="tm"><label for="tm">Time Management</label><br>
+	<input type="checkbox" id="pro" value="pro"><label for="pro">Proactivity</label><br>
+	<input type="checkbox" id="tw" value="tw"><label for="tw">Teamwork</label><br>
+	<input type="checkbox" id="ld" value="ld"><label for="ld">Leadership</label><br>
+   </fieldset>
+   <br>
+   <span>Photo</span><br>
+   <input type="file" name=photo.jpg>
+   <br>
+   <br>
+   <span>Comments</span><br>
+   <textarea rows="4" cols="15" name="comments"></textarea>
+  </form>
+  </body>   
