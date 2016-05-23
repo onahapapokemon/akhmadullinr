@@ -1,0 +1,86 @@
+form {
+	font:12px Tahoma;
+}
+
+input {
+	display:none; /*убираем поля для галочек*/
+}
+
+label {
+	float:left;
+	margin-right: 39px; /*добавили отступы справа от каждого элемента label*/
+	text-decoration: underline; /*добавили нижнее подчеркивание для элементов label*/
+	cursor:pointer; /*добавляем стиль курсора*/
+}
+
+label:last-of-type {
+	margin-right: 31px; /*двигаем список значений ближе к элементам label*/
+}
+
+label:hover {
+	text-decoration:none; /* убираем подчеркивание при наведении курсора*/
+}
+
+label[for="red"] {
+	color:red;
+}
+ 
+label[for="green"] {
+	color:green;
+}
+
+label[for="blue"] {
+	color:blue;
+}
+
+/* задаем цвета текста для трех элементов label*/ 
+
+.red {
+	background-color:red;
+	color:white;
+}
+
+/* задаем красный фон для класса red */
+
+.green {
+	background-color:green;
+	color:white;
+}
+
+.blue {
+	background-color:blue;
+	color:white;
+}
+/* задаем цвета для остальных классов*/
+
+#red ~ .red,
+#green~ .green,
+#blue~ .blue {
+	visibility: visible;
+}
+/* задаем условие скрытости элементов при выключенном чекбоксе*/
+
+#red:checked~ .red,
+#green:checked~ .green,
+#blue:checked~ .blue {
+	display:none;  /* скрывает элементы как будто их и не было в документе, сдвигая все блоки влево*/
+}
+/* задаем условие видимости элементов при включении чекбокса*/
+
+span {
+	display:inline-block;
+	vertical-align:top; 
+	padding: 0 5px;  /* добавляем поля справа/слева для содержимого блочных элементов в span*/
+	line-height: 16px;
+	height:18px;
+	border-radius:6px; /* делаем округленные углы для рамок*/
+}
+
+#red:checked ~ label[for="red"],
+#green:checked ~ label[for="green"],
+#blue:checked ~ label[for="blue"]
+{
+	opacity: 0.3;  /* добавляем прозрачность чекбоксам при выключении*/
+}
+
+
