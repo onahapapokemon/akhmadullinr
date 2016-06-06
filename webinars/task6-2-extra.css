@@ -1,0 +1,204 @@
+
+/* задаем свойства главному контейнеру. максимальную ширину, высоту, фоновый рисунок вынимаем из psd*/
+
+.container {
+    max-width: 1400px;
+    min-width: 470px;
+    height: 530px;
+    background-repeat: repeat;
+    background-image: url(http://www.imageup.ru/img9/2450504/task6-2-bg-imagejpg.jpg);
+    background-size: contain;
+}
+
+/* задаем свойства заголовку "what client says" */
+
+.main_title {
+    font-family: "Trebuchet MS", serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #3170a8;
+    text-align: center;
+    padding-top: 34px;
+}
+
+/* цвет первого слова в заголовке */
+
+.main_title span {
+    color: #ee8129;
+}
+
+/* задаем отступы для контейнера с отзывами, выравниванием по центру*/
+
+section {
+    margin: 25px 70px 25px;
+    text-align: center;
+}
+
+/* задаем стили для 4 блоков с комментариями, делаем relative для псевдоэлементов-треугольников */
+
+.first-comment, .second-comment, .third-comment, .fourth-comment {
+    display: inline-block;
+    position: relative;
+    margin: 20px 40px 0;
+
+}
+
+/* делаем нижний отступ у верхних комментов 50 пикселей */
+
+.first-comment, .second-comment {
+    margin-bottom: 50px;
+}
+
+/* выравниваем нижние комменты по высоте текста */
+
+.third-comment, .fourth-comment {
+    vertical-align: text-top;
+}
+
+/* задаем стили изображениям */
+
+img {
+    width: 100px;
+    min-height: 100px;             /* минимальная высота рисунка 100 пикселей */
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* задаем стили блоку, где будет находится имя и текст отзыва */
+
+.field {
+    display: inline-block;
+    max-width: 480px;
+    background-color: #fff;
+    width: 360px;
+    height: auto;                      /* высота блока будет определяться по содержимому */
+    min-height: 100px;
+    max-height: 200px;
+    overflow: auto;
+    margin-left: 23px;
+}
+
+/* задаем стили для заголовка комментария */
+
+.field header {
+    font-family: Trebuchet MS, serif;
+    font-size: 13px;
+    color: #3070a8;
+    margin: 0 20px;
+}
+
+/* сдвигаем имя влево, слово customer вправо */
+
+.field h3:first-child {
+    float: left;
+    padding-left: 10px;
+}
+
+
+.field h3:last-child {
+    float: right;
+}
+
+/* задаем стили для блока с комментариями */
+
+.comment_text {
+    border-top: 1px dotted #000000;
+    clear: both;
+    font-family: "Trebuchet MS", serif;
+    font-size: 13px;
+    padding: 12px;
+    margin: 5px 20px;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+/* задаем relative для блока с заголовком, будем позиционировать относительно него псевдоэлемент "-" */
+.title {
+    position: relative;
+}
+
+/* задаем свойства псевдоэлементам */
+
+.title:before {
+    content: "-";
+    right: 315px;
+    top: 15px;
+    font-family: Trebuchet MS, serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #3070a8;
+    position: absolute;
+}
+
+.field:before {
+    content: " ";
+    position: absolute;
+    border: 15px solid;
+    border-color: transparent #fff transparent transparent;
+    right: 360px;
+    top: 35px;
+}
+
+
+@media (max-width: 850px) and (min-width: 660px) { /* если максимальное разрешение экрана составит 469 пикселей */
+    .container {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        background-size: cover;
+        border: 3px solid #ee8129;;
+    }
+    .main_title {
+        margin: 10px 5px;
+        font-size: 30px;
+    }
+    .section {
+        position: static;
+        width: 100%;
+        margin: 5px 30px 5px;
+    }
+    .first-comment, .second-comment, .third-comment, .fourth-comment {
+        margin:0; padding: 0;}
+    .field:before {
+        display: none;
+    }
+}
+
+@media (max-width: 659px) and (min-width: 469px) {
+    .container {
+        padding: 0;
+        margin: 0;
+        height: 100%;
+        background-size: cover;
+        border: 3px solid #ee8129;;
+    }
+
+    .main_title {
+        margin: 10px 5px;
+        font-size: 30px;
+    }
+
+    .section {
+        width: 100%;
+        margin: 5px 5px 5px;
+    }
+
+    .first-comment, .second-comment, .third-comment, .fourth-comment {
+        margin: 0;
+        padding: 0;
+    }
+
+
+    img {
+        border: 3px solid #ee8129;;
+        width: 150px;
+        height: 150px;
+        margin-bottom: 20px;
+    }
+
+    .field:before {
+        display: none;
+    }
+}
