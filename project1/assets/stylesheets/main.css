@@ -1,0 +1,106 @@
+/*
+  ========================================
+  Пользовательские стили
+  ========================================
+*/
+
+body {
+    font: 300 16px/22px "Futura Md BT", "Futura Bk BT", "Open Sans", "Trebuchet MS", "Poiret One", Arial, sans-serif;
+}
+
+
+
+
+/*
+  ========================================
+  Сетка
+  ========================================
+*/
+
+.container {
+    margin: 0 auto;
+    border: 1px solid #000;
+    padding-left: 180px;
+    padding-right: 180px;
+}
+
+.container,
+.grid {
+    margin: 0 auto;
+    width: 1400px;
+}
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+.col-1-3 {
+    width: 33.33%;
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/*
+  ========================================
+  Полосы
+  ========================================
+*/
+
+.row {
+    padding: 60px 0 60px 0;
+    min-width: 960px;
+    border: 1px solid red;
+}
+
+/*
+  ========================================
+  Ссылки
+  ========================================
+*/
+
+
+/*
+  ========================================
+  Кнопки
+  ========================================
+*/
+
+
+
+
+/*
+  ========================================
+  Блок с заголовком и меню
+  ========================================
+*/
+
+
+
+
+/*
+  ========================================
+  Заголовок
+  ========================================
+*/
+
+.logo {
+    font-size: 40px;
+
+}
+
+.logo span:first-child {
+     color: #ee8129;
+    text-transform: capitalize;
+ }
+
+.logo span:last-child {
+    color: #3170a8;
+    text-transform: uppercase;
+}
+
