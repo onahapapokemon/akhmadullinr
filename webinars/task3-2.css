@@ -4,3 +4,7 @@ article p:first-of-type {
 article p:last-of-type {
 	color: #999;
 }
+
+body {
+	color: red;
+}
