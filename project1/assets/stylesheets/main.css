@@ -5,11 +5,23 @@
 */
 
 body {
-    font: 300 16px/22px "Futura Md BT", "Futura Bk BT", "Open Sans", "Trebuchet MS", "Poiret One", Arial, sans-serif;
+    font: 300 16px/22px "Futura Md BT", "Futura Bk BT", "Open Sans Semibold", "Trebuchet MS", "Poiret One", Arial, sans-serif;
 }
 
+@font-face {
+    font-family: 'Futura Md BT';
+    src: url(https://http://akhmadullinr.github.io/project1/assets/fonts/Futura%20Bold%20BT.ttf);
+}
 
+@font-face {
+    font-family: 'Futura Bk BT';
+    src: url(https://http://http://akhmadullinr.github.io/project1/assets/fonts/Futura%20Book%20BT.ttf);
+}
 
+@font-face {
+    font-family: 'Open Sans Semibold';
+    src: url(https://http://http://http://akhmadullinr.github.io/project1/assets/fonts/OpenSans-Semibold.ttf);
+}
 
 /*
   ========================================
@@ -18,15 +30,12 @@ body {
 */
 
 .container {
-    margin: 0 auto;
     border: 1px solid #000;
-    padding-left: 180px;
-    padding-right: 180px;
 }
 
 .container,
 .grid {
-    margin: 0 auto;
+    margin: auto;
     width: 1400px;
 }
 
@@ -64,43 +73,517 @@ body {
   ========================================
 */
 
+.nav a {
+    color: #989898;
+    text-decoration: none;
+    ~border: 1px solid fuchsia;
+    padding-bottom: 29px;
+}
+
+.nav a:hover {
+    color: #3170a8;
+    font-weight: 300;
+}
 
 /*
   ========================================
-  Кнопки
+  Основная кнопка
   ========================================
 */
 
 
-
-
 /*
   ========================================
-  Блок с заголовком и меню
+  Рекламные кнопки
   ========================================
 */
 
 
+/* добавляем стили для кнопки*/
+
+.body_advert button {
+    color: #fff;
+    font-family: Trebuchet MS, serif;
+    font-size: 14px;
+    font-weight: bold;
+    border-radius: 6px;
+    text-transform: uppercase;
+    padding: 13px 75px;
+    margin: 0 16px;
+    border-bottom: 3px solid #b3560b;
+}
+
+/* задаем фон и границы для центральной кнопки */
+
+.advert-block2 button {
+    background-color: #ee8129;
+    border: 1px solid #fff;
+    border-bottom: 3px solid #b3560b;
+}
+
+/* задем фон и границы для крайних кнопок */
+
+.advert-block1 button, .advert-block3 button {
+    background-color: #3371ab;
+    border-bottom: 3px solid #16436a;
+}
+
+/* задаем стиль при нажатии на кноки, пропадает нижний бордер */
+
+.body_advert button:focus {
+    border-bottom: 1px solid #fff;
+}
+
+/*
+  ========================================
+  Верхний блок навигации
+  ========================================
+*/
+
+.logo-head {
+    padding-left: 175px;
+    padding-right: 175px;
+}
+
 
 
 /*
   ========================================
-  Заголовок
+  Логотип
   ========================================
 */
+
+.logo-head {
+    height: 110px;
+}
 
 .logo {
-    font-size: 40px;
-
+    font-size: 36px;
+    ~border: 1px solid green;
+    max-width: 295px;
+    float: left;
+    margin-top: 40px;
 }
 
 .logo span:first-child {
-     color: #ee8129;
+    color: #ee8129;
     text-transform: capitalize;
+    font-family: "Futura Bk BT", sans-serif;
+    font-weight: 200;
  }
 
 .logo span:last-child {
     color: #3170a8;
     text-transform: uppercase;
+    font-family: "Futura MD BT", sans-serif;
 }
+
+/*
+  ========================================
+  Меню
+  ========================================
+*/
+
+.nav {
+    font-family: "Open Sans Semibold", sans-serif;
+    font-size: 14px;
+    color: #989898;
+    text-transform: uppercase;
+    text-align: right;
+    ~border: 1px solid green;
+    max-width: 750px;
+    float: right;
+    margin-top: 40px;
+    box-sizing: border-box;
+}
+
+.nav li {
+    list-style-type: none;
+    display: inline-block;
+    vertical-align: top;
+    margin: 0 23px;
+    padding-bottom: 29px;
+    ~border: 1px dotted blue;
+}
+
+.nav li:last-child {
+    margin-right: 0;
+}
+
+.nav li:hover {
+    color: #3170a8;
+    border-bottom: 3px solid #3170a8;
+    transition: 0.1s;
+}
+
+/*
+  ========================================
+  Рекламное предложение
+  ========================================
+*/
+
+/* Задаем свойства заголовку*/
+
+.header_advert {
+    font-size: 30px;
+    font-family: "Trebuchet MS", serif;
+    text-transform: uppercase;
+    text-align: center;
+    color: #41525c;
+    margin-bottom: 40px;
+}
+
+/* задаем свойства контейнеру для трех блоков */
+
+.body_advert {
+    margin: 0 50px 30px;
+    position: relative;
+    text-align: center;
+}
+
+/* задаем общие свойства для трех блоков */
+
+.advert-block1, .advert-block2, .advert-block3 {
+    ~border-radius: 6px;
+    box-sizing: border-box;
+    display: inline-block;
+}
+
+.advert-block2 {
+    width: 297px;
+    height: 470px;
+    border: 3px solid #ee8129;
+    box-shadow: 3px 3px 5px 3px #edf5fd,
+    -3px -3px 5px 3px #edf5fd;
+    border-radius: 5px;
+    position: relative;
+    z-index:1;
+}
+
+
+.advert-block1 {
+    border: 1px solid #e8eaec;
+    border-right: none;               /* убираем правый бордер для первого блока */
+    position: relative;
+    width: 290px;
+    height: 440px;
+    border-radius: 5px;
+    z-index:2;
+    right: -4px;
+}
+
+.advert-block3 {
+    border: 1px solid #e8eaec;
+    border-left: none;                /* убираем левый бордер для третьего блока */
+    position: relative;
+    width: 290px;
+    height: 440px;
+    border-radius: 5px;
+    right: 4px;
+    z-index: 2;
+}
+
+/* общие свойства для всех заголовков внутри каждого блока*/
+
+.inner_block1 {
+    color: #fff;
+    font-size: 24px;
+    font-family: Trebuchet MS, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 18px 73px;
+}
+
+/* задаем каждому заголовку блока цвет фона*/
+
+.advert-block1 .inner_block1 {
+    background-color:#37c2d3;
+    border-top-left-radius: 5px;  /* закругляем верхний левый угол у первого блока */
+}
+
+.advert-block2 .inner_block1 {
+    background-color: #ee8129;
+    padding: 27px 73px 27px 73px;
+
+}
+
+.advert-block3 .inner_block1 {
+    background-color: #1cd79a;
+    border-top-right-radius: 5px;
+}
+
+/* задаем стили для блока ICONIC GRAPHICS */
+
+.inner_block2 {
+    font-size: 24px;
+    font-family: Trebuchet MS, serif;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 20px 47px 15px;
+    color: #35495a;
+}
+
+/* задаем стили для блока с ценами */
+
+.inner_block3 {
+    font-size: 72px;
+    font-family: Trebuchet MS, serif;
+    padding: 15px 40px 0 40px;
+    color: #35495a;
+    font-weight: bold;
+}
+
+.inner_block3 sub{
+    font-size: 18px;
+    font-family: Trebuchet MS, serif;
+    text-transform: capitalize;
+    font-weight: 600;
+    position: relative;
+    right: 25px;
+    bottom: 5px;
+}
+
+.inner_block3 sup {
+    font-size: 22px;
+    font-family: Trebuchet MS, serif;
+    position: relative;
+    left: 20px;
+    bottom: 15px;
+}
+
+/* задаем стили для блока со списками */
+
+
+.body_advert ul li {
+    list-style: none;
+    line-height: 2em;
+    word-spacing: 3px;
+    font-family: Trebuchet MS, serif;
+    font-size: 15px;
+    color: #989ca4;
+    border: 1px solid #fff;
+    text-align: left;
+    padding-left: 47px;
+
+}
+
+/* задаем фон четным и нечетным сторонам списка в блоках */
+
+.body_advert ul li:nth-child(odd) {
+    background-color: #edf5fd;
+}
+
+.body_advert ul li:nth-child(even) {
+    background-color: #f5f5f6;
+}
+
+/* выравниваем список по середине */
+
+.body_advert ul {
+    padding: 0 13px;
+}
+
+/* добавляем псевдоэлемент before в виде галочки спереди в списках */
+
+.body_advert li:before {
+    content: url(http://www.imageup.ru/img104/2449119/image5-2.gif);
+    position: relative;
+    top: 5px;
+    right: 10px;
+}
+
+
+/*
+  ========================================
+  Отзывы
+  ========================================
+*/
+
+/* задаем свойства главному контейнеру. максимальную ширину, высоту, фоновый рисунок вынимаем из psd*/
+
+.feedback {
+    max-width: 1400px;
+    background-repeat: repeat;
+    background-image: url(http://www.imageup.ru/img9/2450504/task6-2-bg-imagejpg.jpg);
+    background-width: 150%;
+    text-align: center;
+    padding-top: 60px;
+
+}
+
+/* задаем свойства заголовку "what client says" */
+
+.main_title {
+    font-family: "Trebuchet MS", serif;
+    font-size: 40px;
+    text-transform: uppercase;
+    color: #3170a8;
+    text-align: center;
+    padding-bottom: 50px;
+}
+
+/* цвет первого слова в заголовке */
+
+.main_title span {
+    color: #ee8129;
+}
+
+/* */
+
+.comment-section {
+    padding-bottom: 50px;
+}
+
+
+/* задаем стили для блоков с комментариями, делаем relative для псевдоэлементов-треугольников */
+
+.first-comment, .second-comment {
+    display: inline-block;
+    position: relative;
+    ~border: 1px solid white;
+
+}
+
+/* задаем отступы комментариям */
+
+.first-comment {
+    margin: 20px 29px 0 0;
+}
+
+.second-comment {
+    margin: 20px 0 0 29px;
+}
+
+
+/* задаем стили изображениям */
+
+img {
+    width: 100px;
+    min-height: 100px;             /* минимальная высота рисунка 100 пикселей */
+    margin: 0;
+    padding: 0;
+    display: inline-block;
+    vertical-align: top;
+}
+
+/* задаем стили блоку, где будет находится имя и текст отзыва */
+
+.field {
+    display: inline-block;
+    max-width: 480px;
+    background-color: #fff;
+    width: 360px;
+    height: auto;                      /* высота блока будет определяться по содержимому */
+    min-height: 100px;
+    max-height: 200px;
+    overflow: auto;
+    margin-left: 23px;
+}
+
+/* задаем стили для заголовка комментария */
+
+.field header {
+    font-family: Trebuchet MS, serif;
+    font-size: 13px;
+    color: #3070a8;
+    margin: 0 20px;
+}
+
+/* сдвигаем имя влево, слово customer вправо */
+
+.field h3:first-child {
+    float: left;
+    padding-left: 10px;
+}
+
+
+.field h3:last-child {
+    float: right;
+}
+
+/* задаем стили для блока с комментариями */
+
+.comment_text {
+    border-top: 1px dotted #000000;
+    clear: both;
+    font-family: "Trebuchet MS", serif;
+    font-size: 13px;
+    padding: 12px;
+    margin: 5px 20px;
+    text-align: left;
+    line-height: 1.5em;
+}
+
+/* задаем relative для блока с заголовком, будем позиционировать относительно него псевдоэлемент "-" */
+.title {
+    position: relative;
+}
+
+/* задаем свойства псевдоэлементам */
+
+.title:before {
+    content: "-";
+    right: 315px;
+    top: 15px;
+    font-family: Trebuchet MS, serif;
+    font-size: 13px;
+    font-weight: bold;
+    color: #3070a8;
+    position: absolute;
+}
+
+.field:before {
+    content: " ";
+    position: absolute;
+    border: 15px solid;
+    border-color: transparent #fff transparent transparent;
+    right: 360px;
+    top: 35px;
+}
+
+/*
+  ========================================
+  Блок контактной информации
+  ========================================
+*/
+
+/*
+  ========================================
+  Подвал
+  ========================================
+*/
+
+footer {
+    background-color: #3070a8;
+    font-family: "Open Sans", sans-serif;
+    color: #fff;
+    font-size: 14px;
+    text-align: center;
+    letter-spacing: 2px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    line-height: 25px;
+}
+
+
+.copyright em {
+    font-weight: bold;
+}
+
+.designedby em {
+    font-weight: bold;
+    color: #000;
+}
+
+
+
+
+
+
+
+
+
+
+
+
 
