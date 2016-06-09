@@ -236,5 +236,5 @@ body {
 }
 
 .animation-01 .cube {
-    animation: squash-stretch 5s 5s infinite;
+    animation: squash-stretch 5s 1s infinite;
 }
