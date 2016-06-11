@@ -3,9 +3,14 @@
   Пользовательские стили
   ========================================
 */
+* {
+    padding: 0;
+    margin: 0;
+}
+
 
 body {
-    font: 300 16px/22px "Futura Md BT", "Futura Bk BT", "Open Sans Semibold", "Trebuchet MS", "Poiret One", Arial, sans-serif;
+    font: 300 16px/22px "Futura Md BT", "Futura Bk BT", "Open Sans Semibold", "Trebuchet MS", Arial, sans-serif;
 }
 
 @font-face {
@@ -30,17 +35,12 @@ body {
 */
 
 .container {
-    border: 1px solid #000;
-}
-
-.container {
     margin: 0;
     width: 1400px;
 }
 
 .grid {
     width: 1100px;
-    ~border: 1px solid maroon;
     text-align: center;
 }
 
@@ -58,9 +58,13 @@ body {
     vertical-align: top;
     padding-left: 15px;
     padding-right: 15px;
-    ~border: 1px dotted darkviolet;
 }
 
+.col-1-2 {
+    width: 50%;
+    display: inline-block;
+    vertical-align: top;
+}
 /*
   ========================================
   Полосы
@@ -70,7 +74,6 @@ body {
 .row {
     padding: 60px 0 60px 0;
     min-width: 960px;
-    border: 1px solid red;
 }
 
 /*
@@ -82,7 +85,6 @@ body {
 .nav a {
     color: #989898;
     text-decoration: none;
-    ~border: 1px solid fuchsia;
     padding-bottom: 29px;
 }
 
@@ -97,6 +99,26 @@ body {
   ========================================
 */
 
+.main-button {
+    font-family: "Open Sans Semibold", sans-serif;
+    font-size: 16px;
+    text-transform: uppercase;
+    border: 1px solid white;
+    height: 56px;
+    width: 246px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 3px;
+    padding: 20px;
+    text-decoration: none;
+    color: #fff;
+    margin: 30px 0;
+}
+
+.main-button:hover {
+    background-color: #fff;
+    color: #3070a8;
+}
 
 /*
   ========================================
@@ -149,6 +171,8 @@ body {
 .logo-head {
     padding-left: 175px;
     padding-right: 175px;
+    ~overflow: hidden;
+    height: 116px;
 }
 
 
@@ -208,20 +232,85 @@ body {
     display: inline-block;
     vertical-align: top;
     margin: 0 23px;
-    padding-bottom: 29px;
-    ~border: 1px dotted blue;
+    padding-bottom: 50px;
+    transform: translateZ(0);
+    box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+    backface-visibility: hidden;
+    overflow: hidden;
+}
+
+.nav li:before {
+    content: "";
+    position: absolute;
+    z-index: -1;
+    left: 50%;
+    right: 50%;
+    bottom: 0;
+    background: #3170a8;
+    height: 4px;
+    -webkit-transition-property: left, right;
+    transition-property: left, right;
+    -webkit-transition-duration: 0.3s;
+    transition-duration: 0.3s;
+    -webkit-transition-timing-function: ease-out;
+    transition-timing-function: ease-out;
+}
+
+.nav li:hover:before, .nav li:focus:before, .nav li:active:before {
+    left: 0;
+    right: 0;
 }
 
 .nav li:last-child {
     margin-right: 0;
 }
 
-.nav li:hover {
-    color: #3170a8;
-    border-bottom: 3px solid #3170a8;
-    transition: 0.1s;
+/*
+  ========================================
+  Блок баннер
+  ========================================
+*/
+
+.banner {
+    max-width: 1400px;
+    background-repeat: repeat;
+    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/bg-2.jpg?raw=true);
+    background-size: cover;
+    text-align: center;
+    padding-top: 150px;
+    color: #fff;
 }
 
+.banner h4 {
+    font-family: "Futura Bk BT", sans-serif;
+    font-size: 36px;
+    font-weight: normal;
+    line-height: 1.5em;
+    ~outline: 1px solid white;
+}
+
+.banner p:first-of-type {
+    font-family: "Futura MD BT", sans-serif;
+    font-weight: bold;
+    font-size: 48px;
+    text-transform: uppercase;
+    line-height: 1.3em;
+    margin: 0 200px 30px;
+    text-align: center;
+
+}
+
+.banner p:nth-child(3) {
+    width: 600px;
+    ~outline: 1px solid yellow;
+    text-align: center;
+    display: inline-block;
+    margin-left: 50px;
+    font-family: "Calibri", sans-serif;
+    font-size: 20px;
+    font-style: italic;
+    line-height: 1.5em;
+}
 /*
   ========================================
   Колонки сервисов
@@ -253,6 +342,7 @@ body {
     text-transform: uppercase;
     color: #3070a8;
     text-align: center;
+    margin: 30px 0;
 }
 
 .columns p {
@@ -320,6 +410,7 @@ body {
   ========================================
 */
 
+
 /* Задаем свойства заголовку*/
 
 .header_advert {
@@ -328,7 +419,7 @@ body {
     text-transform: uppercase;
     text-align: center;
     color: #41525c;
-    margin-bottom: 40px;
+    margin-bottom: 30px;
 }
 
 /* задаем свойства контейнеру для трех блоков */
@@ -349,7 +440,7 @@ body {
 
 .advert-block2 {
     width: 297px;
-    height: 470px;
+    height: 440px;
     border: 3px solid #ee8129;
     box-shadow: 3px 3px 5px 3px #edf5fd,
     -3px -3px 5px 3px #edf5fd;
@@ -364,7 +455,7 @@ body {
     border-right: none;               /* убираем правый бордер для первого блока */
     position: relative;
     width: 290px;
-    height: 440px;
+    height: 410px;
     border-radius: 5px;
     z-index:2;
     right: -4px;
@@ -375,7 +466,7 @@ body {
     border-left: none;                /* убираем левый бордер для третьего блока */
     position: relative;
     width: 290px;
-    height: 440px;
+    height: 410px;
     border-radius: 5px;
     right: 4px;
     z-index: 2;
@@ -478,7 +569,7 @@ body {
 /* выравниваем список по середине */
 
 .body_advert ul {
-    padding: 0 13px;
+    padding: 0 13px 15px;
 }
 
 /* добавляем псевдоэлемент before в виде галочки спереди в списках */
@@ -503,7 +594,6 @@ body {
     max-width: 1400px;
     background-repeat: repeat;
     background-image: url(http://www.imageup.ru/img9/2450504/task6-2-bg-imagejpg.jpg);
-    background-width: 150%;
     text-align: center;
     padding-top: 60px;
 
@@ -645,6 +735,123 @@ img {
   ========================================
 */
 
+
+
+.contacts {
+    width: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+  ========================================
+  Списки контактов
+  ========================================
+*/
+
+
+.contacts ul {
+    font-family: "Open Sans Semibold", sans-serif;
+    font-size: 14px;
+    color: #666;
+    margin: 28px auto 0;
+    list-style-type: none;
+    text-align: left;
+    display: inline-block;
+    right: 20px;
+    position: relative;
+}
+
+.contacts li {
+    margin-bottom: 15px;
+    position: relative;
+}
+
+.contacts li:nth-child(4) {
+    margin-bottom: 25px;
+}
+
+/* иконки контактов */
+
+.contacts li:first-child::before {
+    content: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/marker.jpg?raw=true);
+    position: absolute;
+    right: 195px;
+    top: -5px;
+}
+
+.contacts li:nth-child(5)::before {
+    content: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/phone.jpg?raw=true);
+    position: absolute;
+    right: 197px;
+    top: -3px;
+}
+
+.contacts li:last-child::before {
+    content: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/mail.jpg?raw=true);
+    position: absolute;
+    right: 195px;
+    top: 3px;
+}
+
+/*
+  ========================================
+  Фрейм
+  ========================================
+*/
+
+.frame {
+    margin: 0;
+    padding: 0;
+    height: 345px;
+}
+
+iframe {
+    height: 100%;
+    width: 100%;
+    border: none;
+}
+
+/*
+  ========================================
+  Иконки соцсетей
+  ========================================
+*/
+
+.social_media {
+    position: absolute;
+    bottom: 25px;
+    left:190px;
+}
+
+.facebook {
+    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/facebook.jpg?raw=true);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.twitter {
+    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/twitter.jpg?raw=true);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.linkedin {
+    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/linkedin.jpg?raw=true);
+    width: 50px;
+    height: 50px;
+    background-size: cover;
+    display: inline-block;
+}
+
+
 /*
   ========================================
   Подвал
@@ -661,6 +868,8 @@ footer {
     padding-top: 30px;
     padding-bottom: 30px;
     line-height: 25px;
+    overflow: hidden;
+    height:104px;
 }
 
 
