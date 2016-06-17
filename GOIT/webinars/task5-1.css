@@ -1,0 +1,60 @@
+﻿header {
+	background-color: #1aa4ff;			/* задаем синий цвет для контейнера меню*/
+	position: relative;                 /* позиционирование будет вестись относительно этого контейнера*/
+}
+
+nav {
+	font-family: Impact, serif; 		/* задаем шрифт для заголовков меню, заглавные буквы, цвет шрифта белый, ширина навбара 900*/
+	text-transform: uppercase; 
+	color: #fff;
+	width: 900px;
+	margin-left: 200px;                 /* отступ слева 200 пикселей, отступ внутри контейнера 60 пикселей*/
+	padding-left:60px;
+}
+
+li a {
+	display: inline-block;              /* задаем строчные свойства блокам со ссылками, белый цвет для ссылок, отступы 10 пикселей*/
+	color: #fff;
+	text-decoration: none;
+	padding: 10px;
+}
+
+
+
+ul a {                                    /* задаем цвет шрифта выпадающему меню*/
+	color:  #b3b3b3;
+}
+
+li {
+	list-style-type: none;              /* убираем маркеры для списка, задаем строчные свойства блокам списка и белый цвет*/
+	display: inline-block;
+	color: #fff;
+}
+
+li ul {                                    /* задаем абсолютное позиционирование для выпадающего списка, скрываем список в ненажатом состоянии, */
+	position:absolute;                  /* задаем ширину на всю длину */
+	display:none;                       /* задаем высоту без отступа от главного меню */
+	width:100%;
+	left: 0;                            /* выпадающее меню начинается с левого края*/
+	top:55%;
+}
+
+li a:hover {                              /* задаем цвет при наведении на ссылку в блоке меню*/
+	color: #b3b3b3;
+	background-color: #eeeeee;
+}
+
+li:hover {
+	color: #b3b3b3;
+	background-color: #eeeeee;
+}
+
+li:hover ul {                               /* привязываем выпадающее меню к ховеру, выравниваем содержимое по центру */
+	background-color: #eeeeee;
+	display:inline-block;
+	font-family: Arial;
+	text-transform: capitalize;
+	font-size: 15px;
+	text-align: center;
+}
+

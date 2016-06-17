@@ -1,0 +1,253 @@
+/*
+  ========================================
+  Сбросим все стандартные стили
+  ========================================
+*/
+
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+    display: block;
+}
+body {
+    line-height: 1;
+}
+ol, ul {
+    list-style: none;
+}
+blockquote, q {
+    quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+    content: '';
+    content: none;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+
+/*
+  ========================================
+  Пользовательские стили
+  ========================================
+*/
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url(../fonts/MyriadPro-Regular.otf);
+}
+
+body {
+    padding: 50px 114px 80px;
+    background-color: #f8f8f8;
+    max-width: 1200px;
+    min-width: 500px;
+    font-family: "Myriad Pro", Arial, sans-serif;
+}
+
+.container {
+    width: 972px;
+    outline: 3px solid black;
+    background-color: #fff;
+    padding: 10px 20px 0;
+    border: 1px solid #ebebeb;
+    margin: 0 auto;
+    box-sizing: border-box;
+
+}
+
+.col-1-3 {
+    width: calc(33% - 20px);
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+    ~outline: 1px dotted deepskyblue;
+}
+
+.col-2-3 {
+    width: calc(66% - 20px);
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+    ~outline: 1px dotted deepskyblue;
+}
+
+.col-1-4 {
+    width: calc(25% - 40px);
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.col-2-4 {
+    width: calc(50% - 30px);
+    display: inline-block;
+    vertical-align: top;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+/*
+  ========================================
+  Header
+  ========================================
+*/
+
+.header {
+    outline: 2px solid red;
+    margin: 20px;
+    position: relative;
+
+}
+
+/*
+  ========================================
+  Логотип
+  ========================================
+*/
+.logo {
+    display: inline-block;
+    outline: 1px solid black;
+}
+
+
+.logo_description {
+    font-family: "Myriad Pro", Arial, sans-serif;
+    font-size: 15px;
+    color: #bebebe;
+}
+
+.logo a {
+    text-decoration: none;
+    color: #222;
+    font-family: "Oleo Script", sans-serif;
+    font-size: 40px;
+    padding-bottom: 5px;
+    padding-top: 15px;
+    display: block;
+}
+
+/*
+  ========================================
+  Навигация
+  ========================================
+*/
+
+
+.navbar {
+    display: inline-block;
+    padding-top: 30px;
+    width: 440px;
+}
+
+
+.navbar li {
+    display: inline-block;
+    font-size: 16px;
+    font-family: "Myriad Pro", Arial, sans-serif;
+    text-transform: capitalize;
+    text-align: center;
+    padding-right: 58px;
+}
+
+.navbar li:last-child {
+    padding-right: 0;
+}
+
+.navbar li a {
+    color: #222;
+    text-decoration: none;
+}
+
+.header_button {
+    position: absolute;
+    right: 0;
+    top: 35%;
+    font-family: "Myriad Pro", Arial, sans-serif;
+    font-size: 15px;
+    color: #fff;
+    background-color: #ffc452;
+    padding: 5px;
+    border: 1px solid #eeaf3e;
+    border-radius: 3px;
+    text-decoration: none;
+
+}
+
+/*
+  ========================================
+  Всплывающее меню
+  ========================================
+*/
+
+.header_navbar_drop {
+    position: relative;
+    outline: 1px solid green;
+}
+
+.header_navbar_sub {
+    position: absolute;
+    top: 50px;
+    opacity: 0;
+    left: -9999em;
+    background-color: #fff;
+    ~text-align: left;
+    font-size: 12px;
+    width: 166px;
+    outline: 3px solid red;
+    margin: 0;
+    padding: 0;
+}
+
+.header_navbar_drop:hover .header_navbar_sub {
+    opacity: 1;
+    left: -15px;
+    color: #222;
+}
+
+.header_navbar_sub_list:first-child span {
+    font-size: 10px;
+    line-height: 10px;
+    font-family: Arial, sans-serif;
+    color: #aaa;
+    width: 166px;
+    outline: 1px dotted brown;
+    display: inline-block;
+    text-align: left;
+    padding-left: 7px;
+
+}
+
+.header_navbar_sub_link {
+    outline: 1px solid blue;
+    display: inline-block;
+    text-align: left;
+    padding-left: 7px;
+}

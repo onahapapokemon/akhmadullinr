@@ -1,0 +1,44 @@
+﻿
+
+.pager ul {
+	width: 600px;
+    margin: auto;
+}
+
+.pager ul li {
+	
+	display: inline-block;
+	margin: 10px 5px;
+	list-style: none;
+}
+
+.active {
+	text-decoration: none;
+	color: #aa0bdf;
+	font-size: 10px;
+	font-weight: 400;
+}
+
+.button {
+	border: 1px solid #d9d9d9;
+	border-radius: 5px;
+	padding: 5px;
+	padding-right: 7px;
+	padding-left: 7px;
+}
+
+.first, .prev, .next, .last {
+	text-transform: uppercase;
+}
+
+.pager-item {
+	margin-left: 10px;
+}
+
+.button:hover {
+	background-color: #aa0bdf;
+	color: white;
+}
+
+
+

@@ -1,0 +1,997 @@
+/*
+  ========================================
+                Общие стили
+  ========================================
+*/
+
+@font-face {
+    font-family: "Myriad Pro";
+    src: url(https://https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project2/assets/fonts/MyriadPro-Regular.otf);
+}
+
+@font-face {
+    font-family: "Oleo Script";
+}
+
+body{
+    background-color: #f8f8f8;
+    margin: 0;
+    padding: 35px 115px 80px;
+    font-family: "Myriad Pro", sans-serif;
+    color: #666666;
+}
+
+.container{
+    position: relative;
+    background-color: #fff;
+    width: 972px;
+    box-sizing: border-box;
+    margin: 0 auto;
+    padding: 10px 20px 0;
+    border: 1px solid #ebebeb;
+    border-radius: 3px;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.15);
+}
+
+/*
+  ========================================
+   Стиль верхнего блока
+  ========================================
+*/
+
+.header{
+      position: relative;
+      text-align: left;
+      margin-bottom: 65px;
+      padding-left: 10px;
+  }
+
+/*
+  ========================================
+   Логотип
+  ========================================
+*/
+
+/* шрифт, размер шрифта, цвет, позиция для логотипа*/
+
+.header_logo{
+    font-size: 40px;
+    font-family: "Oleo Script", sans-serif;
+    color: #222;
+    position: relative;
+    top:10px;
+}
+
+/* размер шрифта, тип шрифта и цвет для надписи под логотипом*/
+
+.header_logo_title{
+    font-size: 11px;
+    font-family: "Arial", sans-serif;
+    color: #999;
+}
+
+/*
+  ========================================
+   Меню
+  ========================================
+*/
+
+/* выравниваем меню флоатом вправо*/
+
+.header_menu {
+    float: right;
+    font-size: 14px;
+    position: relative;
+    margin-right: 90px;
+}
+
+/*стили для выпадающего меню*/
+
+.header_menu_sub {
+    list-style-type: none;
+    position: absolute;
+    border: 1px solid #ebebeb;
+    background-color: #fff;
+    border-radius: 3px;
+    top: 50px;
+    padding: 10px;
+    font-size: 12px;
+    z-index: 100;
+    width: 145px;
+    display: none;
+}
+
+.header_menu_sub_popup:before, .header_menu_sub_popup:after {           /* разобрать на готовом варианте */
+    content: "";
+    position: absolute;
+}
+
+.header_menu_sub_popup:before {
+    border-left: 8px solid rgba(113, 101, 58, 0);
+    border-right: 8px solid rgba(113, 101, 58, 0);
+    border-top: 8px solid #ebebeb;
+    left: 20px;
+    top:0;
+    outline: 1px solid black;
+}
+
+.header_menu_sub_popup:after {
+    border-left: 8px solid rgba(255, 241, 190, 0);
+    border-right: 8px solid rgba(255, 241, 190, 0);
+    border-top: 8px solid #fff;
+    left: 20px;
+    top: -1px;
+}
+
+
+/* задаем свойства элементам в выпадающем меню*/
+
+.header_menu_item {
+    display: inline-block;
+    padding: 10px;
+}
+
+/* свойства блока для выпадающего меню при ховере основного меню */
+
+.header_menu_item:hover .header_menu_sub {
+    display: block;
+}
+
+/* свойства ссылок для основного меню*/
+
+.header_menu_link {
+    text-decoration: none;
+    margin: 10px 10px 0 0 ;
+    color: #666;
+    padding: 5px 10px 20px;
+    border-radius: 3px;
+    display: block;
+}
+
+/* отступ для первого и последнего пункта в главном меню*/
+
+.header_menu_link:last-child{
+    margin-right: 0;
+}
+.header_menu_link:first-child{
+    margin-right: 7px;
+}
+
+/* цвет при ховере */
+
+.header_menu_link:hover {
+    background-color: #f5f5f5;
+}
+
+.header_menu_link:hover~.header_menu_link_popap:before{    /* разобрать позже*/
+    display: inline-block;
+}
+
+/* стили для кнопки справа от меню */
+
+.button_apply {
+    font-size: 14px;
+    position: absolute;
+    text-decoration: none;
+    text-shadow: 0px -1px 1px rgba(198, 141, 30, 0.7);      /* разобрать когда буду делать свой проект */
+    background-color: #ffc552;
+    border-radius: 3px;
+    font-family: "Myriad Pro", sans-serif;
+    right: 0;
+    top: 33px;
+    padding: 5px 7px;
+    color: #fff;
+}
+
+/* стили для кнопки при ховере */
+
+.button_apply:hover {                                       /* сделать на своем проекте кнопку лучше */
+    border-radius: 20px;
+    padding-right: 17px;
+    right: -10px;
+    transition-timing-function: ease;
+    transition-duration: 0.1s;
+}
+
+/* стили для пунктов выпадающего меню */
+
+.header_menu_sub_item {
+    text-decoration: none;
+    color: #666;
+    padding: 5px;
+    display: inline-block;
+    width: 100%;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+/* цвет ховера для пунктов выпадающего меню */
+
+.header_menu_sub_item:hover {
+    background-color: #f5f5f5;
+}
+
+.header_menu_item_list{
+    position: relative;
+}
+
+/* стили к активным пунктам выпадающего меню */
+
+.header_menu_item_list:after{                             /* в моем варианте допилить что-нибудь получше */
+    display: none;
+    position: absolute;
+    border-radius: 3px;
+    background-color: rgb(255, 234, 194);
+    width: 145px;
+    height: 10px;
+    bottom: -4px;
+    z-index: -1;
+    margin: 0;
+    content: '';
+}
+
+.header_menu_item_list:active:after{
+    display: block;
+}
+
+/* стили для линии в выпадающем меню */
+
+.header_menu_sub_hr {
+    color: #666;
+    margin: 5px 0;
+}
+
+/* стили для небольшого текста в первом пункте выпадающего меню*/
+
+.header_menu_sub_small-text {
+    font-size: 10px;
+    font-family: Arial, sans-serif;
+    color: #aaa;
+}
+
+.item_blog:hover .header_menu_sub {       /* разобрать на готовом примере*/
+    display: block;
+}
+
+.header_menu_link_popup {
+    position: relative;
+}
+
+/* добавляет псевдоэлемент для списков меню в виде нижней стрелки */
+
+.header_menu_link_popup:before {
+    content: "";
+    display: none;
+    width: 0;
+    height: 0;
+    border: 10px solid;
+    border-color: #f5f5f5 transparent transparent transparent;
+    z-index: 5;
+    position: absolute;
+    bottom: -19px;
+    left:30%;
+}
+.header_menu_link_popup:hover:before{
+    display:block;
+}
+
+/*
+  ========================================
+   Главный блок
+  ========================================
+*/
+
+/* сдвигаем вправо*/
+
+.hero{
+    position: relative;
+    text-align: right;
+    margin-bottom: 60px;
+}
+
+/*
+  ========================================
+   Блок Враппер
+  ========================================
+*/
+
+
+/* блок враппер. задаем ему ширину и высоту. отступ слева 60px, фон и тень */
+
+/* блок сдвигается влевую сторону*/
+
+.hero_wrapper {
+    position: relative;
+    height: 198px;
+    width: 302px;
+    ~margin-left: 60px;
+    box-sizing: border-box;
+    padding-top: 5px;
+    box-shadow: 0 30px 18px -27px rgba(0,0,0,0.24), inset 0 0 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgb(246, 246, 246);
+}
+
+/* внутри враппера есть блок слайдер. задаем ему ширину и высоту. затем свойством хидден скрываем содержимое внутрь.
+   марджин выравнимает блок внутри враппера */
+
+
+.hero_slider {
+    position: relative;
+    overflow: hidden;
+    width: 292px;
+    margin: auto;
+    height: 189px;
+}
+
+
+/* скрываем переключатели */
+
+.hero_slide-switch {
+    display: none;
+}
+
+/* переключать картинки будем через label, для этого делаем абсолютное позиционирование и z-index приоритет */
+
+.hero_slide-label {
+    position: absolute;
+    z-index: 5;
+    width: 32px;
+    height: 50px;
+    border-radius:3px;
+    cursor: pointer;
+}
+
+/* свойства для левого переключателя */
+
+.hero_label-left {
+    background-image: url(../images/sprite.png);
+    opacity: 0.6;
+    top:134px;
+    left:0;
+    background-repeat: no-repeat;
+    background-position: -10px -88px;   /* местоположение стрелки на спрайте */
+}
+
+
+/* свойства для левого переключателя */
+
+.hero_label-right {
+    background-image: url(../images/sprite.png);
+    opacity: 0.6;
+    top:134px;
+    right:0;
+    background-repeat: no-repeat;
+    background-position: -335px -88px;
+}
+
+.hero_slide-content {
+    width: 292px;
+    float: left;
+    margin-right: -100%;       /* сдвигаем изображение при анимации на 100% */
+}
+
+/* задаем свойства анимации для переключения изображений */
+
+.hero_slide-switch:not(:checked) + .hero_slide-label + .hero_slide-content {
+    opacity: 0;
+    transition: opacity 0.35s;
+    pointer-events: none;
+}
+
+.hero_slide-switch:checked + .hero_slide-label + .hero_slide-content {         /* анимацию доработать */
+    animation: slide 1s;
+}
+@keyframes slide {
+    0% {
+        transform: translateX(100%);
+    }
+    100% {
+        transform: translateX(0);
+    }
+}
+
+/* задаем стили для надписи под слайд-изображениями */
+
+.hero_slider_name {
+    position: absolute;
+    bottom:5px;
+    left:38px;
+    width: 215px;
+    height: 50px;
+    padding: 8px;
+    box-sizing: border-box;
+    border-radius:3px;
+    color: #fff;
+    text-align: left;
+    background-color: rgba(0, 0, 0, 0.6);   /* разобрать */
+}
+
+/* задаем размера заголовка под слайд-изображениями */
+
+.hero_slider_name_title{
+    font-size: 13px;
+    font-family: Arial, sans-serif;
+    margin: 0;
+}
+
+
+
+/* задаем параметры тексту под заголовком */
+
+.hero_slider_name_text{
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    margin-top: 5px;
+}
+
+.name_text-orange{
+    color: rgb(255, 193, 76);
+}
+.name_text-grey{
+    color: #676767;
+}
+
+/*
+========================================
+Заголовок главного блока
+========================================
+*/
+
+
+/* переходим к работе с блоком названия amazing superman, форматируем и позиционируем с помощью абсолюта */
+
+.hero_text {
+    position: absolute;
+    right:70px;
+    top:0;
+    width: 490px;
+    text-align: right;
+    z-index: 20;
+}
+
+/* форматируем заголовок */
+
+.hero_text_title{
+    font-size: 38px;
+    color: rgb(81, 81, 81);
+    line-height: 0.474;
+    margin-bottom: 20px;
+
+}
+
+/* текст под заголовком */
+
+.hero_text_area {
+    font-size: 14px;
+    color: rgb(102, 102, 102);
+    line-height: 1.286;
+    width: 420px;
+    position: relative;
+    left:70px;
+}
+
+/* задаем стили для первой и второй линии в блоке */
+
+.hero_hr{
+    background-color: #ebebeb;
+    opacity: 0.1;
+}
+
+.hero_hr2 {
+    background-color:rgba(0, 0, 0, 0.25);
+}
+
+/*
+========================================
+Кнопка главного блока
+========================================
+*/
+
+/* задаем стили кнопке */
+
+.hero_button{
+    position: absolute;
+    right: 70px;
+    top:120px;
+    display: block;
+    text-decoration: none;
+    text-align: left;
+    padding: 5px;
+    width: 168px;
+    height: 42px;
+    box-sizing: border-box;
+    border-radius: 3px;
+    border: 1px solid #efb74c;
+    background-color: #ffc24e;
+    background-image: url(../images/sprite.png);
+    background-repeat: no-repeat;
+    background-position: 123px 10px;
+    box-shadow: 0px 1px 1px 0px rgba(0, 0, 0, 0.1),inset 0px 0px 1px 0px rgba(0, 0, 0, 0.25);
+}
+
+/* задаем стили заголовку кнопки и тексту под ним */
+
+.hero_button_title{
+    font-size: 17px;
+    color: rgb(255, 255, 255);
+    line-height: 1.059;
+    text-shadow: 0 -1px 0 rgba(208, 139, 18, 0.5);
+    border-right: 1px  solid #efb74c;
+    padding-right: 20px;
+    padding-bottom: 10px;
+}
+.hero_button_text {
+    font-size: 10px;
+    font-family: "Arial";
+    color: rgb(210, 134, 0);
+    font-weight: bold;
+    text-transform: uppercase;
+    line-height: 1.8;
+    text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.5);
+    position: absolute;
+    bottom: 0;
+
+}
+
+/*
+========================================
+Блок About
+========================================
+*/
+
+/* задаем отступы сверху и снизу */
+
+.about{
+    margin:15px 0 30px;
+}
+
+/* задаем стили заголовку */
+
+.about_title{
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+}
+
+
+/* задаем flex свойство указанным контейнерам */
+
+.about_block,
+.tab-content_grid,
+.footer{
+    display: flex;
+}
+
+.about_block_item{
+    flex: 1;
+}
+
+.about_block_item:nth-child(2){
+    margin:0 20px;
+}
+
+/* задаем стили тексту и заголовкам под картинками */
+
+.about_block_item_text{
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+    color: rgb(102, 102, 102);
+    line-height: 1.5;
+    text-align: justify;
+    text-shadow: 0 1px 0 rgba(255, 255, 255, 0.004);
+    width: 280px;
+    margin: 15px auto 0;
+    height: 121px;
+    padding: 0 8px;
+}
+
+
+.about_block_item_image_description {
+    font-size: 11px;
+    font-family: Arial, sans-serif;
+    color: rgb(153, 153, 153);
+    line-height: 1.2;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+    margin: 0 8px 10px;
+    text-align: left;
+}
+.about_block_item_image_title {
+    font-size: 14px;
+    font-family: "Myriad Pro", sans-serif;
+    color: rgb(102, 102, 102);
+    text-align: left;
+    text-shadow: 0px 1px 0px rgba(255, 255, 255, 0.004);
+    margin: 5px 8px;
+}
+
+/* задаем стили для изображений блока about */
+
+
+.about_block_item_head{                                                  /* на своем проекте сделать правильные отступы */
+    background-color: #f0f0f0;
+    height: 200px;
+    width: 300px;
+    overflow: hidden;
+    position: relative;
+    text-align: center;
+    border: 1px solid #f0f0f0;
+    border-bottom: none;
+    background-image: url(../images/fon.gif);
+    background-position: 0% 100%;
+    background-repeat: repeat-x;
+}
+
+/* делаем нижний бордер при ховере на картинки */
+
+.about_block_item_head:hover {
+    background-color: #fff;
+    border-color: #f0f0f0 #f0f0f0 transparent  #f0f0f0;
+}
+
+/* для контейнера с картинкой и контейнера под картинкой задали ширину и высоту, белый бордер */
+
+.about_block_item_cover,
+.about_block_item_image {
+    box-sizing: border-box;
+    width: 298px;
+    height: 146px;
+    border: 2px solid #fff;
+}
+
+/* свойства для блока под картинкой */
+
+.about_block_item_cover{
+    opacity: 0;
+    padding:42px 0;
+    vertical-align: middle;
+    position: absolute;
+    overflow: hidden;
+    top: 0;
+    left: 0;
+    box-shadow: inset 0px 0px 100px 20px rgba(0,0,0,0.3);
+}
+
+/* свойства кнопкам на картинках при ховере */
+
+.item_cover_sprite-container{
+    vertical-align: middle;
+    display: inline-block;
+    position: relative;
+    width: 35px;
+    height: 35px;
+    padding-top:6px;
+    box-sizing: border-box;
+    border-radius:50%;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.item_cover_button_plus{
+    font-size: 36px;
+    font-family: Arial, sans-serif;
+    color: rgb(75, 75, 75);
+    font-weight: bold;
+    margin-top: 7px;
+}
+
+.item_cover_sprite-container:hover{
+    background-color:transparent;
+}
+.item_cover_button{
+    opacity: 0;
+    display: inline-block;
+    text-decoration: none;
+    box-sizing: border-box;
+    width: 25px;
+    height: 25px;
+    border-radius:50%;
+    margin:auto;
+    background: linear-gradient(to bottom, #fff, #dadada);
+    box-shadow: inset 0px -1px 1px 1px rgba(0,0,0,0.3);
+}
+
+.about_block_item_head:hover .about_block_item_image {
+    opacity: 1;
+}
+
+.about_block_item_head:hover .about_block_item_cover {
+    opacity: 1;
+}
+
+.about_block_item_head:hover .item_cover_button {
+    opacity: 1;
+}
+
+.cover-middle-button{
+    width: 60px;
+    height: 60px;
+    padding:7.5px;
+    text-align: center;
+}
+
+.cover-middle-button .item_cover_button {
+    width: 45px;
+    height: 45px;
+
+}
+
+/*
+========================================
+Блок Cont2
+========================================
+*/
+
+.cont2{
+    margin-bottom: 30px;
+}
+.cont2_title {
+    font-size: 18px;
+    color: rgb(34, 34, 34);
+    text-align: left;
+}
+.highlightme {
+    background-color:#ffe7b9;
+    color:#c07e00;}
+
+
+.tabs {
+    position: relative;
+    width: 100%;
+    float: none;
+    padding: 0;
+    margin: 20px auto;
+    border: 1px solid #e6e6e6;
+    border-radius: 3px;
+    overflow: hidden;
+    background: linear-gradient(to top, #f0efef 75%, #fff);
+}
+.tabs:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.tabs input[type=radio] {
+    display:none;
+}
+.tabs label {
+    display: block;
+    float: left;
+    border: 1px solid #e6e6e6;
+    padding:14px 0;
+    font-size: 14px;
+    font-family: "Arial";
+    color: rgb(102, 102, 102);
+    text-align: center;
+    cursor: pointer;
+    margin: -1px -1px 0 0;
+    z-index: 10;
+    width: 95px;
+}
+.tabs .cont2_tabs_lab1{
+    border-left: 1px solid #e6e6e6;
+    margin-left: -1px;
+}
+.tab-content {
+    display: none;
+    width: 100%;
+    height: 195px;
+    float: left;
+    padding: 15px;
+    box-sizing: border-box;
+    background-color:#ffffff;
+    border-top: 1px solid #e6e6e6;
+    margin-top: -1px;
+
+}
+.cont2_list_item:hover{
+    color: rgb(255, 173, 25);
+}
+
+.tabs [id^="tab"]:checked + label {
+    background: #FFF;
+    border-bottom:1px solid #fff;
+    z-index: 10;
+    position: relative;
+}
+#tab1:checked ~ #tab-content1,
+#tab2:checked ~ #tab-content2,
+#tab3:checked ~ #tab-content3 {
+    display: block;
+}
+.tab-content_grid_item{
+    flex: 1;
+
+}
+.tab-content_grid_item_image{
+    border: 1px solid rgb(241, 241, 241);
+    background-color: rgb(255, 255, 255);
+    width: 116px;
+    height: 93px;
+    padding: 4px;
+}
+.blokimg {
+    position: relative;
+    float: left;
+    -moz-float: left;
+    -webkit-float: left;
+    margin:5px 8px 0 10px;
+}
+.overlay{
+    display: none;
+    width: auto;
+    height: auto;
+    position: absolute;
+    top:-15px;
+    left:-15px;
+    z-index: 999;
+}
+.tab-content_blokimg_foto{
+    width: 175px;
+    height: 130px;
+}
+.overlay:target {
+    display: table;
+}
+.tab-content_grid_item_title{
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(51, 51, 51);
+    font-weight: 700;
+    line-height: 1.667;
+    padding-left:5px;
+    margin-top: 5px;
+}
+.tab_hr{
+    margin-top: -5px;
+    padding: 0;
+
+}
+.cont2_list_item{
+    text-decoration: none;
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(51, 51, 51);
+    line-height: 1.667;
+}
+.cont2_list_item:before{
+    content: url("../images/list_arrow.png");
+    vertical-align: top;
+    margin-right: 10px;
+    opacity: 0.6;
+}
+.cont2_list{
+    list-style: none;
+    margin: 0;
+
+}
+.tab-content_grid_item_text{
+    margin: 0;
+    font-size: 12px;
+    font-family: "Arial";
+}
+.tab-content_title {
+    font-size: 14px;
+    font-family: "Arial";
+    color: rgb(51, 51, 51);
+    text-align: left;
+}
+.footer_item1{
+    flex: 1;
+}
+.footer_item2{
+    flex: 2;
+}
+.footer_item_title {
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(255, 173, 25);
+    font-weight: bold;
+    text-transform: uppercase;
+}
+.footer_item_link{
+    display: inline-block;
+    font-size: 12px;
+    font-family: "Arial";
+    color: rgb(102, 102, 102);
+    text-decoration: none;
+    padding: 10px 0 5px;
+    width: 180px;
+}
+.footer_item_menu{
+    list-style-type: none;
+    position: relative;
+    padding: 0;
+    margin: 0;
+}
+.footer{
+    margin-bottom: 30px;
+}
+.footer_item_link_description{
+    font-size: 11px;
+    color: rgb(170, 170, 170);
+    padding: 0;
+    margin-top: 0;
+}
+.footer_item_menu_button{
+    border-bottom: 1px solid  #e6e6e6;
+    width: 180px;
+}
+.footer_item_menu_button:last-child{
+    border-bottom:none;
+}
+.footer_item2 .footer_item_link,
+.footer_item2 .footer_item_menu_button{
+    width: 455px;
+    box-sizing: border-box;
+    padding-left: 15px;
+}
+.footer_item2 .footer_item_link:before{
+    content: url("../images/footer_icon.png");
+    margin-right: 10px;
+    position: absolute;
+    left: 0;
+}
+.footer_item_menu_button:hover .footer_item_link {
+    color: orange;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
