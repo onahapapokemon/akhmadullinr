@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Help</title>
+    <link rel="stylesheet" href="assets/stylesheets/help.css">
+    <link href='https://fonts.googleapis.com/css?family=Oleo+Script:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body>
+<div class="container box-shadow">
+
+
+    <div class="header">
+        <div class="header-logo">
+            <h1 class="logo">
+                <a href="index.html">Officetime</a>
+                <p class="logo_description"> Officetime a psd template  </p>
+            </h1>
+        </div>
+        <nav class="menu">
+            <li class="menu-list-first">
+                <a href="index.html" title="Вернуться на главную страницу">Home</a>
+            </li>
+            <li class="menu-list">
+                <a href="#" title="Информация о компании">About</a>
+                <ul class="drop-menu">
+                    <li><a class="drop-menu-link" href="#">Some text</a></li>
+                    <hr>
+                    <li><a class="drop-menu-link" href="#">Some text</a></li>
+                </ul>
+            </li>
+            <li class="menu-list">
+                <a href="#" title="Продукты">Products</a>
+                <ul class="drop-menu">
+                    <li><a class="drop-menu-link" href="#">Product one</a></li>
+                    <hr>
+                    <li><a class="drop-menu-link" href="#">Product two</a></li>
+                    <hr>
+                    <li><a class="drop-menu-link" href="#">Product three</a></li>
+                    <hr>
+                    <li><a class="drop-menu-link" href="#">Product four</a></li>
+                </ul>
+            </li>
+            <li class="menu-list">
+                <a href="#" title="Блог">Blog</a>
+                <ul class="drop-menu">
+                    <li><a class="drop-menu-link" href="#">Articles<br><span>this text is complementary</span></a></li>
+                    <hr>
+                    <li><a class="drop-menu-link" href="#">Writers</a></li>
+                    <hr>
+                    <li><a class="drop-menu-link" href="#">Top 50</a></li>
+                    <hr>
+                    <li><a class="drop-menu-link" href="#">The Hall of Fame</a></li>
+                </ul>
+            </li>
+            <li class="menu-list">
+                <a href="help.html" title="Как с нами связаться">Help</a>
+                <ul class="drop-menu">
+                    <li><a class="drop-menu-link" href="#">Work hours</a></li>
+                    <hr>
+                    <li><a class="drop-menu-link" href="#">Location</a></li>
+                </ul>
+            </li>
+        </nav>
+        <a class="header_button" href="#">Apply Now</a>
+
+
+    </div>
+    <div class="contact">
+        <div class="contact_header">contact</div>
+        <div class="contact_form">
+            <div class="contact_form_wrapper">
+
+                <script language="JavaScript">
+
+                    function pr(form)
+                    {
+                        if((form.name.value=="")||(form.mail.value=="")||(form.website.value=="") ||(form.message.value==""))
+                        {
+                            alert("Заполните все поля");
+                            return false;
+                        }
+                        else
+                            return true;
+                    }
+                </script>
+
+            <form name="order_form" action="do-order.php" class="contact_form_content" method="post" onsubmit="return pr(order_form)">
+                <h1 class="contact_form_title">Send us a Message</h1>
+                <label class="contact_form_label label-name" for="name">
+                    <span>Name:</span>
+                    <input class="contact_form_input" type="text" name="name" id="name" placeholder="Theodore Dreiser" required>
+                    <span class="contact_form_error">something wrong with your name</span>
+                    <span class="contact_form_valid"></span>
+                </label>
+                <label class="contact_form_label label-mail" for="mail">
+                    <span>Email:</span>
+                    <input class="contact_form_input" type="email" name="mail" id="mail" placeholder="name@gmail.com" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,3}$">
+                    <span class="contact_form_error">something wrong with your email</span>
+                    <span class="contact_form_valid"></span>
+                </label>
+                <label class="contact_form_label label-url" for="website">
+                    <span>Website:</span>
+                    <input class="contact_form_input" type="url" name="website" id="website" placeholder="http://google.com" required pattern="(http|https)://.+">
+                    <span class="contact_form_error">something wrong with your website</span>
+                    <span class="contact_form_valid"></span>
+                </label>
+                <label for="comment" id="contact_textarea_label">Your Message:</label>
+                <textarea name="message" cols="60" rows="10" id="comment" placeholder="Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Cum sociis natoque penatibus et ma..."></textarea><br/>
+                <input type="submit" value="Send Message" class="contact_form_button">
+            </form>
+        </div>
+        <div class="contact_information">
+            <div class="contact_information_wrapper">
+            <h3 class="contact_information_title">Contact Information</h3>
+            <p class="contact_information_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis mollis, est non commodo luctus, nisi erat porttitor ligula, eget lacinia odio sem nec elit. Vivamus sagittis lacus vel augue laoreet rutrum faucibus dolor auctor. Morbi leo risus, porta ac consectetur ac, vestibulum at eros.</p>
+            </div>
+        </div>
+        </div>
+    </div>
+
+</div>
+
+<hr class="footer_above">
+
+<div class="footer container box-shadow2">
+
+        <div class="footer_column">
+
+            <h3> single menu title</h3>
+            <ul>
+                <li> Condimentum Etiam Purus</li>
+                <li> Quam Tristique Sem </li>
+                <li> Fusce Parturient </li>
+                <li> Tristiqur Tortor Condimentinm </li>
+                <li> Magna Parturient Aenean </li>
+                <li> Tortor Nich Etiam </li>
+            </ul>
+
+        </div><div class="footer_column">
+
+        <h3> cursus venetatis mollis </h3>
+        <ul>
+            <li>Condimentin Etias Purus </li>
+            <li> Quam Tristique Sem </li>
+            <li> Fusce Parturient </li>
+            <li> Tristiqur Tortor Condimentinm </li>
+            <li> Magna Parturient Aenean </li>
+            <li> Cursus Justo Fringilla </li>
+        </ul>
+    </div><div class="footer_column_last">
+
+        <h3> Latest Articles</h3>
+
+        <ul>
+
+            <li><a class="footer_link" href="#">Fusce Etiam Bibendum <p class="footer_link_description">Sed posuere consadetur est at lobortis. </p></a></li>
+            <li><a class="footer_link" href="#">Fusce Parturient<p class="footer_link_description">Maecenas faucibus  mollis interdum. Cras justo cdio, padibus ac facilis in, esestias eqet quam.</p></a></li>
+            <li><a class="footer_link" href="#">Magna Parturient Aenean<p class="footer_link_description">Cum socius natoqiue et magnis dis parturiebt montes, nascetufur ridiculus mus.</p></a></li>
+
+        </ul>
+
+    </div>
+
+    </div>
+    <div class="footer_shadow"></div>
+
+
+</body>
+</html>
