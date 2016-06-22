@@ -1,5 +1,14 @@
 /*
   ========================================
+                Разбор выполненного задания  gorbatyuks.github.io-master
+  ========================================
+*/
+
+
+
+
+/*
+  ========================================
                 Общие стили
   ========================================
 */
@@ -101,27 +110,6 @@ body{
     display: none;
 }
 
-.header_menu_sub_popup:before, .header_menu_sub_popup:after {           /* разобрать на готовом варианте */
-    content: "";
-    position: absolute;
-}
-
-.header_menu_sub_popup:before {
-    border-left: 8px solid rgba(113, 101, 58, 0);
-    border-right: 8px solid rgba(113, 101, 58, 0);
-    border-top: 8px solid #ebebeb;
-    left: 20px;
-    top:0;
-    outline: 1px solid black;
-}
-
-.header_menu_sub_popup:after {
-    border-left: 8px solid rgba(255, 241, 190, 0);
-    border-right: 8px solid rgba(255, 241, 190, 0);
-    border-top: 8px solid #fff;
-    left: 20px;
-    top: -1px;
-}
 
 
 /* задаем свойства элементам в выпадающем меню*/
@@ -762,13 +750,15 @@ body{
     text-align: center;
     cursor: pointer;
     margin: -1px -1px 0 0;
-    z-index: 10;
+    z-index: 100;
     width: 95px;
 }
+
 .tabs .cont2_tabs_lab1{
     border-left: 1px solid #e6e6e6;
     margin-left: -1px;
 }
+
 .tab-content {
     display: none;
     width: 100%;
@@ -781,21 +771,24 @@ body{
     margin-top: -1px;
 
 }
+
 .cont2_list_item:hover{
     color: rgb(255, 173, 25);
 }
 
-.tabs [id^="tab"]:checked + label {
+.tabs [id^="tab"]:checked + label {      /* взаимосвязь лейблов и контента */
     background: #FFF;
     border-bottom:1px solid #fff;
     z-index: 10;
     position: relative;
 }
-#tab1:checked ~ #tab-content1,
+
+#tab1:checked ~ #tab-content1,          /* взаимосвязь лейблов и контента */
 #tab2:checked ~ #tab-content2,
 #tab3:checked ~ #tab-content3 {
     display: block;
 }
+
 .tab-content_grid_item{
     flex: 1;
 
@@ -851,7 +844,7 @@ body{
     color: rgb(51, 51, 51);
     line-height: 1.667;
 }
-.cont2_list_item:before{
+~.cont2_list_item:before{
     content: url("../images/list_arrow.png");
     vertical-align: top;
     margin-right: 10px;
