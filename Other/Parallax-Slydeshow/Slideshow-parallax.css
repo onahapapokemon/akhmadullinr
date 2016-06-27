@@ -108,6 +108,8 @@
 .sp-arrow:active{
     margin-top: -18px;
 }
+
+
 .sp-selector-1:checked ~ .sp-arrow.sp-a2,
 .sp-selector-2:checked ~ .sp-arrow.sp-a3,
 .sp-selector-3:checked ~ .sp-arrow.sp-a4,
@@ -125,7 +127,7 @@
     background-position: top left;
 }
 
-~.sp-slideshow input:checked ~ .sp-content {
+.sp-slideshow input:checked ~ .sp-content {
     -webkit-transition: background-position linear 0.6s, background-color linear 0.8s;
     -moz-transition: background-position linear 0.6s, background-color linear 0.8s;
     -o-transition: background-position linear 0.6s, background-color linear 0.8s;
@@ -133,7 +135,7 @@
     transition: background-position linear 0.6s, background-color linear 0.8s;
 }
 
-~.sp-slideshow input:checked ~ .sp-content .sp-parallax-bg {
+.sp-slideshow input:checked ~ .sp-content .sp-parallax-bg {
     -webkit-transition: background-position linear 0.7s;
     -moz-transition: background-position linear 0.7s;
     -o-transition: background-position linear 0.7s;
@@ -141,17 +143,17 @@
     transition: background-position linear 0.7s;
 }
 
-~input.sp-selector-1:checked ~ .sp-content {
+input.sp-selector-1:checked ~ .sp-content {
     background-position: 0 0;
     background-color: #727b7f;
 }
 
-~input.sp-selector-2:checked ~ .sp-content {
+input.sp-selector-2:checked ~ .sp-content {
     background-position: -100px 0;
     background-color: #7f7276;
 }
 
-~input.sp-selector-3:checked ~ .sp-content {
+input.sp-selector-3:checked ~ .sp-content {
     background-position: -200px 0;
     background-color: #737f72;
 }
@@ -161,32 +163,32 @@
     background-color: #79727f;
 }
 
-~input.sp-selector-5:checked ~ .sp-content {
+input.sp-selector-5:checked ~ .sp-content {
     background-position: -400px 0;
     background-color: #7d7f72;
 }
 
-~input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {
+input.sp-selector-1:checked ~ .sp-content .sp-parallax-bg {
     background-position: 0 0;
 }
 
-~input.sp-selector-2:checked ~ .sp-content .sp-parallax-bg {
+input.sp-selector-2:checked ~ .sp-content .sp-parallax-bg {
     background-position: -200px 0;
 }
 
-~input.sp-selector-3:checked ~ .sp-content .sp-parallax-bg {
+input.sp-selector-3:checked ~ .sp-content .sp-parallax-bg {
     background-position: -400px 0;
 }
 
-~input.sp-selector-4:checked ~ .sp-content .sp-parallax-bg {
+input.sp-selector-4:checked ~ .sp-content .sp-parallax-bg {
     background-position: -600px 0;
 }
 
-~input.sp-selector-5:checked ~ .sp-content .sp-parallax-bg {
+input.sp-selector-5:checked ~ .sp-content .sp-parallax-bg {
     background-position: -800px 0;
 }
 
-~.sp-slider {
+.sp-slider {
     position: relative;
     left: 0;
     width: 500%;
@@ -232,31 +234,31 @@
     max-height: 100%;
     max-width: 100%;
 }
-~input.sp-selector-1:checked ~ .sp-content .sp-slider {
+input.sp-selector-1:checked ~ .sp-content .sp-slider {
     left: 0;
 }
 
-~input.sp-selector-2:checked ~ .sp-content .sp-slider {
+input.sp-selector-2:checked ~ .sp-content .sp-slider {
     left: -100%;
 }
 
-~input.sp-selector-3:checked ~ .sp-content .sp-slider {
+input.sp-selector-3:checked ~ .sp-content .sp-slider {
     left: -200%;
 }
 
-~input.sp-selector-4:checked ~ .sp-content .sp-slider {
+input.sp-selector-4:checked ~ .sp-content .sp-slider {
     left: -300%;
 }
 
-~input.sp-selector-5:checked ~ .sp-content .sp-slider {
+input.sp-selector-5:checked ~ .sp-content .sp-slider {
     left: -400%;
 }
 
-~input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
-~input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2),
-~input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),
-~input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),
-~input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
+input.sp-selector-1:checked ~ .sp-content .sp-slider > li:first-child,
+input.sp-selector-2:checked ~ .sp-content .sp-slider > li:nth-child(2),
+input.sp-selector-3:checked ~ .sp-content .sp-slider > li:nth-child(3),
+input.sp-selector-4:checked ~ .sp-content .sp-slider > li:nth-child(4),
+input.sp-selector-5:checked ~ .sp-content .sp-slider > li:nth-child(5){
     opacity: 1;
 }
 @media screen and (max-width: 840px){
