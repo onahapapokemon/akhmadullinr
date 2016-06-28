@@ -1,0 +1,100 @@
+@width: 100%;
+@computer-width: 970px;
+@tablet-width: 750px;
+@marked: 1px solid red;
+
+header {
+  width: @width;
+  background-color: #ecf0f1;
+  font: normal 28px Arial;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  @media (min-width: 0) and (max-width: 767px) {
+    display: block;
+    font: normal 30px Arial;
+  }
+}
+
+section {
+  width: @width;
+  height: auto;
+  background-color: #bdc3c7;
+  text-align: center;
+  padding-bottom: 50px;
+  div {
+    display: inline-block;
+    margin: 20px 20px 0 0;
+    img {
+      width: 150px;
+      height: 150px;
+      &:hover {
+        opacity: .5;
+      }
+      &:focus {
+        opacity: .5;
+      }
+      @media (min-width: 0) and (max-width: 539px) {
+        width:@width;
+        height: 300px;
+      }
+      @media (min-width: 540px) and (max-width: 767px) {
+        width: @width;
+        height: 200px;
+      }
+      @media (min-width:768px) and (max-width:991px) {
+        width: @width;
+        height: 150px;
+      }
+
+    }
+    @media (min-width: 0) and (max-width: 539px) {
+      display: block;
+      margin: 0;
+    }
+    @media (min-width: 540px) and (max-width: 767px) {
+      width: 49%;
+      margin: 0;
+    }
+    @media (min-width:768px) and (max-width:991px) {
+      width: 32%;
+      margin: 5px 5px 0 0 ;
+    }
+  }
+}
+
+.container {
+  @media (min-width:992px) and (orientation: landscape) {
+    width: @computer-width;
+  }
+  @media (min-width:768px) and (max-width:991px) {
+    width: @tablet-width;
+  }
+  @media (min-width: 540px) and (max-width: 767px) {
+    width: @width;
+    outline: 3px solid green;
+  }
+  @media (min-width: 0) and (max-width: 539px) {
+    width: @width;
+    outline: 3px solid deepskyblue;
+  }
+}
+
+.footer:extend(header) {
+  height: auto;
+  width: @width;
+  background-color: #ecf0f1;
+  font: 100 20px Arial;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  @media (min-width: 0) and (max-width: 767px) {
+    font-size: 15px;
+  }
+}
+
+

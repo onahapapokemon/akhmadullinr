@@ -1,0 +1,113 @@
+header,
+.footer {
+  width: 100%;
+  background-color: #ecf0f1;
+  font: normal 28px Arial;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  header,
+  .footer {
+    display: block;
+    font: normal 30px Arial;
+  }
+}
+section {
+  width: 100%;
+  height: auto;
+  background-color: #bdc3c7;
+  text-align: center;
+  padding-bottom: 50px;
+}
+section div {
+  display: inline-block;
+  margin: 20px 20px 0 0;
+}
+section div img {
+  width: 150px;
+  height: 150px;
+}
+section div img:hover {
+  opacity: .5;
+}
+section div img:focus {
+  opacity: .5;
+}
+@media (min-width: 0) and (max-width: 539px) {
+  section div img {
+    width: 100%;
+    height: 300px;
+  }
+}
+@media (min-width: 540px) and (max-width: 767px) {
+  section div img {
+    width: 100%;
+    height: 200px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section div img {
+    width: 100%;
+    height: 150px;
+  }
+}
+@media (min-width: 0) and (max-width: 539px) {
+  section div {
+    display: block;
+    margin: 0;
+  }
+}
+@media (min-width: 540px) and (max-width: 767px) {
+  section div {
+    width: 49%;
+    margin: 0;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  section div {
+    width: 32%;
+    margin: 5px 5px 0 0 ;
+  }
+}
+@media (min-width: 992px) and (orientation: landscape) {
+  .container {
+    width: 970px;
+  }
+}
+@media (min-width: 768px) and (max-width: 991px) {
+  .container {
+    width: 750px;
+  }
+}
+@media (min-width: 540px) and (max-width: 767px) {
+  .container {
+    width: 100%;
+    outline: 3px solid green;
+  }
+}
+@media (min-width: 0) and (max-width: 539px) {
+  .container {
+    width: 100%;
+    outline: 3px solid deepskyblue;
+  }
+}
+.footer {
+  height: auto;
+  width: 100%;
+  background-color: #ecf0f1;
+  font: 100 20px Arial;
+  text-align: center;
+  vertical-align: middle;
+  display: inline-block;
+  padding-top: 5%;
+  padding-bottom: 5%;
+}
+@media (min-width: 0) and (max-width: 767px) {
+  .footer {
+    font-size: 15px;
+  }
+}
