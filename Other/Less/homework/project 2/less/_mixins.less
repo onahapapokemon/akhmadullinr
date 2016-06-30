@@ -1,0 +1,17 @@
+.btn-style(@_bg, @_color, @_hover_bg, @_hover_color) {
+  background-color: @_bg;
+  color: @_color;
+
+  &:focus,
+  &:hover,
+  &:active {
+    background-color: @_hover_bg;
+    color: @_hover_color;
+  }
+}
+
+.button-size(@_font, @_padding) {
+  font-size: @_font;
+  padding: @_padding;
+}
+

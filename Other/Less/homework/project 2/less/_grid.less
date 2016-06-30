@@ -1,0 +1,66 @@
+* {
+  &:before,
+  &:after {
+    box-sizing: border-box;
+  }
+}
+
+html {
+  font-size: 10px;
+}
+
+//типографика
+
+body {
+  font-size: 14px;
+  line-height: 20px;
+  font-family: Arial, Tahoma, Verdana, sans-serif;
+}
+
+//clearfix
+
+.clearfix {
+  &:before,
+  &:after {
+    content: " ";
+    display: table;
+}
+  &:after {
+    clear: both;
+  }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin-top: 2em;
+  margin-bottom: 1em;
+}
+
+h1 {
+  font-weight: 300;
+  line-height: 1.25;
+  font-size: 3.2rem;
+}
+
+//настройки контейнера
+
+.container {
+  &:extend(.clearfix all);
+  position: relative;
+  margin-right: auto;
+  margin-left: auto;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  width: 750px;
+}
+
+@media (min-width: 992px) {
+  width: 970px;
+}
+
