@@ -1,0 +1,25 @@
+body {
+  text-align: center;
+  padding-top: 40px;
+}
+a {
+  display: inline-block;
+  color: #fff;
+  text-decoration: none;
+  padding: 10px;
+  border-radius: 5px;
+}
+a:hover {
+  background-color: #cbf0ff;
+  transition: .4s;
+  transform: scale(1.1);
+}
+.first {
+  background-color: #4bcaff;
+}
+.second {
+  background-color: #008fcb;
+}
+.third {
+  background-color: #cbf0ff;
+}
