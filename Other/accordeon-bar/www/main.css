@@ -1,0 +1,64 @@
+html {
+  box-sizing: border-box;
+}
+.container {
+  width: 860px;
+  margin: 50px auto 30px auto;
+}
+.buffle label {
+  font: normal 19px Arial;
+  padding: 15px 20px;
+  position: relative;
+  z-index: 20;
+  display: block;
+  height: 30px;
+  cursor: pointer;
+  text-shadow: 1px 1px 1px rgba(255, 255, 255, 0.8);
+  box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 1px 0px 0px 0px rgba(255, 255, 255, 0.9) inset, 0px 2px 2px rgba(0, 0, 0, 0.1);
+  background-color: #4f6f8b;
+  color: #eee;
+  line-height: 33px;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius: 5px;
+  margin-top: -10px;
+}
+.buffle label:hover {
+  background-color: #212e3a;
+}
+.buffle input:checked + label {
+  background-color: #eee;
+  color: #777;
+  text-shadow: 0px 1px 1px rgba(255, 255, 255, 0.6);
+  box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3), 0px 2px 2px rgba(0, 0, 0, 0.1);
+  border-radius: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
+}
+.buffle-inner {
+  background-color: #eee;
+  color: #777;
+  font: normal 19px Arial;
+  overflow: hidden;
+  height: 0;
+  position: relative;
+  left: -9999rem;
+  border-bottom-left-radius: 5px;
+  border-bottom-right-radius: 5px;
+  padding: 10px 10px 0 10px;
+  line-height: 30px;
+  transition: height 0.3s ease-in-out, box-shadow 0.6s linear;
+}
+.buffle input:checked ~ .buffle-inner {
+  transition: height 0.5s ease-in-out, box-shadow 0.1s linear;
+  box-shadow: 0px 0px 0px 1px rgba(155, 155, 155, 0.3);
+  height: 210px;
+  left: 0;
+  position: relative;
+}
+.third {
+  overflow-y: scroll;
+}
+.buffle input {
+  display: none;
+}
