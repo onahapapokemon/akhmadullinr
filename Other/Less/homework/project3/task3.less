@@ -1,0 +1,21 @@
+// имена классов
+
+@listNames: black, red, purple, green, blue;
+
+// цвет
+@listColors: #000000, #ff0000, #800080, #008000, #0000ff;
+
+@column-name: color;
+
+
+.generate-class(@index: 1) when (@index =< length(@listNames)) {
+  @name: extract(@listNames, @index);
+  @color: extract(@listColors, @index);
+  .@{column-name}-@{name} {
+  color: @color;
+}
+  .generate-class(@index + 1);
+}
+
+.generate-class();
+
