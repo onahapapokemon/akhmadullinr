@@ -5,28 +5,30 @@
         <item url="file://$PROJECT_DIR$/ReverseIt-compiled.js" />
         <item url="file://$PROJECT_DIR$/Case swapping-compiled.js" />
         <item url="file://$PROJECT_DIR$/Training JS #36 methods of Math-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Complete The Pattern #10 - Parallelogram-compiled.js" />
         <item url="file://$PROJECT_DIR$/More than one way to call a function, or skin a cat.-compiled.js" />
         <item url="file://$PROJECT_DIR$/Training JS #33 methods of Math-compiled.js" />
         <item url="file://$PROJECT_DIR$/Gradually Adding Parameters-compiled.js" />
         <item url="file://$PROJECT_DIR$/Find Duplicates-compiled.js" />
-        <item url="file://$PROJECT_DIR$/Basic JS - Calculating averages-compiled.js" />
         <item url="file://$PROJECT_DIR$/Training JS #30 methods of arrayObject reduce()-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Basic JS - Calculating averages-compiled.js" />
         <item url="file://$PROJECT_DIR$/Descending Order-compiled.js" />
         <item url="file://$PROJECT_DIR$/Unpacking Arguments-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/ReverseIt-compiled.js" />
       <root url="file://$PROJECT_DIR$/Case swapping-compiled.js" />
-      <root url="file://$PROJECT_DIR$/Training JS #36 methods of Math-compiled.js" />
       <root url="file://$PROJECT_DIR$/More than one way to call a function, or skin a cat.-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Basic JS - Calculating averages-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Unpacking Arguments-compiled.js" />
+      <root url="file://$PROJECT_DIR$/ReverseIt-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Training JS #36 methods of Math-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Complete The Pattern #10 - Parallelogram-compiled.js" />
       <root url="file://$PROJECT_DIR$/Training JS #33 methods of Math-compiled.js" />
       <root url="file://$PROJECT_DIR$/Gradually Adding Parameters-compiled.js" />
       <root url="file://$PROJECT_DIR$/Find Duplicates-compiled.js" />
-      <root url="file://$PROJECT_DIR$/Basic JS - Calculating averages-compiled.js" />
       <root url="file://$PROJECT_DIR$/Training JS #30 methods of arrayObject reduce()-compiled.js" />
       <root url="file://$PROJECT_DIR$/Descending Order-compiled.js" />
-      <root url="file://$PROJECT_DIR$/Unpacking Arguments-compiled.js" />
     </CLASSES>
     <SOURCES />
   </library>
