@@ -2,33 +2,61 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/80's Kids #2 Help ALF Find His Spaceship-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Basic JS - Calculating averages-compiled.js" />
+        <item url="file://$PROJECT_DIR$/80's Kids #1 How Many Licks Does it Take-compiled.js" />
         <item url="file://$PROJECT_DIR$/ReverseIt-compiled.js" />
-        <item url="file://$PROJECT_DIR$/Case swapping-compiled.js" />
         <item url="file://$PROJECT_DIR$/Training JS #36 methods of Math-compiled.js" />
         <item url="file://$PROJECT_DIR$/Complete The Pattern #10 - Parallelogram-compiled.js" />
-        <item url="file://$PROJECT_DIR$/More than one way to call a function, or skin a cat.-compiled.js" />
         <item url="file://$PROJECT_DIR$/Training JS #33 methods of Math-compiled.js" />
         <item url="file://$PROJECT_DIR$/Gradually Adding Parameters-compiled.js" />
         <item url="file://$PROJECT_DIR$/Find Duplicates-compiled.js" />
-        <item url="file://$PROJECT_DIR$/Training JS #30 methods of arrayObject reduce()-compiled.js" />
-        <item url="file://$PROJECT_DIR$/Basic JS - Calculating averages-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Count consonants-compiled.js" />
         <item url="file://$PROJECT_DIR$/Descending Order-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Training JS #30 methods of arrayObject reduce()-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Convert Integer to Binary-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Case swapping-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Binary Addition-compiled.js" />
+        <item url="file://$PROJECT_DIR$/More than one way to call a function, or skin a cat.-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Beginner Series #5 Triangular Numbers-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Beginner Series #4 Cockroach-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Beginner Series #2 Clock-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Beginner Series #1 School Paperwork-compiled.js" />
         <item url="file://$PROJECT_DIR$/Unpacking Arguments-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Beginner Series #3 Sum of Numbers-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Are they square-compiled.js" />
+        <item url="file://$PROJECT_DIR$/All unique-compiled.js" />
+        <item url="file://$PROJECT_DIR$/A Gift Well Spent-compiled.js" />
+        <item url="file://$PROJECT_DIR$/80's Kids #3 Punky Brewster's Socks-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/Case swapping-compiled.js" />
-      <root url="file://$PROJECT_DIR$/More than one way to call a function, or skin a cat.-compiled.js" />
+      <root url="file://$PROJECT_DIR$/80's Kids #2 Help ALF Find His Spaceship-compiled.js" />
       <root url="file://$PROJECT_DIR$/Basic JS - Calculating averages-compiled.js" />
-      <root url="file://$PROJECT_DIR$/Unpacking Arguments-compiled.js" />
+      <root url="file://$PROJECT_DIR$/80's Kids #1 How Many Licks Does it Take-compiled.js" />
       <root url="file://$PROJECT_DIR$/ReverseIt-compiled.js" />
       <root url="file://$PROJECT_DIR$/Training JS #36 methods of Math-compiled.js" />
       <root url="file://$PROJECT_DIR$/Complete The Pattern #10 - Parallelogram-compiled.js" />
       <root url="file://$PROJECT_DIR$/Training JS #33 methods of Math-compiled.js" />
       <root url="file://$PROJECT_DIR$/Gradually Adding Parameters-compiled.js" />
       <root url="file://$PROJECT_DIR$/Find Duplicates-compiled.js" />
-      <root url="file://$PROJECT_DIR$/Training JS #30 methods of arrayObject reduce()-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Count consonants-compiled.js" />
       <root url="file://$PROJECT_DIR$/Descending Order-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Training JS #30 methods of arrayObject reduce()-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Convert Integer to Binary-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Case swapping-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Binary Addition-compiled.js" />
+      <root url="file://$PROJECT_DIR$/More than one way to call a function, or skin a cat.-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Beginner Series #5 Triangular Numbers-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Beginner Series #4 Cockroach-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Beginner Series #2 Clock-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Beginner Series #1 School Paperwork-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Unpacking Arguments-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Beginner Series #3 Sum of Numbers-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Are they square-compiled.js" />
+      <root url="file://$PROJECT_DIR$/All unique-compiled.js" />
+      <root url="file://$PROJECT_DIR$/A Gift Well Spent-compiled.js" />
+      <root url="file://$PROJECT_DIR$/80's Kids #3 Punky Brewster's Socks-compiled.js" />
     </CLASSES>
     <SOURCES />
   </library>
