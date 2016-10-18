@@ -2,7 +2,12 @@
   <library name="Generated files" type="javaScript">
     <properties>
       <sourceFilesUrls>
+        <item url="file://$PROJECT_DIR$/Every archer has its arrows-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Debug Basic Calculator-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Difference between biggest 2 numbers-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Credit Card Mask-compiled.js" />
         <item url="file://$PROJECT_DIR$/80's Kids #2 Help ALF Find His Spaceship-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Counting in the Amazon-compiled.js" />
         <item url="file://$PROJECT_DIR$/Basic JS - Calculating averages-compiled.js" />
         <item url="file://$PROJECT_DIR$/80's Kids #1 How Many Licks Does it Take-compiled.js" />
         <item url="file://$PROJECT_DIR$/ReverseIt-compiled.js" />
@@ -12,8 +17,8 @@
         <item url="file://$PROJECT_DIR$/Gradually Adding Parameters-compiled.js" />
         <item url="file://$PROJECT_DIR$/Find Duplicates-compiled.js" />
         <item url="file://$PROJECT_DIR$/Count consonants-compiled.js" />
-        <item url="file://$PROJECT_DIR$/Descending Order-compiled.js" />
         <item url="file://$PROJECT_DIR$/Training JS #30 methods of arrayObject reduce()-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Descending Order-compiled.js" />
         <item url="file://$PROJECT_DIR$/Convert Integer to Binary-compiled.js" />
         <item url="file://$PROJECT_DIR$/Case swapping-compiled.js" />
         <item url="file://$PROJECT_DIR$/Binary Addition-compiled.js" />
@@ -27,11 +32,18 @@
         <item url="file://$PROJECT_DIR$/Are they square-compiled.js" />
         <item url="file://$PROJECT_DIR$/All unique-compiled.js" />
         <item url="file://$PROJECT_DIR$/A Gift Well Spent-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Failed Filter - Bug Fixing #3-compiled.js" />
         <item url="file://$PROJECT_DIR$/80's Kids #3 Punky Brewster's Socks-compiled.js" />
+        <item url="file://$PROJECT_DIR$/Exes and Ohs-compiled.js" />
       </sourceFilesUrls>
     </properties>
     <CLASSES>
+      <root url="file://$PROJECT_DIR$/Every archer has its arrows-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Debug Basic Calculator-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Difference between biggest 2 numbers-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Credit Card Mask-compiled.js" />
       <root url="file://$PROJECT_DIR$/80's Kids #2 Help ALF Find His Spaceship-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Counting in the Amazon-compiled.js" />
       <root url="file://$PROJECT_DIR$/Basic JS - Calculating averages-compiled.js" />
       <root url="file://$PROJECT_DIR$/80's Kids #1 How Many Licks Does it Take-compiled.js" />
       <root url="file://$PROJECT_DIR$/ReverseIt-compiled.js" />
@@ -41,8 +53,8 @@
       <root url="file://$PROJECT_DIR$/Gradually Adding Parameters-compiled.js" />
       <root url="file://$PROJECT_DIR$/Find Duplicates-compiled.js" />
       <root url="file://$PROJECT_DIR$/Count consonants-compiled.js" />
-      <root url="file://$PROJECT_DIR$/Descending Order-compiled.js" />
       <root url="file://$PROJECT_DIR$/Training JS #30 methods of arrayObject reduce()-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Descending Order-compiled.js" />
       <root url="file://$PROJECT_DIR$/Convert Integer to Binary-compiled.js" />
       <root url="file://$PROJECT_DIR$/Case swapping-compiled.js" />
       <root url="file://$PROJECT_DIR$/Binary Addition-compiled.js" />
@@ -56,7 +68,9 @@
       <root url="file://$PROJECT_DIR$/Are they square-compiled.js" />
       <root url="file://$PROJECT_DIR$/All unique-compiled.js" />
       <root url="file://$PROJECT_DIR$/A Gift Well Spent-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Failed Filter - Bug Fixing #3-compiled.js" />
       <root url="file://$PROJECT_DIR$/80's Kids #3 Punky Brewster's Socks-compiled.js" />
+      <root url="file://$PROJECT_DIR$/Exes and Ohs-compiled.js" />
     </CLASSES>
     <SOURCES />
   </library>

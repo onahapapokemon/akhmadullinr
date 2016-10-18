@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0f9ff476-e43f-4919-ba5c-5f239e85885d" name="Default" comment="" />
-    <ignored path="6 kyu.iws" />
+    <list default="true" id="ede1820d-6087-4a41-8b74-1db5f59623a7" name="Default" comment="" />
+    <ignored path="JS.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -17,21 +17,10 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="6 kyu" />
+    <favorites_list name="JS" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="This is an other problem.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/This is an other problem.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf />
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -43,15 +32,18 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Complete Fibonacci Series.js" />
-        <option value="$PROJECT_DIR$/Multiples of 3 and 5.js" />
-        <option value="$PROJECT_DIR$/Count characters in your string.js" />
-        <option value="$PROJECT_DIR$/Detect Pangram.js" />
-        <option value="$PROJECT_DIR$/Duplicate Arguments.js" />
-        <option value="$PROJECT_DIR$/Typer-dot-js.js" />
-        <option value="$PROJECT_DIR$/Write JavaScript's 'call' function using apply..js" />
-        <option value="$PROJECT_DIR$/This is an other problem.js" />
-        <option value="$PROJECT_DIR$/This is an other solution.js" />
+        <option value="$PROJECT_DIR$/Dressed to Impress - hasOwnProperty.js" />
+        <option value="$PROJECT_DIR$/List ALL the Properties - for-in-object[key].js" />
+        <option value="$PROJECT_DIR$/Prototype Practice.js" />
+        <option value="$PROJECT_DIR$/It's All in the Genes - prototype.js" />
+        <option value="$PROJECT_DIR$/DRY Penguins - prototype.js" />
+        <option value="$PROJECT_DIR$/Black (and White) Penguin Magic.js" />
+        <option value="$PROJECT_DIR$/Penguins, Properties, and the Prototype.js" />
+        <option value="$PROJECT_DIR$/prototype inheritance - Up the Food-I-mean-Prototype Chain.js" />
+        <option value="$PROJECT_DIR$/Accessing Private Variables.js" />
+        <option value="$PROJECT_DIR$/Passing Arguments - prototype.js" />
+        <option value="$PROJECT_DIR$/Looks For-In To Me.js" />
+        <option value="$PROJECT_DIR$/Private Eye.js" />
       </list>
     </option>
   </component>
@@ -91,34 +83,34 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="6 kyu" />
+              <option name="myItemId" value="JS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
-              <option name="myItemId" value="6 kyu" />
+              <option name="myItemId" value="JS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="6 kyu" />
+              <option name="myItemId" value="JS" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../codecademy/JS" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../GOIT/JS" />
     <property name="WebServerToolWindowFactoryState" value="false" />
   </component>
   <component name="ShelveChangesManager" show_recycled="false">
@@ -129,30 +121,24 @@
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="0f9ff476-e43f-4919-ba5c-5f239e85885d" name="Default" comment="" />
-      <created>1475256744647</created>
+      <changelist id="ede1820d-6087-4a41-8b74-1db5f59623a7" name="Default" comment="" />
+      <created>1476514247084</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1475256744647</updated>
-      <workItem from="1475256746921" duration="2264000" />
-      <workItem from="1475311797582" duration="522000" />
-      <workItem from="1475333258426" duration="611000" />
-      <workItem from="1475595993338" duration="638000" />
-      <workItem from="1475772791125" duration="138000" />
-      <workItem from="1475916265846" duration="647000" />
-      <workItem from="1476440024581" duration="1273000" />
-      <workItem from="1476514189504" duration="51000" />
+      <updated>1476514247084</updated>
+      <workItem from="1476514248642" duration="5547000" />
+      <workItem from="1476711335579" duration="12000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="6144000" />
+    <option name="totallyTimeSpent" value="5559000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="1" width="1366" height="727" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.29173046" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2656968" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -188,104 +174,87 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/This is an other problem.js">
+    <entry file="file://$PROJECT_DIR$/List ALL the Properties - for-in-object[key].js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="204">
+          <caret line="12" column="91" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Complete Fibonacci Series.js">
+    <entry file="file://$PROJECT_DIR$/Prototype Practice.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="323">
+          <caret line="19" column="94" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Multiples of 3 and 5.js">
+    <entry file="file://$PROJECT_DIR$/It's All in the Genes - prototype.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="94" selection-start-line="17" selection-start-column="94" selection-end-line="17" selection-end-column="94" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Count characters in your string.js">
+    <entry file="file://$PROJECT_DIR$/Dressed to Impress - hasOwnProperty.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="91" selection-start-line="12" selection-start-column="91" selection-end-line="12" selection-end-column="91" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../../GOIT/JS/task10-8.js">
+    <entry file="file://$PROJECT_DIR$/Penguins, Properties, and the Prototype.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        <state relative-caret-position="204">
+          <caret line="12" column="29" selection-start-line="12" selection-start-column="29" selection-end-line="12" selection-end-column="29" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Multiples of 3 and 5.js">
+    <entry file="file://$PROJECT_DIR$/Black (and White) Penguin Magic.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="8" column="0" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+        <state relative-caret-position="289">
+          <caret line="17" column="18" selection-start-line="17" selection-start-column="18" selection-end-line="17" selection-end-column="18" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Count characters in your string.js">
+    <entry file="file://$PROJECT_DIR$/DRY Penguins - prototype.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="1" selection-start-line="6" selection-start-column="1" selection-end-line="6" selection-end-column="1" />
+        <state relative-caret-position="289">
+          <caret line="17" column="94" selection-start-line="17" selection-start-column="94" selection-end-line="17" selection-end-column="94" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Detect Pangram.js">
+    <entry file="file://$PROJECT_DIR$/prototype inheritance - Up the Food-I-mean-Prototype Chain.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="49" selection-start-line="20" selection-start-column="49" selection-end-line="20" selection-end-column="49" />
+        <state relative-caret-position="425">
+          <caret line="25" column="94" selection-start-line="25" selection-start-column="94" selection-end-line="25" selection-end-column="94" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Complete Fibonacci Series.js">
+    <entry file="file://$PROJECT_DIR$/Looks For-In To Me.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" column="26" selection-start-line="11" selection-start-column="26" selection-end-line="11" selection-end-column="26" />
+        <state relative-caret-position="204">
+          <caret line="12" column="1" selection-start-line="12" selection-start-column="1" selection-end-line="12" selection-end-column="1" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Duplicate Arguments.js">
+    <entry file="file://$PROJECT_DIR$/Passing Arguments - prototype.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="1" column="18" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
+        <state relative-caret-position="289">
+          <caret line="17" column="94" selection-start-line="17" selection-start-column="94" selection-end-line="17" selection-end-column="94" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Typer-dot-js.js">
+    <entry file="file://$PROJECT_DIR$/Private Eye.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="16" column="36" selection-start-line="16" selection-start-column="36" selection-end-line="16" selection-end-column="36" />
+        <state relative-caret-position="323">
+          <caret line="19" column="94" selection-start-line="19" selection-start-column="94" selection-end-line="19" selection-end-column="94" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Write JavaScript's 'call' function using apply..js">
+    <entry file="file://$PROJECT_DIR$/Accessing Private Variables.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="34">
-          <caret line="2" column="42" selection-start-line="2" selection-start-column="42" selection-end-line="2" selection-end-column="42" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/This is an other solution.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="340">
-          <caret line="20" column="77" selection-start-line="20" selection-start-column="77" selection-end-line="20" selection-end-column="77" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/This is an other problem.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="7" selection-start-line="7" selection-start-column="7" selection-end-line="7" selection-end-column="7" />
-          <folding />
+        <state relative-caret-position="323">
+          <caret line="19" column="95" selection-start-line="19" selection-start-column="95" selection-end-line="19" selection-end-column="95" />
         </state>
       </provider>
     </entry>

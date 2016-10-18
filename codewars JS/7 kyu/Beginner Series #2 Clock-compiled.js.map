@@ -1,1 +1,0 @@
-{"version":3,"sources":["Beginner Series #2 Clock.js"],"names":[],"mappings":"AAAA,SAAS,IAAT,CAAc,CAAd,EAAiB,CAAjB,EAAoB,CAApB,EAAsB;AAClB,WAAO,IAAI,EAAJ,GAAS,EAAT,GAAc,IAAd,GAAqB,IAAI,EAAJ,GAAS,IAA9B,GAAqC,IAAI,IAAhD;AACH","file":"Beginner Series #2 Clock-compiled.js","sourcesContent":["function past(h, m, s){\r\n    return h * 60 * 60 * 1000 + m * 60 * 1000 + s * 1000;\r\n}"]}

@@ -1,1 +1,0 @@
-{"version":3,"sources":["Unpacking Arguments.js"],"names":[],"mappings":"AAAA,SAAS,MAAT,CAAgB,IAAhB,EAAsB,IAAtB,EAA4B;AACxB,WAAO,KAAK,KAAL,CAAW,IAAX,EAAgB,IAAhB,CAAP;AACH","file":"Unpacking Arguments-compiled.js","sourcesContent":["function spread(func, args) {\r\n    return func.apply(null,args);\r\n}"]}

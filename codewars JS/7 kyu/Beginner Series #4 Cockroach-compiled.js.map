@@ -1,1 +1,0 @@
-{"version":3,"sources":["Beginner Series #4 Cockroach.js"],"names":[],"mappings":"AAAA,SAAS,cAAT,CAAwB,CAAxB,EAA2B;AACvB,WAAO,KAAK,KAAL,CAAW,KAAG,SAAO,IAAV,CAAX,CAAP;AACH","file":"Beginner Series #4 Cockroach-compiled.js","sourcesContent":["function cockroachSpeed(s) {\r\n    return Math.floor(s*(100000/3600));\r\n}"]}
