@@ -20,7 +20,7 @@ body {
 
 @font-face {
     font-family: 'Futura Bk BT';
-    src: url(https://http://http://akhmadullinr.github.io/GOIT/project1/assets/fonts/Futura%20Book%20BT.ttf);
+    src: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/GOIT/project1/assets/fonts/Futura%20Book%20BT.ttf);
 }
 
 @font-face {
@@ -274,7 +274,7 @@ body {
 .banner {
     max-width: 1400px;
     background-repeat: repeat;
-    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/GOIT/project1/assets/images/bg-2.jpg?raw=true);
+    background-image: url(http://akhmadullinr.github.io/GOIT/project1/assets/images/bg-2.jpg);
     background-size: cover;
     text-align: center;
     padding-top: 150px;
