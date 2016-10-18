@@ -397,7 +397,7 @@ body {
     transform-origin: 50% 0;
     transform: rotateY(90deg) translateZ(-25px) scale(1.5);
     transition: transform .6s, opacity .6s, -webkit-filter 0.9s ease-out ;
-    -webkit-filter: saturate(0) blur(5px) brightness(0.4) contrast(4);
+    -webkit-filter: saturate(1) blur(0px) brightness(1) contrast(1);
     filter: saturate(1) blur(0px) brightness(1) contrast(1);
 }
 
