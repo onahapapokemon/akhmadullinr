@@ -370,19 +370,19 @@ body {
 }
 
 .wrapper .img1 .frag {
-    background-image: url(../img/spider.jpg);
+    background-image: url(http://akhmadullinr.github.io/GOIT/exam/assets/img/spider.jpg);
 }
 
 .wrapper .img2 .frag {
-    background-image: url(../img/house.jpg);
+    background-image: url(http://akhmadullinr.github.io/GOIT/exam/assets/img/house.jpg);
 }
 
 .wrapper .img3 .frag {
-    background-image: url(../img/spider.jpg);
+    background-image: url(http://akhmadullinr.github.io/GOIT/exam/assets/img/spider.jpg);
 }
 
 .wrapper .img4 .frag {
-    background-image: url(../img/house.jpg);
+    background-image: url(http://akhmadullinr.github.io/GOIT/exam/assets/img/house.jpg);
 }
 
 .wrapper .frag {
@@ -476,7 +476,7 @@ body {
 #slide4:checked ~ .side-controls label:nth-of-type(3){
      left: 4px;
      z-index: 5;
-     background-image: url(../img/sprite.png);
+     background-image: url(http://akhmadullinr.github.io/GOIT/exam/assets/img/sprite.png);
      background-position: -10px -88px;
      top:134px;
      background-repeat: no-repeat;
@@ -571,7 +571,7 @@ body {
     right: 10%;
     border: 1px solid #eeaf3e;
     border-radius: 5px;
-    background-image: url(../img/sprite.png);
+    background-image: url(http://akhmadullinr.github.io/GOIT/exam/assets/img/sprite.png);
     background-repeat: no-repeat;
     background-position: 123px 10px;
 }
@@ -633,7 +633,7 @@ body {
     box-sizing: border-box;
     border: 1px solid #f0f0f0;
     border-bottom: none;
-    background-image: url(../img/fon.gif);
+    background-image: url(http://akhmadullinr.github.io/GOIT/exam/assets/img/fon.gif);
     background-position: 0 100%;
     background-repeat: repeat-x;
     padding-bottom: 10px;
@@ -974,7 +974,7 @@ body {
 }
 
 .tabs_list_item:before {
-    content: url("../img/list_arrow.png");
+    content: url(http://akhmadullinr.github.io/GOIT/exam/assets/img/list_arrow.png);
     vertical-align: top;
     margin-right: 10px;
     opacity: .6;
@@ -1062,7 +1062,7 @@ body {
 }
 
 .footer_column_last li:before{
-    content: url("../img/footer_icon.png");
+    content: url(http://akhmadullinr.github.io/GOIT/exam/assets/img/footer_icon.png);
     margin-right: 10px;
     position: absolute;
     left: -5px;
