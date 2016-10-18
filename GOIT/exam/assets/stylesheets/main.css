@@ -462,7 +462,7 @@ body {
 #slide4:checked ~ .side-controls label:nth-of-type(1){
     right: -10px;
     z-index: 5;
-    background-image: url(../img/sprite.png);
+    background-image: url(http://akhmadullinr.github.io/GOIT/exam/assets/img/sprite.png);
     background-position: -335px -88px;
     top:134px;
     background-repeat: no-repeat;
