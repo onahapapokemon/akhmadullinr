@@ -15,17 +15,17 @@ body {
 
 @font-face {
     font-family: 'Futura Md BT';
-    src: url(https://http://akhmadullinr.github.io/GOIT/project1/assets/fonts/Futura%20Bold%20BT.ttf);
+    src: url(http://akhmadullinr.github.io/GOIT/project1/assets/fonts/Futura%20Bold%20BT.ttf);
 }
 
 @font-face {
     font-family: 'Futura Bk BT';
-    src: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/GOIT/project1/assets/fonts/Futura%20Book%20BT.ttf);
+    src: url(http://akhmadullinr.github.io/GOIT/project1/assets/fonts/Futura%20Book%20BT.ttf);
 }
 
 @font-face {
     font-family: 'Open Sans Semibold';
-    src: url(https://http://http://http://akhmadullinr.github.io/GOIT/project1/assets/fonts/OpenSans-Semibold.ttf);
+    src: url(http://akhmadullinr.github.io/GOIT/project1/assets/fonts/OpenSans-Semibold.ttf);
 }
 
 /*
@@ -362,7 +362,7 @@ body {
 .middle {
     padding-left: 175px;
     padding-right: 175px;
-    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/GOIT/project1/assets/images/bg-1.jpg?raw=true);
+    background-image: url(http://akhmadullinr.github.io/GOIT/project1/assets/images/bg-1.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
