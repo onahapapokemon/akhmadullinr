@@ -15,17 +15,17 @@ body {
 
 @font-face {
     font-family: 'Futura Md BT';
-    src: url(https://http://akhmadullinr.github.io/project1/assets/fonts/Futura%20Bold%20BT.ttf);
+    src: url(https://http://akhmadullinr.github.io/GOIT/project1/assets/fonts/Futura%20Bold%20BT.ttf);
 }
 
 @font-face {
     font-family: 'Futura Bk BT';
-    src: url(https://http://http://akhmadullinr.github.io/project1/assets/fonts/Futura%20Book%20BT.ttf);
+    src: url(https://http://http://akhmadullinr.github.io/GOIT/project1/assets/fonts/Futura%20Book%20BT.ttf);
 }
 
 @font-face {
     font-family: 'Open Sans Semibold';
-    src: url(https://http://http://http://akhmadullinr.github.io/project1/assets/fonts/OpenSans-Semibold.ttf);
+    src: url(https://http://http://http://akhmadullinr.github.io/GOIT/project1/assets/fonts/OpenSans-Semibold.ttf);
 }
 
 /*
@@ -274,7 +274,7 @@ body {
 .banner {
     max-width: 1400px;
     background-repeat: repeat;
-    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/bg-2.jpg?raw=true);
+    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/GOIT/project1/assets/images/bg-2.jpg?raw=true);
     background-size: cover;
     text-align: center;
     padding-top: 150px;
@@ -362,7 +362,7 @@ body {
 .middle {
     padding-left: 175px;
     padding-right: 175px;
-    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/bg-1.jpg?raw=true);
+    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/GOIT/project1/assets/images/bg-1.jpg?raw=true);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -775,21 +775,21 @@ img {
 /* иконки контактов */
 
 .contacts li:first-child::before {
-    content: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/marker.jpg?raw=true);
+    content: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/GOIT/project1/assets/images/marker.jpg?raw=true);
     position: absolute;
     right: 195px;
     top: -5px;
 }
 
 .contacts li:nth-child(5)::before {
-    content: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/phone.jpg?raw=true);
+    content: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/GOIT/project1/assets/images/phone.jpg?raw=true);
     position: absolute;
     right: 197px;
     top: -3px;
 }
 
 .contacts li:last-child::before {
-    content: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/mail.jpg?raw=true);
+    content: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/GOIT/project1/assets/images/mail.jpg?raw=true);
     position: absolute;
     right: 195px;
     top: 3px;
@@ -826,7 +826,7 @@ iframe {
 }
 
 .facebook {
-    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/facebook.jpg?raw=true);
+    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/GOIT/project1/assets/images/facebook.jpg?raw=true);
     width: 50px;
     height: 50px;
     background-size: cover;
@@ -835,7 +835,7 @@ iframe {
 }
 
 .twitter {
-    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/twitter.jpg?raw=true);
+    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/GOIT/project1/assets/images/twitter.jpg?raw=true);
     width: 50px;
     height: 50px;
     background-size: cover;
@@ -844,7 +844,7 @@ iframe {
 }
 
 .linkedin {
-    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/project1/assets/images/linkedin.jpg?raw=true);
+    background-image: url(https://github.com/akhmadullinr/akhmadullinr.github.io/blob/master/GOIT/project1/assets/images/linkedin.jpg?raw=true);
     width: 50px;
     height: 50px;
     background-size: cover;
