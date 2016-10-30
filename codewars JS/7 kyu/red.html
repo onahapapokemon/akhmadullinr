@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=windows-1251" />
+    <title>WYSIWYG текстовый редактор</title>
+    <script type="text/javascript">
+        function Init()
+        {document.getElementById("iframe_redactor").contentWindow.document.designMode = "On";}
+        function doStyle(style)
+        {document.getElementById("iframe_redactor").contentWindow.document.execCommand(style, false, null);}
+        function doURL()
+        {var mylink = prompt("Enter a URL:", "http://");
+            if ((mylink != null) && (mylink != "")) {
+                document.getElementById("iframe_redactor").contentWindow.document.execCommand("CreateLink",false,mylink);
+            }
+        }
+    </script>
+
+</head>
+<body onLoad="Init();">
+<button onClick="doStyle('bold');">Жирный</button>
+<button onClick="doStyle('italic');">Курсив</button>
+<button onClick="doStyle('underline');">Подчеркнутый</button>
+<button onClick="doStyle('justifyleft');">Выровнять слева</button><br />
+<button onClick="doStyle('justifycenter');">Выравнять по центру</button>
+<button onClick="doStyle('justifyright');">Выровнять справа</button>
+<button onClick="doURL();">Ссылка</button><br />
+WYSIWYG текстовый редактор:<br /><iframe id="iframe_redactor" ></iframe>
+
+</body>
+</html>
