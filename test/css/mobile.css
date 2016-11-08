@@ -2163,6 +2163,9 @@ ul.infoblockMenuTop li {}
         width: 320px;
         font-size: 14px;
     }
+    .headMenuTop {
+        background-color: #fff;
+    }
     h1 {
         font-size: 28px;
         line-height: 28px;
