@@ -138,7 +138,7 @@ html, body {
     }
     .mobileMenuClick a.glavmenubut {
         margin: 0 20px;
-        background: url(../img/mobilemenubut.png) no-repeat;
+        background: url(../img/toggle-1.png) no-repeat;
         background-size: 100% 100%;
     }
     .mobileMenuClick a.mobileButCallBack {
