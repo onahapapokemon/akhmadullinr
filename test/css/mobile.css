@@ -173,6 +173,7 @@ html, body {
 .headmenuMobileSlide {
     display: block;
     color: #fff;
+    color: #fff;
 }
     .headmenuMobileSlide > div {
         width: 100%;
@@ -863,6 +864,9 @@ html, body {
     ul.greenmenu{
         height: 45px;
     }
+    .headMenuTop {
+        background-color: #fff;
+    }
     .shadowcard {
         display: none;
     }
@@ -877,7 +881,7 @@ html, body {
         margin-right: 2%;
     }
     .colum2-75-25 > div,
-	colum2-30-70 > div {
+	.colum2-30-70 > div {
         width: auto !important;
 		float: none;
 		margin-right: 0 !important;
@@ -972,6 +976,9 @@ html, body {
         width: 100%;
         font-size: 18px;
         min-width: 100%;
+    }
+    .headMenuTop {
+        background-color: #fff;
     }
     #ymap {max-height: 400px !important;}
 
