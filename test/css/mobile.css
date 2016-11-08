@@ -139,18 +139,18 @@ html, body {
     .mobileMenuClick a.glavmenubut {
         margin: 0 20px;
         background: url(../img/toggle-1.png) no-repeat;
-        background-size: 100% 100%;
+        background-size: 70% 70%;
     }
     .mobileMenuClick a.mobileButCallBack {
         float: right;
         background: url(../img/mobilemenucallback-new.png) no-repeat;
-        background-size: 70% 70%;
+        background-size: 100% 100%;
     }
     .mobileMenuClick a.mobileButSearch {
         float: right;
         margin: 0 20px;
         background: url(../img/mobilemenusearch-new.png) no-repeat;
-        background-size: 70% 70%;
+        background-size: 100% 100%;
     }
     .menusubhref {font-size: 23px;}
     .headMenuTop .logo {
@@ -979,6 +979,7 @@ html, body {
     }
     .headMenuTop {
         background-color: #fff;
+        height: 113px;
     }
     #ymap {max-height: 400px !important;}
 
