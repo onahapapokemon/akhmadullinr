@@ -16,12 +16,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
     .mobileMenuClick a.mobileButCallBack {
         float: right;
         margin: 0 20px;
-        background: url(../img/mobilemenucallback.png) no-repeat;
+        background: url(../img/mobilemenucallback-new.png) no-repeat;
         background-size: 100% 100%;
     }
     .mobileMenuClick a.mobileButSearch {
         float: right;
-        background: url(../img/mobilemenusearch.png) no-repeat;
+        background: url(../img/mobilemenusearch-new.png) no-repeat;
         background-size: 100% 100%;
     }
     .glavmenubutinside {
