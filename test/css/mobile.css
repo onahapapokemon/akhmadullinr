@@ -14,13 +14,13 @@ only screen and (min-device-pixel-ratio : 1.5) {
 @media (max-device-width:1024px) , (max-width:1024px){
 
     .mobileMenuClick a.mobileButCallBack {
-        float: right;
-        margin: 0 20px;
         background: url(../img/mobilemenucallback-new.png) no-repeat;
         background-size: 100% 100%;
+        float: right;
     }
     .mobileMenuClick a.mobileButSearch {
         float: right;
+        margin: 0 20px;
         background: url(../img/mobilemenusearch-new.png) no-repeat;
         background-size: 100% 100%;
     }
@@ -143,13 +143,13 @@ html, body {
     }
     .mobileMenuClick a.mobileButCallBack {
         float: right;
-        margin: 0 20px;
-        background: url(../img/mobilemenucallback.png) no-repeat;
+        background: url(../img/mobilemenucallback-new.png) no-repeat;
         background-size: 100% 100%;
     }
     .mobileMenuClick a.mobileButSearch {
         float: right;
-        background: url(../img/mobilemenusearch.png) no-repeat;
+        margin: 0 20px;
+        background: url(../img/mobilemenusearch-new.png) no-repeat;
         background-size: 100% 100%;
     }
     .menusubhref {font-size: 23px;}
