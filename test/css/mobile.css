@@ -28,7 +28,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
         display: block;
         width: 46px;
         height: 46px;
-        background: url(../img/toggle-1.png.png) no-repeat;
+        background: url(../img/toggle-1.png) no-repeat;
         background-size: 100% 100%;
         position: absolute;
         left: 20px;
