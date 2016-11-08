@@ -137,20 +137,21 @@ html, body {
         border-bottom: none;
     }
     .mobileMenuClick a.glavmenubut {
-        margin: 0 20px;
+        margin: 20px 20px 0 20px;
         background: url(../img/toggle-1.png) no-repeat;
         background-size: 70% 70%;
     }
     .mobileMenuClick a.mobileButCallBack {
+        margin-top: 20px;
         float: right;
         background: url(../img/mobilemenucallback-new.png) no-repeat;
-        background-size: 100% 100%;
+        background-size: 90% 90%;
     }
     .mobileMenuClick a.mobileButSearch {
         float: right;
         margin: 0 20px;
         background: url(../img/mobilemenusearch-new.png) no-repeat;
-        background-size: 100% 100%;
+        background-size: 90% 90%;
     }
     .menusubhref {font-size: 23px;}
     .headMenuTop .logo {
