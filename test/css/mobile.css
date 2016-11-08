@@ -982,6 +982,12 @@ html, body {
         background-color: #fff;
         height: 113px;
     }
+
+    .logo {
+        position: relative;
+        left:-20px;
+    }
+
     #ymap {max-height: 400px !important;}
 
     .menusub3 {
