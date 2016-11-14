@@ -2500,7 +2500,7 @@ height: 40px;
     }
     #card1 .card-item__title {
         position: absolute;
-        top: 270px;
+        top: 300px;
         font-size: 25px;
     }
     #card1 .card-item__title span {
@@ -2508,7 +2508,7 @@ height: 40px;
     }
     #card2 .card-item__title {
         position: absolute;
-        top: 650px;
+        top: 680px;
         font-size: 25px;
         width: 70%;
     }
@@ -2518,9 +2518,10 @@ height: 40px;
     .mobile-cards-content-title {
         display: block;
         position: absolute;
-        font-size: 20px;
+        font-size: 25px;
         color: #898989;
         left: 15px;
+        top: 10px;
     }
 }
 
