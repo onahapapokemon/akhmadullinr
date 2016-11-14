@@ -1,3 +1,4 @@
+
 /*handheld and*/
 
 @media
@@ -2495,6 +2496,7 @@ height: 40px;
     }
     .cards-content {
         position: relative;
+        margin-top: 25px;
     }
     #card1 .card-item__title {
         position: absolute;
@@ -2513,6 +2515,13 @@ height: 40px;
     .logo span {
         top: 0;
     }
+    .mobile-cards-content-title {
+        display: block;
+        position: absolute;
+        font-size: 20px;
+        color: #898989;
+        left: 15px;
+    }
 }
 
 @media (max-device-width:410px) , (max-width:410px){
@@ -2526,6 +2535,7 @@ height: 40px;
     #card1,#card2 {
         padding-left: 0 !important;
     }
+
 }
 
 
