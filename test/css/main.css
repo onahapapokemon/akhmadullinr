@@ -3,7 +3,7 @@ html, body {
     width: 100%;
     font-family: 'AgoraR', Arial, Helvetica, sans-serif;
     font-size: 16px;
-    min-width: 980px;
+    min-width: 960px;
 
 }
 
@@ -468,14 +468,14 @@ span.smallGrey {
     padding-top: 4px;
 }
 .center {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     height: inherit;
     position: relative;
 }
 .text-center {text-align: center;margin-left: auto; margin-right: auto;}
 .footercenter {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
     position: relative;
 }
@@ -1038,13 +1038,13 @@ background-size: 17px;*/
     display: block;
 }
 .sliderlist {
-    width: 1200px;
+    max-width: 1200px;
     height: 429px;
     position: relative;
 }
 .sliderimages {
     position: absolute;
-    width: 1200px;
+    max-width: 1200px;
     height: 429px;
     top: 0;
     left: 0;
@@ -2784,13 +2784,15 @@ div.clearIpad {
     display: table;
 }
 #wrapper {
-    width: 1200px;
+    max-width: 1200px;
     /*width: 1280px;*/
     min-height: 500px;
     margin: 0 auto;
     margin-top: 47px;
 }
-.wrapper2 {width: 1200px; margin: 0 auto;}
+
+
+/*.wrapper2 {width: 1200px; margin: 0 auto;}
 .block-2light-grey .wrapper2 {padding-bottom: 30px;}
 #wrapper p,
 .wrapper2 p {
@@ -4662,6 +4664,7 @@ ul {
 a.goToCompare span {
     margin-top: 3px!important;
 }
+/*
 .zag {
     width: 1200px;
 }
@@ -4669,6 +4672,7 @@ a.goToCompare span {
     width: 1200px;
     background: #fff;
 }
+*/
 .drag-drop {
     height: 150px;
     text-align: center;
@@ -7467,25 +7471,25 @@ a > span.card-to-card::after {
 .what_infokioski > div:last-child {padding-top: 50px;}
 
 @media (max-device-width:1279px), (max-width:1279px) {
-
     .center {
-        width: 940px;
-    }
+    width: 960px;
+}
+
 
     .footercenter {
-        width: 940px;
+        width: 960px;
         clear:both;
     }
     .sliderlist {
-        width: 940px;
+        width: 960px;
     }
     .sliderimages {
-        width: 940px;
+        width: 960px;
     }
-    #wrapper,
+    /*#wrapper,
     .wrapper2 {
-        width: 940px;
-    }
+        width: 960px;
+    } */
     .zag {
         width: 940px;
     }
