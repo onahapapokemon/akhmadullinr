@@ -6,7 +6,7 @@
     html, body {
         width: 100%;
         font-size: 18px;
-        min-width: 100%;
+        min-width: 320px !important;
     }
     .headMenuTop {
         background-color: #fff;
