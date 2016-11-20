@@ -1173,11 +1173,11 @@ only screen and (min-device-pixel-ratio : 1.5) {
 }
 @media (max-device-width:1060px), (max-width:1060px) and (min-width: 769px) {
     .center {
-        width: 960px !important;
+        max-width: 960px !important;
     }
 
     #wrapper {
-        width: 960px !important;
+        max-width: 960px !important;
     }
 
     .CardTabsBlock {
