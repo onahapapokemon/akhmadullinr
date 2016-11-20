@@ -1130,7 +1130,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
         margin-top: 30px !important;
     }
     .slider {
-        min-width: 700px;
+        min-width: 100%;
     }
     .bank-transfer {
         display: none;
@@ -1253,7 +1253,6 @@ only screen and (min-device-pixel-ratio : 1.5) {
         html, body {
             width: 100%;
             font-size: 16px;
-            min-width: 500px;
         }
 
         #content {
@@ -2980,7 +2979,6 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
     @media (max-width: 800px) and (min-width: 481px) {
         #content {
-            min-width: 700px;
         }
     }
 
