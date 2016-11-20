@@ -1149,7 +1149,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
     }
 }
 
-@media (max-device-width:800px) , (max-width:800px) {
+@media (max-device-width:800px) , (max-width:800px) and (min-width: 481px){
 
     .flip-scroll .cf:after { visibility: hidden; display: block; font-size: 0; content: " "; clear: both; height: 0; }
     .flip-scroll * html .cf { zoom: 1; }
@@ -1249,7 +1249,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
     }
 
-    @media (max-device-width: 1024px) and (orientation: portrait), (max-width: 768px) {
+    @media (max-device-width: 1024px) and (orientation: portrait), (max-width: 768px) and (min-width: 481px) {
         html, body {
             width: 100%;
             font-size: 16px;
@@ -2727,7 +2727,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
         }
     }
 
-    @media (max-device-width: 768px), (max-width: 768px) {
+    @media (max-device-width: 768px), (max-width: 768px) and (min-width: 481px) {
 
         ul.greenmenu {
             height: 45px;
