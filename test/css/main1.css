@@ -1084,7 +1084,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
     .raiting_votes, .raiting_votes_fixed {background: url("../img/ico/stars_2x.png") no-repeat 0 -38px;background-size: 102px auto;}
 }
 
-@media (max-device-width:768px) , (max-width:768px) and (min-width: 500px){
+@media (max-device-width:768px) , (max-width:768px) {
 
     .mobileMenuClick a.mobileButCallBack {
         background: url(../img/mobilemenucallback-new.png) no-repeat;
@@ -1173,11 +1173,11 @@ only screen and (min-device-pixel-ratio : 1.5) {
 }
 @media (max-device-width:1060px), (max-width:1060px) and (min-width: 769px) {
     .center {
-        max-width: 960px !important;
+        width: 960px !important;
     }
 
     #wrapper {
-        max-width: 960px !important;
+        width: 960px !important;
     }
 
     .CardTabsBlock {
@@ -1249,7 +1249,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
     }
 
-    @media (max-device-width: 1024px) and (orientation: portrait), (max-width: 768px) and (min-width: 481px) {
+    @media (max-device-width: 1024px) and (orientation: portrait), (max-width: 768px) {
         html, body {
             width: 100%;
             font-size: 16px;
@@ -2727,7 +2727,7 @@ only screen and (min-device-pixel-ratio : 1.5) {
         }
     }
 
-    @media (max-device-width: 768px), (max-width: 768px) and (min-width: 481px) {
+    @media (max-device-width: 768px), (max-width: 768px) {
 
         ul.greenmenu {
             height: 45px;
@@ -4293,7 +4293,7 @@ height: 40px;
         display: none;
     }
     .checkbox-inner {
-        outline: 1px solid red;
+        ~outline: 1px solid red;
     }
     .slick-slider {
         z-index: 101;
@@ -4469,6 +4469,10 @@ height: 40px;
         top: 10px;
     }
 
+    #wrapper .CardTabsBlock {
+        float: left;
+        margin-left: 5%;
+    }
 }
 
 @media (max-device-width:410px) , (max-width:410px){
