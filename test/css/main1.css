@@ -2990,6 +2990,13 @@ only screen and (min-device-pixel-ratio : 1.5) {
 
 
 @media (max-device-width:480px), (max-width:480px) {
+    .center {
+        max-width: 960px !important;
+    }
+
+    #wrapper {
+        max-width: 960px !important;
+    }
     html, body {
         width: 100%;
         font-size: 18px;
