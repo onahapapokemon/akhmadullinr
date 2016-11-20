@@ -1480,9 +1480,7 @@ height: 40px;
         left: 15px;
         top: 10px;
     }
-    #content > h1 {
-        color: red !important;
-    }
+
 }
 
 @media (max-device-width:410px) , (max-width:410px){
