@@ -46,17 +46,17 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="mobile.css" pinned="false" current-in-tab="false">
+      <file leaf-file-name="mobile.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/css/mobile.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="25636">
-              <caret line="1508" column="4" selection-start-line="1508" selection-start-column="0" selection-end-line="1508" selection-end-column="4" />
+            <state relative-caret-position="153">
+              <caret line="1483" column="19" selection-start-line="1483" selection-start-column="19" selection-end-line="1483" selection-end-column="19" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main1.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main1.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main1.css">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="187">
@@ -88,8 +88,8 @@
         <option value="$PROJECT_DIR$/css/slick-theme.css" />
         <option value="$PROJECT_DIR$/css/main.css" />
         <option value="$PROJECT_DIR$/test.html" />
-        <option value="$PROJECT_DIR$/css/mobile.css" />
         <option value="$PROJECT_DIR$/css/main1.css" />
+        <option value="$PROJECT_DIR$/css/mobile.css" />
       </list>
     </option>
   </component>
@@ -230,12 +230,12 @@
       <workItem from="1479226365928" duration="104000" />
       <workItem from="1479229227520" duration="21056000" />
       <workItem from="1479492897441" duration="10648000" />
-      <workItem from="1479660114218" duration="885000" />
+      <workItem from="1479660114218" duration="1196000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="229436000" />
+    <option name="totallyTimeSpent" value="229747000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -665,14 +665,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/css/mobile.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="25636">
-          <caret line="1508" column="4" selection-start-line="1508" selection-start-column="0" selection-end-line="1508" selection-end-column="4" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/test.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="506">
@@ -690,6 +682,14 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="187">
           <caret line="2980" column="18" selection-start-line="2980" selection-start-column="18" selection-end-line="2980" selection-end-column="18" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/css/mobile.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="153">
+          <caret line="1483" column="19" selection-start-line="1483" selection-start-column="19" selection-end-line="1483" selection-end-column="19" />
           <folding />
         </state>
       </provider>
