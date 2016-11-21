@@ -3,7 +3,6 @@ html, body {
     width: 100%;
     font-family: 'AgoraR', Arial, Helvetica, sans-serif;
     font-size: 16px;
-    min-width: 960px;
 
 }
 
@@ -7472,7 +7471,7 @@ a > span.card-to-card::after {
 
 @media (max-device-width:1279px), (max-width:1279px) {
     .center {
-    width: 960px;
+    max-width: 960px;
 }
 
 

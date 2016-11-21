@@ -902,7 +902,7 @@ h3.spravka:after {
 }
 
 .rashetspravka {
-    width: 245px;
+    width: 238px;
     height: 80px;
     padding-left: 26px;
     /*background: url(../img/quest.png) no-repeat 0 5px;*/
@@ -1173,11 +1173,12 @@ only screen and (min-device-pixel-ratio : 1.5) {
 }
 @media (max-device-width:1060px), (max-width:1060px) and (min-width: 769px) {
     .center {
-        width: 960px !important;
+        width: 960px;
+        outline: 1px solid red;
     }
 
     #wrapper {
-        width: 960px !important;
+        width: 960px;
     }
 
     .CardTabsBlock {
@@ -2984,5 +2985,9 @@ only screen and (min-device-pixel-ratio : 1.5) {
         }
     }
 
+@media (max-width: 1023px) {
+    .rashetspravka {
+        display: none !important;
+    }
 
-
+}

@@ -3,11 +3,11 @@
 
 @media (max-device-width:480px), (max-width:480px) {
     .center {
-        max-width: 450px !important;
+        max-width: 450px;
     }
 
     #wrapper {
-        max-width: 450px !important;
+        max-width: 450px;
     }
     html, body {
         width: 100%;
@@ -169,7 +169,6 @@
     #content {
         border: none;
         padding-top: 0;
-        outline: 1px solid red;
     }
     #content h1 {
         border-bottom: none;
