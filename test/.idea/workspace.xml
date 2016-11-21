@@ -21,7 +21,7 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="test.html" pinned="false" current-in-tab="false">
+      <file leaf-file-name="test.html" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/test.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
@@ -56,11 +56,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="main1.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="main1.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/css/main1.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="74">
-              <caret line="1233" column="25" selection-start-line="1233" selection-start-column="25" selection-end-line="1233" selection-end-column="25" />
+            <state relative-caret-position="166">
+              <caret line="1175" column="21" selection-start-line="1175" selection-start-column="21" selection-end-line="1175" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -268,12 +268,12 @@
       <workItem from="1479226365928" duration="104000" />
       <workItem from="1479229227520" duration="21056000" />
       <workItem from="1479492897441" duration="10648000" />
-      <workItem from="1479660114218" duration="13197000" />
+      <workItem from="1479660114218" duration="13364000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="241748000" />
+    <option name="totallyTimeSpent" value="241915000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -695,19 +695,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/test.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="550" column="56" selection-start-line="550" selection-start-column="53" selection-end-line="550" selection-end-column="56" />
-          <folding>
-            <element signature="n#form#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#p#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/css/mobile.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="153">
@@ -726,9 +713,22 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/css/main1.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="74">
-          <caret line="1233" column="25" selection-start-line="1233" selection-start-column="25" selection-end-line="1233" selection-end-column="25" />
+        <state relative-caret-position="166">
+          <caret line="1175" column="21" selection-start-line="1175" selection-start-column="21" selection-end-line="1175" selection-end-column="21" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="550" column="56" selection-start-line="550" selection-start-column="53" selection-end-line="550" selection-end-column="56" />
+          <folding>
+            <element signature="n#form#0;n#div#0;n#div#1;n#div#2;n#body#0;n#html#0;n#!!top" expanded="false" />
+            <element signature="n#style#0;n#p#0;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#1;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#2;n#div#1;n#div#0;n#div#0;n#div#0;n#div#5;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
