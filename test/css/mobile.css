@@ -1,8 +1,14 @@
-
 /*handheld and*/
 
 
 @media (max-device-width:480px), (max-width:480px) {
+    .center {
+        max-width: 450px !important;
+    }
+
+    #wrapper {
+        max-width: 450px !important;
+    }
     html, body {
         width: 100%;
         font-size: 18px;
@@ -163,6 +169,7 @@
     #content {
         border: none;
         padding-top: 0;
+        outline: 1px solid red;
     }
     #content h1 {
         border-bottom: none;
@@ -1305,7 +1312,7 @@ height: 40px;
         display: none;
     }
     .checkbox-inner {
-        outline: 1px solid red;
+    ~outline: 1px solid red;
     }
     .slick-slider {
         z-index: 101;
@@ -1481,6 +1488,10 @@ height: 40px;
         top: 10px;
     }
 
+    #wrapper .CardTabsBlock {
+        float: left;
+        margin-left: 5%;
+    }
 }
 
 @media (max-device-width:410px) , (max-width:410px){
@@ -1774,6 +1785,15 @@ height: 40px;
 
 
 }
+
+
+
+
+
+
+
+
+
 
 
 
