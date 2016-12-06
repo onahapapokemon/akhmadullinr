@@ -1,0 +1,635 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width; initial-scale=1.0">
+    <title>Task Test</title>
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+</head>
+<body>
+    <header id="top">
+        <div class="header-wrapper">
+          <div class="grid">
+            <div class="logo">
+                <a href="#">
+                    <img src="assets/img/logo.png">
+                </a>
+            </div>
+            <a class="header-link" href="#">
+                <span class="header-item signModal">Sign In</span>
+            </a>
+           </div>
+        </div>
+    </header>
+    <nav class="topnav">
+      <div class="grid">
+        <ul id="main-menu" class="topnav-menu">
+            <li class="topnav-menu-items"><a href="#">Constructor</a></li>
+            <li class="topnav-menu-items"><a href="#">Help</a></li>
+            <li class="topnav-menu-items"><a href="#">User Panels</a></li>
+            <li class="topnav-menu-items"><a href="#">FAQ</a></li>
+            <li class="topnav-menu-items"><a href="#">About</a></li>
+            <li class="topnav-menu-items"><a href="#">Blog</a></li>
+            <li class="topmenu-rightside">
+                <a class="topmenu-bookmark" href="#"><img src="assets/img/like.png"></a>
+                <a class="topmenu-search" href="#"><img src="assets/img/search.png"></a>
+            </li>
+        </ul>
+       </div>
+    </nav>
+    <div class="title">
+        <div class="grid">
+        <div class="title-left-bracket"></div>
+        <div class="title-text"><span>CHIP</span> CONSTRUCTOR</div>
+        <div class="title-right-bracket"></div>
+        </div>
+    </div>
+    <div class="hero">
+        <div class="slider grid">
+            <div id="slider">
+                <input type="radio" name="slider" id="slide1" checked="">
+                <input type="radio" name="slider" id="slide2">
+                <input type="radio" name="slider" id="slide3">
+                <input type="radio" name="slider" id="slide4">
+                <input type="radio" name="slider" id="slide5">
+                <input type="radio" name="slider" id="slide6">
+                <input type="radio" name="slider" id="slide7">
+                <input type="radio" name="slider" id="slide8">
+                <input type="radio" name="slider" id="slide9">
+                <input type="radio" name="slider" id="slide10">
+
+                <div id="slides">
+                    <div id="overflow">
+                        <div class="inner">
+                            <div class="page">
+                                <input type="checkbox" id="temperature" class="active">
+                                <label for="temperature">Temperature</label>
+                            </div>
+                            <div class="page">
+                                <input type="checkbox" id="water-temperature" class="water-temperature active">
+                                <label for="water-temperature"><span>Water</span>  temperature</label>
+                            </div>
+                            <div class="page">
+                                <input type="checkbox" id="cloud-temperature" class="cloud-temperature active">
+                                <label for="cloud-temperature"><span>Cloud </span> temperature</label>
+                            </div>
+                            <div class="page">
+                                <input type="checkbox" id="dust-temperature" class="dust-temperature active">
+                                <label for="dust-temperature"><span>Dust </span> temperature</label>
+                            </div>
+                            <div class="page">
+                                <input type="checkbox" id="temperature-2">
+                                <label for="temperature-2">Temperature</label>
+                            </div>
+                            <div class="page">
+                                <input type="checkbox" id="water-temperature-2" class="water-temperature">
+                                <label for="water-temperature-2"><span>Water</span>  temperature</label>
+                            </div>
+                            <div class="page">
+                                <input type="checkbox" id="cloud-temperature-2" class="cloud-temperature">
+                                <label for="cloud-temperature-2"><span>Cloud </span> temperature</label>
+                            </div>
+                            <div class="page">
+                                <input type="checkbox" id="dust-temperature-2" class="dust-temperature">
+                                <label for="dust-temperature-2"><span>Dust </span> temperature</label>
+                            </div>
+                            <div class="page">
+                                <input type="checkbox" id="cloud-temperature-3" class="cloud-temperature">
+                                <label for="cloud-temperature-3"><span>Cloud </span> temperature</label>
+                            </div>
+                            <div class="page">
+                                <input type="checkbox" id="dust-temperature-3" class="dust-temperature">
+                                <label for="dust-temperature-3"><span>Dust </span> temperature</label>
+                            </div>
+                            <a class="add-custom" href="#add-custom-modal">
+                                <input type="checkbox" id="add-custom">
+                                <label for="add-custom-modal"><span>Add</span> Custom</label>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="controls">
+                    <label for="slide1"></label>
+                    <label for="slide2"></label>
+                    <label for="slide3"></label>
+                    <label for="slide4"></label>
+                    <label for="slide5"></label>
+                    <label for="slide6"></label>
+                    <label for="slide7"></label>
+                    <label for="slide8"></label>
+                    <label for="slide9"></label>
+                    <label for="slide10"></label>
+                </div>
+
+            </div>
+        </div>
+        <div class="chosen-wrapper">
+            <div class="chosen">
+             <div class="chosen-title">Chosen <span>options:</span></div>
+              <div class="chosen-content">
+                <div class="chosen-option">
+                    <label class="option2" id="active_sub1" for="temperature"></label>
+                </div>
+                <div class="chosen-option active_sub">
+                    <label class="option2" id="active_sub2" for="water-temperature"></label>
+                </div>
+                <div class="chosen-option active_sub">
+                    <label class="option2" id="active_sub3" for="cloud-temperature"></label>
+                </div>
+                <div class="chosen-option active_sub">
+                    <label class="option2" id="active_sub4" for="dust-temperature"></label>
+                </div>
+                <div class="chosen-option">
+                    <label class="option2" id="active_sub5" for="temperature-2"></label>
+                </div>
+                <div class="chosen-option">
+                    <label class="option2" id="active_sub6" for="water-temperature-2"></label>
+                </div>
+                <div class="chosen-option">
+                    <label class="option2" id="active_sub7" for="cloud-temperature-2"></label>
+                </div>
+                <div class="chosen-option">
+                    <label class="option2" id="active_sub8" for="dust-temperature-2"></label>
+                </div>
+                <div class="chosen-option">
+                    <label class="option2" id="active_sub9" for="cloud-temperature-3"></label>
+                </div>
+                  <div class="chosen-option">
+                      <label class="option2" id="active_sub10" for="dust-temperature-3"></label>
+                  </div>
+            </div>
+            </div>
+            <div class="main">
+                <div id="main-slider">
+                    <input type="radio" name="main-slider" id="main-slide1" checked="">
+                    <input type="radio" name="main-slider" id="main-slide2">
+                    <input type="radio" name="main-slider" id="main-slide3">
+                    <input type="radio" name="main-slider" id="main-slide4">
+                    <input type="radio" name="main-slider" id="main-slide5">
+
+                    <div id="main-slides">
+                        <div id="main-overflow">
+                            <div class="main-inner">
+                                <div class="main-page">
+                                    <div class="slide-title">First Step</div>
+                                    <div class="slide-content">
+                                        <h1>‘Lorem Ipsum’ are the first two words of a classic piece of dummy text. Such filler text is used when the actual text is not available yet or when creating a brand new layout. Because the text is in Latin, people won’t be distracted by it and can focus on evaluating the design itself.</h1>
+
+                                        <h1>     For many years, this text was available on adhesive sheets in different sizes and typefaces from LetraSet. Designers would cut the text out with a cutter and stick it on the page. Aldus included the ‘Lorem ipsum’ text in PageMaker and nowadays you even see it showing up on hundreds of web pages (try searching Google for ‘lorem ipsum’).
+                                        </h1>
+                                    </div>
+                                    <div class="slide-step-description">Complete 1 steps of 4</div>
+                                </div>
+                                <div class="main-page">
+                                    <div class="slide-title">Second Step</div>
+                                    <div class="slide-content">
+                                        <h1>‘Lorem Ipsum’ are the first two words of a classic piece of dummy text. Such filler text is used when the actual text is not available yet or when creating a brand new layout. Because the text is in Latin, people won’t be distracted by it and can focus on evaluating the design itself.</h1>
+
+                                        <h1>     For many years, this text was available on adhesive sheets in different sizes and typefaces from LetraSet. Designers would cut the text out with a cutter and stick it on the page. Aldus included the ‘Lorem ipsum’ text in PageMaker and nowadays you even see it showing up on hundreds of web pages (try searching Google for ‘lorem ipsum’).
+                                        </h1>
+                                    </div>
+                                    <div class="slide-step-description">Complete 2 steps of 4</div>
+                                </div>
+                                <div class="main-page">
+                                    <div class="slide-title">Third Step</div>
+                                    <div class="slide-content">
+                                        <h1>‘Lorem Ipsum’ are the first two words of a classic piece of dummy text. Such filler text is used when the actual text is not available yet or when creating a brand new layout. Because the text is in Latin, people won’t be distracted by it and can focus on evaluating the design itself.</h1>
+
+                                        <h1>     For many years, this text was available on adhesive sheets in different sizes and typefaces from LetraSet. Designers would cut the text out with a cutter and stick it on the page. Aldus included the ‘Lorem ipsum’ text in PageMaker and nowadays you even see it showing up on hundreds of web pages (try searching Google for ‘lorem ipsum’).
+                                        </h1>
+                                    </div>
+                                    <div class="slide-step-description">Complete 3 steps of 4</div>
+                                </div>
+                                <div class="main-page">
+                                    <div class="slide-title">Fourth Step</div>
+                                    <div class="slide-content">
+                                        <h1>‘Lorem Ipsum’ are the first two words of a classic piece of dummy text. Such filler text is used when the actual text is not available yet or when creating a brand new layout. Because the text is in Latin, people won’t be distracted by it and can focus on evaluating the design itself.</h1>
+
+                                        <h1>     For many years, this text was available on adhesive sheets in different sizes and typefaces from LetraSet. Designers would cut the text out with a cutter and stick it on the page. Aldus included the ‘Lorem ipsum’ text in PageMaker and nowadays you even see it showing up on hundreds of web pages (try searching Google for ‘lorem ipsum’).
+                                        </h1>
+                                    </div>
+                                    <div class="slide-step-description">Complete 4 steps of 4</div>
+                                    <div class="distance">
+                                        <div class="distance-title">TRANSMISSION<br><span>DISTANCE</span></div>
+                                        <span class="distance-text">CHOOSE <span>DISTANCE</span></span>
+                                        <span class="meter">m</span>
+                                        <span class="current-distance"><span>CURRENT</span><span>DISTANCE</span></span>
+
+                                        <input type="range" id="range" min="0" max="50" step="1" value="22"><span></span>
+                                    </div>
+                                    <div class="connection">
+                                        <div class="connection-title">Choose <span>type of connection</span></div>
+                                            <input type="radio" name="connection" class="connection-img" id="xbee-1">
+                                            <label for="xbee-1"></label>
+                                            <input type="radio" name="connection" class="connection-img" id="z-wave-1">
+                                            <label for="z-wave-1"></label>
+                                            <input type="radio" name="connection" class="connection-img" id="xbee-2">
+                                            <label for="xbee-2"></label>
+                                            <input type="radio" name="connection" class="connection-img" id="z-wave-2">
+                                            <label for="z-wave-2"></label>
+                                            <input type="radio" name="connection" class="connection-img" id="wifi=gratis">
+                                            <label for="wifi=gratis"></label>
+                                            <input type="radio" name="connection" class="connection-img" id="m-bus-1">
+                                            <label for="m-bus-1"></label>
+                                            <input type="radio" name="connection" class="connection-img" id="wifi=gratis-2">
+                                            <label for="wifi=gratis-2"></label>
+                                            <input type="radio" name="connection" class="connection-img" id="m-bus-2" >
+                                            <label for="m-bus-2"></label>
+                                    </div>
+                                </div>
+                                <div class="main-page">
+                                    <div class="slide-title final-product"><span>White Label</span> W-94900 XP</div>
+                                    <a class="order-button" href="#feedback-window">order now</a>
+                                    <div class="slide-content">
+                                        <h1>‘Lorem Ipsum’ are the first two words of a classic piece of dummy text. Such filler text is used when the actual text is not available yet or when creating a brand new layout. Because the text is in Latin, people won’t be distracted by it and can focus on evaluating the design itself.</h1>
+
+                                        <h1 class="main-last-chapter">     For many years, this text was available on adhesive sheets in different sizes and typefaces from LetraSet. Designers would cut the text out with a cutter and stick it on the page.
+                                        </h1>
+                                    </div>
+                                    <img src="assets/img/item.png" class="product-item">
+                                    <div class="final-product-title">
+                                        <span>live</span>
+                                        <span>view</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="main-controls">
+                        <label for="main-slide1"></label>
+                        <label for="main-slide2"></label>
+                        <label for="main-slide3"></label>
+                        <label for="main-slide4"></label>
+                        <label for="main-slide5"></label>
+                    </div>
+
+                    <div id="main-active">
+                        <label for="main-slide1"></label>
+                        <label for="main-slide2"></label>
+                        <label for="main-slide3"></label>
+                        <label for="main-slide4"></label>
+                        <label for="main-slide5"></label>
+                    </div>
+
+                    <div id="next-step-button">
+                        <label for="main-slide1">NEXT STEP</label>
+                        <label for="main-slide2">NEXT STEP</label>
+                        <label for="main-slide3">NEXT STEP</label>
+                        <label for="main-slide4">NEXT STEP</label>
+                        <label for="main-slide5">NEXT STEP</label>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <form class="newsletter">
+        <div class="newsletter-title">newsletter</div>
+        <input type="email" value="" placeholder="Enter your email" tabindex="1" class="newsletter-email">
+        <input type="submit" value="OK" tabindex="2" class="newsletter-submit">
+        <span>Remember we will not do spam promise.</span>
+    </form>
+    <footer>
+        <div class="footer-info">
+          <div class="grid">
+            <div class="footer-info-about">
+                <div class="footer-info-about-title">about us</div>
+                <div class="footer-info-about-content">Lorem ipsum dolor sit amet consectur adip-
+                isicing elit, sed do elusmod tempor incididunt
+                ut labore et dolore magna aliqua. Ut enim ad</div>
+            </div>
+            <div class="footer-info-categories">
+                <div class="footer-info-categories-title">Categories</div>
+                <ul class="footer-info-categories-list">
+                    <li>-Electronics</li>
+                    <li>-Home & Tools</li>
+                    <li>-Beauty & Health</li>
+                    <li>-Toys & Kids</li>
+                </ul>
+            </div>
+            <div class="footer-payments">
+                <div class="footer-payments-title">Accept Payments</div>
+                <div class="footer-img">
+                    <img src="assets/img/master-card.png">
+                    <img src="assets/img/paypal.png">
+                    <img src="assets/img/visa.png">
+                </div>
+            </div>
+        </div>
+       </div>
+       <div class="footer-end">
+           <div class="grid">
+               <div class="copyrights">
+                   <img src="assets/img/mircod-copyright.png">
+                   <span>- 2016 - Mircod.All Rights Reserved.</span>
+               </div>
+               <div class="social-media">
+                   <a class="facebook-link" href="/"></a>
+                   <a class="twitter-link" href="/"></a>
+                   <a class="google-link" href="/"></a>
+                   <a class="instagram-link" href="/"></a>
+               </div>
+               <div class="footer-blog">
+                   <span>Blog</span>
+                   <span>About Us</span>
+               </div>
+           </div>
+       </div>
+    </footer>
+    <a href="#top" id="button-up">
+        <img src="assets/img/button-up.png">
+    </a>
+    <div id="feedback-window">
+        <div class="modal-window">
+            <span class="modal-window-title">Order now</span>
+            <form class="feedback">
+                <fieldset>
+                    <label>Name *</label>
+                    <input type="text" required placeholder="This field is required">
+                </fieldset>
+                <fieldset>
+                    <label>Phone *</label>
+                    <input type="tel" required placeholder="This field is required">
+                </fieldset>
+                <fieldset>
+                    <label>Email *</label>
+                    <input type="email" required placeholder="This field is required">
+                </fieldset>
+                <fieldset>
+                    <label>Message</label>
+                    <textarea></textarea>
+                </fieldset>
+                <button type="submit" class="submit">ORDER</button>
+            </form>
+        </div>
+        <a class="modal-window-close" href="#close" ><img src="assets/img/close-button.png"></a>
+    </div>
+    <div id="add-custom-modal">
+        <div class="modal-window">
+            <span class="modal-window-title">Add Custom</span>
+            <form class="feedback">
+                <fieldset>
+                    <label>Name *</label>
+                    <input type="text" required placeholder="This field is required">
+                </fieldset>
+                <fieldset>
+                    <label>Function</label>
+                    <textarea></textarea>
+                </fieldset>
+                <button type="submit" class="submit">ADD</button>
+            </form>
+        </div>
+        <a class="modal-window-close" href="#close" ><img src="assets/img/close-button.png"></a>
+    </div>
+    <script>
+        document.getElementById('temperature').onclick = function() {
+            // call toggleSub when checkbox clicked
+            // toggleSub args: checkbox clicked on (this), id of element to show/hide
+            toggleSub(this, 'active_sub1');
+        };
+
+        // called onclick of checkbox
+        function toggleSub(box, id) {
+            // get reference to related content to display/hide
+            var el = document.getElementById(id);
+
+            if ( box.checked ) {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        }
+        document.getElementById('water-temperature').onclick = function() {
+            // call toggleSub when checkbox clicked
+            // toggleSub args: checkbox clicked on (this), id of element to show/hide
+            toggleSub(this, 'active_sub2');
+        };
+
+        // called onclick of checkbox
+        function toggleSub(box, id) {
+            // get reference to related content to display/hide
+            var el = document.getElementById(id);
+
+            if ( box.checked ) {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        }
+        document.getElementById('cloud-temperature').onclick = function() {
+            // call toggleSub when checkbox clicked
+            // toggleSub args: checkbox clicked on (this), id of element to show/hide
+            toggleSub(this, 'active_sub3');
+        };
+
+        // called onclick of checkbox
+        function toggleSub(box, id) {
+            // get reference to related content to display/hide
+            var el = document.getElementById(id);
+
+            if ( box.checked ) {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        }
+        document.getElementById('dust-temperature').onclick = function() {
+            // call toggleSub when checkbox clicked
+            // toggleSub args: checkbox clicked on (this), id of element to show/hide
+            toggleSub(this, 'active_sub4');
+        };
+
+        // called onclick of checkbox
+        function toggleSub(box, id) {
+            // get reference to related content to display/hide
+            var el = document.getElementById(id);
+
+            if ( box.checked ) {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        }
+        document.getElementById('temperature-2').onclick = function() {
+            // call toggleSub when checkbox clicked
+            // toggleSub args: checkbox clicked on (this), id of element to show/hide
+            toggleSub(this, 'active_sub5');
+        };
+
+        // called onclick of checkbox
+        function toggleSub(box, id) {
+            // get reference to related content to display/hide
+            var el = document.getElementById(id);
+
+            if ( box.checked ) {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        }
+        document.getElementById('water-temperature-2').onclick = function() {
+            // call toggleSub when checkbox clicked
+            // toggleSub args: checkbox clicked on (this), id of element to show/hide
+            toggleSub(this, 'active_sub6');
+        };
+
+        // called onclick of checkbox
+        function toggleSub(box, id) {
+            // get reference to related content to display/hide
+            var el = document.getElementById(id);
+
+            if ( box.checked ) {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        }
+        document.getElementById('cloud-temperature-2').onclick = function() {
+            // call toggleSub when checkbox clicked
+            // toggleSub args: checkbox clicked on (this), id of element to show/hide
+            toggleSub(this, 'active_sub7');
+        };
+
+        // called onclick of checkbox
+        function toggleSub(box, id) {
+            // get reference to related content to display/hide
+            var el = document.getElementById(id);
+
+            if ( box.checked ) {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        }
+        document.getElementById('dust-temperature-2').onclick = function() {
+            // call toggleSub when checkbox clicked
+            // toggleSub args: checkbox clicked on (this), id of element to show/hide
+            toggleSub(this, 'active_sub8');
+        };
+
+        // called onclick of checkbox
+        function toggleSub(box, id) {
+            // get reference to related content to display/hide
+            var el = document.getElementById(id);
+
+            if ( box.checked ) {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        }
+        document.getElementById('cloud-temperature-3').onclick = function() {
+            // call toggleSub when checkbox clicked
+            // toggleSub args: checkbox clicked on (this), id of element to show/hide
+            toggleSub(this, 'active_sub9');
+        };
+
+        // called onclick of checkbox
+        function toggleSub(box, id) {
+            // get reference to related content to display/hide
+            var el = document.getElementById(id);
+
+            if ( box.checked ) {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        }
+        document.getElementById('dust-temperature-3').onclick = function() {
+            // call toggleSub when checkbox clicked
+            // toggleSub args: checkbox clicked on (this), id of element to show/hide
+            toggleSub(this, 'active_sub10');
+        };
+
+        // called onclick of checkbox
+        function toggleSub(box, id) {
+            // get reference to related content to display/hide
+            var el = document.getElementById(id);
+
+            if ( box.checked ) {
+                el.style.display = 'block';
+            } else {
+                el.style.display = 'none';
+            }
+        }
+    </script>
+    <script>
+        $("#range").change(function() {
+            $(this).next('span').html(this.value);
+        }).change();
+    </script>
+    <script>
+        $('#range').on('input', function(e){
+            var min = e.target.min,
+                    max = e.target.max,
+                    val = e.target.value;
+
+            $(e.target).css({
+                'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
+            });
+        }).trigger('input');
+    </script>
+    <script>
+        ;( function( $, window, document, undefined )
+        {
+            'use strict';
+
+            var form        = '.newsletter',
+                    className   = 'newsletter--active',
+                    email       = 'input[type="email"]';
+
+            $( form ).each( function()
+            {
+                var $form   = $( this ),
+                        $email  = $form.find( email ),
+                        val     = '';
+
+                $email.on( 'keyup.addClassWhenEmail', function()
+                {
+                    val = $email.val();
+                    $form.toggleClass( className, val != '' && /^([\w-\.]+@([\w-]+\.)+[\w-]{2,12})?$/.test( val ) );
+                });
+            });
+        })( jQuery, window, document );
+    </script>
+    <script>
+        var button = document.getElementById('button-up');
+
+        window.onscroll = function() {
+            var pageY = window.pageYOffset || document.documentElement.scrollTop;
+            var innerHeight = document.documentElement.clientHeight;
+
+            switch (button.className) {
+                case '':
+                    if (pageY > (innerHeight*1.5)) {
+                        button.className = 'up';
+                    }
+                    break;
+
+                case 'up':
+                    if (pageY < (innerHeight*1.5)) {
+                        button.className = '';
+                    }
+                    break;
+            }
+        }
+
+        /* jquery функция для плавного скролла наверх */
+
+        $(function(){
+            $('#button-up').click(function(){
+                var target = $(this).attr('href');
+                $('html, body').animate({scrollTop: $(target).offset().top}, 800);
+                return false;
+            });
+        });
+
+
+    </script>
+</body>
+</html>
