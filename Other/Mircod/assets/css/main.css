@@ -1956,6 +1956,10 @@ fieldset{
     .connection-title {
         text-align: center;
     }
+    #feedback-window,
+    #add-custom-modal{
+        display: none;
+    }
 }
 
 @media screen and (max-width:650px) {
@@ -2015,24 +2019,6 @@ fieldset{
     .final-product-title {
         color: #f14921;
         bottom: -230px;
-    }
-    .modal-window {
-        left: 5%;
-        width: 325px;
-    }
-    #feedback-window,
-    #add-custom-modal{
-        width: 100%;
-        left:0;
-        right:0;
-        top:0;
-        bottom:0;
-        position: absolute;
-        z-index: 999;
-        display: none;
-        background-color: rgba(0,0,0, .5);
-        pointer-events: none;
-        overflow: hidden;
     }
 }
 
