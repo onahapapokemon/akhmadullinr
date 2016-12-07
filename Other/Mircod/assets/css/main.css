@@ -1,5 +1,5 @@
 body {
-    
+
 }
 
 @font-face {
@@ -2018,6 +2018,7 @@ fieldset{
     }
     .modal-window {
         left: 5%;
+        width: 325px;
     }
     #feedback-window,
     #add-custom-modal{
