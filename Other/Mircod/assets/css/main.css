@@ -2080,7 +2080,7 @@ fieldset{
         height: 1225px;
     }
     .order-button {
-        margin-left: 120px;
+        margin-left: 15%;
         margin-right: 0;
         left: 10%;
         padding: 15px 25px;
@@ -2141,10 +2141,6 @@ fieldset{
 
 
 @media screen and (max-width:507px) {
-    .order-button {
-         left: 15%;
-         padding: 15px 25px;
-    }
     .final-product-title {
         bottom: -230px;
         left: 10px;
