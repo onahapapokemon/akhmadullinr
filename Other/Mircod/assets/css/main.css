@@ -1639,6 +1639,9 @@ fieldset{
     .slide-step-description {
         top: -330px;
     }
+    .modal-window {
+        left: 5%;
+    }
 }
 
 
@@ -2021,8 +2024,7 @@ fieldset{
     }
     #feedback-window,
     #add-custom-modal{
-        width: 200%;
-        height: 200%;
+        width: 100%;
         left:0;
         right:0;
         top:0;
