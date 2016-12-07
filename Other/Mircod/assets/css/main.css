@@ -2152,9 +2152,9 @@ fieldset{
     }
 }
 
-@media handheld, only screen and (max-width:510px) {
+@media handheld, only screen and (max-width:550px) {
     .order-button {
-        left: 0;
+        left: -15%;
         padding: 15px 25px;
         float: left;
     }
