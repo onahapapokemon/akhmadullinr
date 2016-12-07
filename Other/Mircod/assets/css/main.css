@@ -1965,6 +1965,16 @@ fieldset{
     }
 }
 
+@media handheld, only screen and (max-width:700px) {
+    #feedback-window,
+    #add-custom-modal,
+    .modal-window,
+    .modal-window-close{
+        display: none;
+        z-index:-1;
+    }
+}
+
 @media screen and (max-width:650px) {
     .topnav-menu-items a {
         font-size: 10px;
