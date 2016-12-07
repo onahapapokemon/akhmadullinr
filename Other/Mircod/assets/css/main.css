@@ -1,5 +1,5 @@
 body {
-
+    min-width: 545px;
 }
 
 @font-face {
@@ -427,8 +427,12 @@ input[type="checkbox"]:not(checked) + label {
 #slide3:checked ~ #controls label:nth-child(4),
 #slide4:checked ~ #controls label:nth-child(5),
 #slide5:checked ~ #controls label:nth-child(6),
-#slide6:checked ~ #controls label:nth-child(1){
-    /* первые пять значений создадут стрелку справа*/
+#slide6:checked ~ #controls label:nth-child(7),
+#slide7:checked ~ #controls label:nth-child(8),
+#slide8:checked ~ #controls label:nth-child(9),
+#slide9:checked ~ #controls label:nth-child(10),
+#slide10:checked ~ #controls label:nth-child(1){
+    /* стрелка справа*/
     width: 0;
     height: 0;
     border-top: 10px solid transparent;
@@ -446,7 +450,11 @@ input[type="checkbox"]:not(checked) + label {
 #slide3:checked ~ #controls label:nth-child(4):after,
 #slide4:checked ~ #controls label:nth-child(5):after,
 #slide5:checked ~ #controls label:nth-child(6):after,
-#slide6:checked ~ #controls label:nth-child(1):after {
+#slide6:checked ~ #controls label:nth-child(7):after,
+#slide7:checked ~ #controls label:nth-child(8):after,
+#slide8:checked ~ #controls label:nth-child(9):after,
+#slide9:checked ~ #controls label:nth-child(10):after,
+#slide10:checked ~ #controls label:nth-child(1):after{
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     border-right: 20px solid #f6f6f6;
@@ -457,12 +465,16 @@ input[type="checkbox"]:not(checked) + label {
     transform: rotate(180deg);
 }
 
-#slide1:checked ~ #controls label:nth-child(6):after,
+#slide1:checked ~ #controls label:nth-child(10):after,
 #slide2:checked ~ #controls label:nth-child(1):after,
 #slide3:checked ~ #controls label:nth-child(2):after,
 #slide4:checked ~ #controls label:nth-child(3):after,
 #slide5:checked ~ #controls label:nth-child(4):after,
-#slide6:checked ~ #controls label:nth-child(5):after {
+#slide6:checked ~ #controls label:nth-child(5):after,
+#slide7:checked ~ #controls label:nth-child(6):after,
+#slide8:checked ~ #controls label:nth-child(7):after,
+#slide9:checked ~ #controls label:nth-child(8):after,
+#slide10:checked ~ #controls label:nth-child(9):after {
     border-top: 20px solid transparent;
     border-bottom: 20px solid transparent;
     border-right: 20px solid  #f6f6f6;
@@ -472,12 +484,16 @@ input[type="checkbox"]:not(checked) + label {
     left: 4px;
 }
 
-#slide1:checked ~ #controls label:nth-child(6),
+#slide1:checked ~ #controls label:nth-child(10),
 #slide2:checked ~ #controls label:nth-child(1),
 #slide3:checked ~ #controls label:nth-child(2),
 #slide4:checked ~ #controls label:nth-child(3),
 #slide5:checked ~ #controls label:nth-child(4),
-#slide6:checked ~ #controls label:nth-child(5){
+#slide6:checked ~ #controls label:nth-child(5),
+#slide7:checked ~ #controls label:nth-child(6),
+#slide8:checked ~ #controls label:nth-child(7),
+#slide9:checked ~ #controls label:nth-child(8),
+#slide10:checked ~ #controls label:nth-child(9){
     /*стрелка слева*/
     width: 0;
     height: 0;
@@ -496,7 +512,11 @@ input[type="checkbox"]:not(checked) + label {
 #slide3:checked ~ #slides .inner { margin-left:-180px;}
 #slide4:checked ~ #slides .inner { margin-left:-270px;}
 #slide5:checked ~ #slides .inner { margin-left:-360px;}
-#slide6:checked ~ #slides .inner { margin-left:0;}
+#slide6:checked ~ #slides .inner { margin-left:-450px;}
+#slide7:checked ~ #slides .inner { margin-left:-540px;}
+#slide8:checked ~ #slides .inner { margin-left:-630px;}
+#slide9:checked ~ #slides .inner { margin-left:-720px;}
+#slide10:checked ~ #slides .inner { margin-left:-810px;}
 
 
 #slides .inner {
@@ -577,7 +597,7 @@ input[type="checkbox"]:not(checked) + label {
 }
 
 .main {
-    margin: -1000px;
+    margin-top: -1000px;
     display: inline-block;
     position: relative;
     top: -204px;
@@ -805,7 +825,7 @@ input[type="checkbox"]:not(checked) + label {
     color: #5f5f5f;
     top: -370px;
     margin-right: 3%;
-    transition: 0.1s ease-in-out;;
+    transition: 0.1s ease-in-out;
 }
 
 .slide-title {
@@ -1534,19 +1554,528 @@ fieldset{
     }
 }
 
+@media screen and (max-width:1190px) {
+    .main {
+        margin-top: -1000px;
+        display: inline-block;
+        position: relative;
+        top: -204px;
+        left: 16px;
+        height: 705px;
+        width: 80%;
+    }
+    #main-slider {
+        height: 705px;
+    }
+    .main-slides {
+        height: 705px;
+    }
+    #main-overflow {
+        height: 705px;
+    }
+    .main-inner {
+        height: 705px;
+    }
+    .connection {
+        width: 50%;
+        margin-left: 5%;
+        left: 3%;
+    }
+    .final-product-title {
+        width: 95px;
+        bottom: 20px;
+    }
+    .slide-step-description {
+        top: -400px;
+    }
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(5),
+    #slide5:checked ~ #controls label:nth-child(6),
+    #slide6:checked ~ #controls label:nth-child(7),
+    #slide7:checked ~ #controls label:nth-child(8),
+    #slide8:checked ~ #controls label:nth-child(9),
+    #slide9:checked ~ #controls label:nth-child(10),
+    #slide10:checked ~ #controls label:nth-child(1){
+        margin-right:-1%;
+    }
+    #slide1:checked ~ #controls label:nth-child(10),
+    #slide2:checked ~ #controls label:nth-child(1),
+    #slide3:checked ~ #controls label:nth-child(2),
+    #slide4:checked ~ #controls label:nth-child(3),
+    #slide5:checked ~ #controls label:nth-child(4),
+    #slide6:checked ~ #controls label:nth-child(5),
+    #slide7:checked ~ #controls label:nth-child(6),
+    #slide8:checked ~ #controls label:nth-child(7),
+    #slide9:checked ~ #controls label:nth-child(8),
+    #slide10:checked ~ #controls label:nth-child(9){
+        margin-left:-1%;
+    }
+}
 
 
 
 
+@media screen and (max-width:1100px) {
+    .connection {
+        width: 52%;
+        margin-left: 5%;
+        left: 0;
+    }
+    .connection-title {
+        margin-left: 40px;
+    }
+    .final-product-title {
+        bottom: 25px;
+    }
+    .slide-step-description {
+        top: -410px;
+    }
+    .slide-content {
+        width:35%;
+        padding-top: 40px;
+    }
+    .slide-step-description {
+        top: -330px;
+    }
+}
 
 
+@media screen and (max-width:1050px) {
+    #slides {
+        width: 900px;
+    }
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(5),
+    #slide5:checked ~ #controls label:nth-child(6),
+    #slide6:checked ~ #controls label:nth-child(7),
+    #slide7:checked ~ #controls label:nth-child(8),
+    #slide8:checked ~ #controls label:nth-child(9),
+    #slide9:checked ~ #controls label:nth-child(10),
+    #slide10:checked ~ #controls label:nth-child(1){
+        margin-right:3%;
+    }
+
+    .distance-title {
+        text-align: center;
+    }
+    .connection {
+        border-top: none;
+        width: 425px;
+        left: 2%;
+        margin-left: 0;
+        margin-right: 0;
+    }
+}
+
+@media screen and (max-width:1024px) {
+    .newsletter {
+        left: 39%;
+    }
+    .order-button {
+        left: -20%;
+        top: 38px;
+    }
+    .product-item {
+        transform: rotateY(60deg) translateX(-390px) translateY(10px) scale(1.2);
+    }
+}
+
+@media screen and (max-width:1000px) {
+    #slides {
+        width: 812px;
+    }
+
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(5),
+    #slide5:checked ~ #controls label:nth-child(6),
+    #slide6:checked ~ #controls label:nth-child(7),
+    #slide7:checked ~ #controls label:nth-child(8),
+    #slide8:checked ~ #controls label:nth-child(9),
+    #slide9:checked ~ #controls label:nth-child(10),
+    #slide10:checked ~ #controls label:nth-child(1){
+        margin-right:8%;
+    }
+    .product-item {
+        transform: rotateY(60deg) translateX(-360px) translateY(10px) scale(1.2);
+    }
+}
+
+@media screen and (max-width:950px) {
+    #slides {
+        width: 720px;
+    }
+
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(5),
+    #slide5:checked ~ #controls label:nth-child(6),
+    #slide6:checked ~ #controls label:nth-child(7),
+    #slide7:checked ~ #controls label:nth-child(8),
+    #slide8:checked ~ #controls label:nth-child(9),
+    #slide9:checked ~ #controls label:nth-child(10),
+    #slide10:checked ~ #controls label:nth-child(1){
+        margin-right:13%;
+    }
+    .product-item {
+        transform: rotateY(60deg) translateX(-300px) translateY(10px) scale(1.2);
+    }
+    #range + span {
+        margin-right: 7%;
+    }
+    .connection {
+        left: 0;
+        width: 50%;
+        padding-top: 0;
+    }
+    .distance {
+        margin-bottom: -20px;
+    }
+    .slide-step-description {
+        top: -360px;
+    }
+}
 
 
+@media screen and (max-width:900px) {
+    .main {
+        width: 70%;
+        left: 0;
+    }
+    #main-slides {
+        background-position: -150px 0;
+    }
+    .slide-content {
+        width:25%;
+        padding-top: 10px;
+        font-family: 'Proxima Nova Regular', Arial, sans-serif;
+        font-size: 12px;
+        padding-left: 5px;
+    }
+    .main-page:nth-of-type(4) .slide-content {
+        display: inline-block;
+        margin-top: 10px;
+        float: left;
+    }
+    .product-item {
+        transform: rotateY(60deg) translateX(-200px) translateY(10px) scale(1.2);
+    }
+    .final-product-title {
+        width: 95px;
+        bottom: 20px;
+        left: -10px;
+    }
+    .order-button {
+        background-color: #cbcbcb;
+        color: #f14921;
+        font-weight: bold;
+        border: none;
+    }
+    .order-button:hover {
+        background-color: #c3c3c3;
+    }
+    #slides {
+        width: 450px;
+        left: 25%;
+    }
+    .inner {
+        width: 250%;
+        height: 100%;
+        padding-top: 10px;
+    }
+
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(5),
+    #slide5:checked ~ #controls label:nth-child(6),
+    #slide6:checked ~ #controls label:nth-child(7),
+    #slide7:checked ~ #controls label:nth-child(8),
+    #slide8:checked ~ #controls label:nth-child(9),
+    #slide9:checked ~ #controls label:nth-child(10),
+    #slide10:checked ~ #controls label:nth-child(1){
+        margin-right:4%;
+    }
+
+    #slide1:checked ~ #controls label:nth-child(10),
+    #slide2:checked ~ #controls label:nth-child(1),
+    #slide3:checked ~ #controls label:nth-child(2),
+    #slide4:checked ~ #controls label:nth-child(3),
+    #slide5:checked ~ #controls label:nth-child(4),
+    #slide6:checked ~ #controls label:nth-child(5),
+    #slide7:checked ~ #controls label:nth-child(6),
+    #slide8:checked ~ #controls label:nth-child(7),
+    #slide9:checked ~ #controls label:nth-child(8),
+    #slide10:checked ~ #controls label:nth-child(9){
+        /*стрелка слева*/
+        margin-left:7%;
+    }
+    .connection {
+        width: 70%;
+    }
+    .connection-title {
+        margin-bottom: 5px;
+    }
+    .newsletter {
+        left: 23%;
+    }
+    .slide-step-description {
+        top: -420px;
+    }
+    .distance {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:850px) {
+    .slide-step-description {
+        display: none;
+    }
+    .final-product-title {
+        bottom: 80px;
+    }
+    .distance {
+        width: 275px;
+    }
+}
+
+@media screen and (max-width:805px) {
+    .topnav-menu-items a {
+        margin-left: 5px;
+    }
+    .order-button {
+        left: 8%;
+        top: 138px;
+    }
+    .product-item {
+        transform: rotateY(60deg) translateX(-40px) translateY(-30px) scale(1.2);
+    }
+    #slides {
+        left: 15%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    .topmenu-rightside img {
+        display: none;
+    }
+    .final-product-title {
+        bottom: 100px;
+    }
+    .footer-payments {
+        margin-right: 0;
+    }
+    .footer-info-categories {
+        width: 20%;
+    }
+}
+
+@media screen and (max-width:750px) {
+    #main-slides {
+        background-position: -300px 0;
+    }
+    .slide-content {
+        color: #000;
+        width: 70%;
+        float: left;
+    }
+    .distance {
+        margin-top: 10px;
+        float: left;
+        margin-left: 105px;
+    }
+    .connection {
+        float: left;
+        margin-left: 105px;
+    }
+    .main {
+        height: 820px;
+        top: -189px;
+        left: -10px;
+    }
+    #main-slider {
+        height: 820px;
+    }
+    .main-slides {
+        height: 820px;
+    }
+    #main-overflow {
+        height: 820px;
+    }
+    .main-inner {
+        height: 820px;
+    }
+    .chosen {
+        height: 830px;
+        width: 100px;
+        margin-top: -1000px;
+    }
+    .hero {
+        height: 1225px;
+    }
+    .newsletter {
+        top: 1430px;
+        left: 3%;
+    }
+    #main-slide1:checked ~ #next-step-button label:nth-child(2),
+    #main-slide2:checked ~ #next-step-button label:nth-child(3),
+    #main-slide3:checked ~ #next-step-button label:nth-child(4),
+    #main-slide4:checked ~ #next-step-button label:nth-child(5) {
+        /* кнопка снизу*/
+        width: 175px;
+        float: right;
+        bottom: 60px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin-right: 4%;
+    }
+    .product-item {
+        transform: rotateY(60deg) translateX(-120px) translateY(310px) scale(1.2);
+    }
+    .order-button {
+        left: -22%;
+        top: 400px;
+    }
+}
 
 
+@media screen and (max-width:700px) {
+    .connection {
+        width: 100%;
+        margin-left: 0;
+    }
+    .connection-title {
+        text-align: center;
+    }
+}
 
+@media screen and (max-width:650px) {
+    .topnav-menu-items a {
+        font-size: 10px;
+        padding: 8px 13px;
+        margin-left: 5px;
+    }
+    .topnav-menu-items a:hover {
+        padding: 7px 12px;
+    }
 
+    .footer-info-about-content,
+    .footer-info-categories-list{
+        font-size: 10px;
+    }
 
+    #slides {
+        width: 275px;
+    }
+
+    .inner {
+        width: 400%;
+    }
+
+    #slide1:checked ~ #controls label:nth-child(2),
+    #slide2:checked ~ #controls label:nth-child(3),
+    #slide3:checked ~ #controls label:nth-child(4),
+    #slide4:checked ~ #controls label:nth-child(5),
+    #slide5:checked ~ #controls label:nth-child(6),
+    #slide6:checked ~ #controls label:nth-child(7),
+    #slide7:checked ~ #controls label:nth-child(8),
+    #slide8:checked ~ #controls label:nth-child(9),
+    #slide9:checked ~ #controls label:nth-child(10),
+    #slide10:checked ~ #controls label:nth-child(1){
+        margin-right:15%;
+    }
+    .connection {
+        margin-top: -20px;
+    }
+    .slide-content {
+        width: 90%;
+    }
+    .product-item {
+        transform: rotateY(60deg) translateX(-180px) translateY(310px) scale(1.2);
+    }
+    .order-button {
+        left: -12%;
+        top: 400px;
+    }
+    .distance {
+        margin-left: 70px;
+    }
+    .main {
+        width: 65%;
+    }
+    #main-slides {
+        background-position: -360px 0;
+    }
+    .final-product-title {
+        color: #f14921;
+        bottom: -230px;
+    }
+}
+
+@media screen and (max-width:650px) {
+    .distance {
+        margin-left: 0;
+    }
+}
+
+@media screen and (max-width:550px) {
+    .distance {
+        margin-left: 0;
+    }
+    .newsletter {
+        display: none;
+    }
+    .main {
+        height: 920px;
+        top: -89px;
+        left: -10px;
+        width: 60%;
+    }
+    #main-slider {
+        height: 920px;
+    }
+    .main-slides {
+        height: 920px;
+    }
+    #main-overflow {
+        height: 920px;
+    }
+    .main-inner {
+        height: 920px;
+    }
+    .chosen {
+        height: 930px;
+        width: 100px;
+        margin-top: -1000px;
+    }
+    .hero {
+        height: 1225px;
+    }
+    .order-button {
+        left: -22%;
+        padding: 15px 35px;
+        top: 400px;
+    }
+    .option2 {
+        margin-left: 15px;
+    }
+    #main-slides {
+        background-position: -430px 0;
+    }
+    .connection-title {
+        margin-left: 0;
+        text-align: left;
+    }
+    .main-page:nth-of-type(4) .slide-content h1:last-of-type {
+        display: none;
+    }
+}
 
 
 
