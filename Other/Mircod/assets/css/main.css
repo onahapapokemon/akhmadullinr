@@ -2154,7 +2154,7 @@ fieldset{
 
 @media handheld, only screen and (max-width:550px) {
     .order-button {
-        left: -15%;
+        left: -35%;
         padding: 15px 25px;
         float: left;
     }
