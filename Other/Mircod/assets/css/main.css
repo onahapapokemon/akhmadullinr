@@ -2080,7 +2080,9 @@ fieldset{
         height: 1225px;
     }
     .order-button {
-        margin-left: 100px;
+        margin-left: 120px;
+        margin-right: 0;
+        left: 10%;
         padding: 15px 25px;
         display: inline-block;
 
