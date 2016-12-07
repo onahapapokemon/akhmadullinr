@@ -1859,6 +1859,9 @@ fieldset{
     #slides {
         left: 15%;
     }
+    .modal-window {
+        left: 25%;
+    }
 }
 
 @media screen and (max-width:750px) {
@@ -2003,9 +2006,6 @@ fieldset{
         left: -12%;
         top: 400px;
     }
-    .distance {
-        margin-left: 70px;
-    }
     .main {
         width: 65%;
     }
@@ -2015,6 +2015,9 @@ fieldset{
     .final-product-title {
         color: #f14921;
         bottom: -230px;
+    }
+    .modal-window {
+        left: 5%;
     }
 }
 
