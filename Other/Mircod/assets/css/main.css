@@ -1957,8 +1957,11 @@ fieldset{
         text-align: center;
     }
     #feedback-window,
-    #add-custom-modal{
+    #add-custom-modal,
+    .modal-window,
+    .modal-window-close{
         display: none;
+        z-index:-1;
     }
 }
 
@@ -2022,9 +2025,14 @@ fieldset{
     }
 }
 
-@media screen and (max-width:650px) {
+@media screen and (max-width:660px) {
     .distance {
         margin-left: 0;
+    }
+    .topnav-menu-items a {
+        font-size: 10px;
+        padding: 8px 13px;
+        margin-left: 5px;
     }
 }
 
