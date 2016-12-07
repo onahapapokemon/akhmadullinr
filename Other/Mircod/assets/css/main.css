@@ -2080,9 +2080,10 @@ fieldset{
         height: 1225px;
     }
     .order-button {
-        left: -25%;
+        margin-left: 100px;
         padding: 15px 25px;
-        float: left;
+        display: inline-block;
+
     }
     .option2 {
         margin-left: 15px;
@@ -2141,7 +2142,6 @@ fieldset{
     .order-button {
          left: 15%;
          padding: 15px 25px;
-        float: left;
     }
     .final-product-title {
         bottom: -230px;
