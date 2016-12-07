@@ -2019,6 +2019,21 @@ fieldset{
     .modal-window {
         left: 5%;
     }
+    #feedback-window,
+    #add-custom-modal{
+        width: 200%;
+        height: 200%;
+        left:0;
+        right:0;
+        top:0;
+        bottom:0;
+        position: absolute;
+        z-index: 999;
+        display: none;
+        background-color: rgba(0,0,0, .5);
+        pointer-events: none;
+        overflow: hidden;
+    }
 }
 
 @media screen and (max-width:650px) {

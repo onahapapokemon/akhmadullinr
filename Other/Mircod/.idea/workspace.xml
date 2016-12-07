@@ -34,8 +34,8 @@
       <file leaf-file-name="main.css" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/assets/css/main.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="100">
-              <caret line="2019" column="14" selection-start-line="2019" selection-start-column="14" selection-end-line="2019" selection-end-column="14" />
+            <state relative-caret-position="299">
+              <caret line="2024" column="21" selection-start-line="2024" selection-start-column="21" selection-end-line="2024" selection-end-column="21" />
               <folding />
             </state>
           </provider>
@@ -218,12 +218,12 @@
       <workItem from="1480690857048" duration="4612000" />
       <workItem from="1480708872026" duration="27335000" />
       <workItem from="1480869958930" duration="70415000" />
-      <workItem from="1481016445617" duration="58929000" />
+      <workItem from="1481016445617" duration="59274000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="161291000" />
+    <option name="totallyTimeSpent" value="161636000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -235,7 +235,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2685325" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -474,8 +474,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/assets/css/main.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="100">
-          <caret line="2019" column="14" selection-start-line="2019" selection-start-column="14" selection-end-line="2019" selection-end-column="14" />
+        <state relative-caret-position="299">
+          <caret line="2024" column="21" selection-start-line="2024" selection-start-column="21" selection-end-line="2024" selection-end-column="21" />
           <folding />
         </state>
       </provider>
