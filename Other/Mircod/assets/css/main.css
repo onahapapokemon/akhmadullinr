@@ -1,5 +1,5 @@
 body {
-    min-width: 545px;
+    
 }
 
 @font-face {
@@ -1639,9 +1639,6 @@ fieldset{
     .slide-step-description {
         top: -330px;
     }
-    .modal-window {
-        left: 5%;
-    }
 }
 
 
@@ -2078,9 +2075,9 @@ fieldset{
         height: 1225px;
     }
     .order-button {
-        left: -22%;
-        padding: 15px 35px;
-        top: 400px;
+        left: -25%;
+        padding: 15px 25px;
+        float: left;
     }
     .option2 {
         margin-left: 15px;
@@ -2095,11 +2092,59 @@ fieldset{
     .main-page:nth-of-type(4) .slide-content h1:last-of-type {
         display: none;
     }
+    .distance-text {
+        font-size: 12px;
+    }
+    #range + span {
+        font-size: 26px;
+        color: #2a2a2b;
+        position: relative;
+        float: right;
+        top: -35px;
+        margin-right: 9%;
+    }
+}
+
+@media screen and (max-width:525px) {
+    .distance {
+        width: 80%;
+        margin-bottom: 15px;
+    }
+    .distance-title {
+        padding-bottom: 20px;
+    }
+    #range + span {
+        font-size: 22px;
+        color: #2a2a2b;
+        position: relative;
+        float: right;
+        top: -32px;
+        margin-right: 12%;
+    }
+    .current-distance {
+        float: left;
+    }
+    .meter {
+        font-size: 16px;
+        position: relative;
+        top: 15px;
+    }
 }
 
 
-
-
-
+@media screen and (max-width:507px) {
+    .order-button {
+         left: 15%;
+         padding: 15px 25px;
+        float: left;
+    }
+    .final-product-title {
+        bottom: -230px;
+        left: 10px;
+    }
+    .product-item {
+        transform: rotateY(60deg) translateX(-240px) translateY(310px) scale(1.2);
+    }
+}
 
 
