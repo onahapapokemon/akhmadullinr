@@ -2082,8 +2082,9 @@ fieldset{
     .order-button {
         margin-left: 15%;
         margin-right: 0;
-        left: 10%;
-        padding: 15px 25px;
+        left: -20px;
+        padding: 15px 15px;
+        width: auto;
         display: inline-block;
 
     }
