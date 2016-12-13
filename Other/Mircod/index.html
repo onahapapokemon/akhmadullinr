@@ -73,7 +73,7 @@
                                 <label for="water-temperature"><span>Water</span>  temperature</label>
                             </div>
                             <div class="page">
-                                <input type="checkbox" id="cloud-temperature" class="cloud-temperature active">
+                                <input type="checkbox" id="cloud-temperature" class="cloud-temperature active ">
                                 <label for="cloud-temperature"><span>Cloud </span> temperature</label>
                             </div>
                             <div class="page">
@@ -219,7 +219,9 @@
                                         <span class="meter">m</span>
                                         <span class="current-distance"><span>CURRENT</span><span>DISTANCE</span></span>
 
-                                        <input type="range" id="range" min="0" max="50" step="1" value="22"><span></span>
+                                        <input type="range" id="range" min="0" max="50" step="1" value="22"><span id="range-span"></span>
+                                        <div class="distance-left-indicator">0m</div>
+                                        <div class="distance-right-indicator">50m</div>
                                     </div>
                                     <div class="connection">
                                         <div class="connection-title">Choose <span>type of connection</span></div>
@@ -288,12 +290,15 @@
             </div>
         </div>
     </div>
-    <form class="newsletter">
-        <div class="newsletter-title">newsletter</div>
-        <input type="email" value="" placeholder="Enter your email" tabindex="1" class="newsletter-email">
-        <input type="submit" value="OK" tabindex="2" class="newsletter-submit">
-        <span>Remember we will not do spam promise.</span>
-    </form>
+    <div class="newsletter-wrapper grid">
+        <form class="newsletter grid">
+            <div class="newsletter-title">newsletter</div>
+            <input type="email" value="" placeholder="Enter your email" tabindex="1" class="newsletter-email">
+            <input type="submit" value="OK" tabindex="2" class="newsletter-submit">
+            <span>Remember we will not do spam promise.</span>
+        </form>
+    </div>
+
     <footer>
         <div class="footer-info">
           <div class="grid">
@@ -306,10 +311,10 @@
             <div class="footer-info-categories">
                 <div class="footer-info-categories-title">Categories</div>
                 <ul class="footer-info-categories-list">
-                    <li>-Electronics</li>
-                    <li>-Home & Tools</li>
-                    <li>-Beauty & Health</li>
-                    <li>-Toys & Kids</li>
+                    <li>- Electronics</li>
+                    <li>- Home & Tools</li>
+                    <li>- Beauty & Health</li>
+                    <li>- Toys & Kids</li>
                 </ul>
             </div>
             <div class="footer-payments">
@@ -321,6 +326,9 @@
                 </div>
             </div>
         </div>
+            <a href="#top" id="button-up">
+                <img src="assets/img/button-up.png">
+            </a>
        </div>
        <div class="footer-end">
            <div class="grid">
@@ -341,9 +349,6 @@
            </div>
        </div>
     </footer>
-    <a href="#top" id="button-up">
-        <img src="assets/img/button-up.png">
-    </a>
     <div id="feedback-window">
         <div class="modal-window">
             <span class="modal-window-title">Order now</span>
@@ -573,6 +578,27 @@
                 'backgroundSize': (val - min) * 100 / (max - min) + '% 100%'
             });
         }).trigger('input');
+
+        var rangeSlider = function(){
+            var slider = $('.distance'),
+                    range = $('#range'),
+                    value = $('#range-span');
+
+            slider.each(function(){
+
+                value.each(function(){
+                    var value = $(this).prev().attr('value');
+                    $(this).html(value);
+                });
+
+                range.on('input', function(){
+                    $(this).next(value).html(this.value);
+                });
+            });
+        };
+
+        rangeSlider();
+
     </script>
     <script>
         ;( function( $, window, document, undefined )
@@ -599,25 +625,6 @@
     </script>
     <script>
         var button = document.getElementById('button-up');
-
-        window.onscroll = function() {
-            var pageY = window.pageYOffset || document.documentElement.scrollTop;
-            var innerHeight = document.documentElement.clientHeight;
-
-            switch (button.className) {
-                case '':
-                    if (pageY > (innerHeight*1.5)) {
-                        button.className = 'up';
-                    }
-                    break;
-
-                case 'up':
-                    if (pageY < (innerHeight*1.5)) {
-                        button.className = '';
-                    }
-                    break;
-            }
-        }
 
         /* jquery функция для плавного скролла наверх */
 
