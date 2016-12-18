@@ -240,7 +240,7 @@ input[type="checkbox"]:not(checked) + label {
 .page input[type="checkbox"]:not(checked) + label:before {
     content: '';
     position: absolute;
-    top: -85px;
+    top: -83px;
     left: -5px;
     width: 80px;
     height: 80px;
@@ -248,7 +248,7 @@ input[type="checkbox"]:not(checked) + label {
     background-color: #fff;
     box-sizing: border-box;
     cursor: pointer;
-    z-index: 100;
+    z-index: 101;
 }
 
 .page input[type="checkbox"]:not(checked) + label:after {
@@ -272,7 +272,6 @@ input[type="checkbox"]:not(checked) + label {
 
 .page input[type="checkbox"]:checked + label:hover:before {
     animation: r2 2s .5s ease-out infinite;
-    z-index:-1;
 }
 
 .page input[type="checkbox"]:not(checked) + label {
@@ -310,10 +309,13 @@ input[type="checkbox"]:not(checked) + label {
 }
 
 
-.water-temperature + label span,
-.cloud-temperature + label span,
-.dust-temperature + label span{
+.page-name-1 {
     text-align: left;
+}
+
+.page-name-all {
+    position: relative;
+    left: 5px;
 }
 
 #water-temperature:checked + label:after,
@@ -2217,12 +2219,13 @@ fieldset{
 
 @keyframes r2 {
     0% {
-        box-shadow: 0 0 0.8rem 0.6rem rgba(26, 255, 255, 0), 0 0 0 0 rgba(246, 246, 246, 0.3), 0 0 0 0 rgba(26, 255, 255, 0);
+        box-shadow: 0 0 0.4rem 0.4rem rgba(26, 255, 255, 0), 0 0 0 0 rgba(246, 246, 246, 0.3), 0 0 0 0 rgba(26, 255, 255, 0);
     }
     10% {
-        box-shadow: 0 0 0.8rem 0.6rem #ff5c33, 0 0 1.2rem 1rem rgba(246, 246, 246, 0.3), 0 0 1.2rem 1.4rem #ff5c33;
+        box-shadow: 0 0 0.4rem 0.4rem #ff5c33, 0 0 0.6rem 0.4rem rgba(246, 246, 246, 0.3), 0 0 0.4rem 0.4rem #ff5c33;
     }
     100% {
-        box-shadow: 0 0 0.8rem 0.6rem rgba(26, 255, 255, 0), 0 0 0 1.8rem rgba(246, 246, 246, 0.3), 0 0 0 1.8rem rgba(26, 255, 255, 0);
+        box-shadow: 0 0 0.4rem 0.4rem rgba(26, 255, 255, 0), 0 0 0 0.6rem rgba(246, 246, 246, 0.3), 0 0 0 0.6rem rgba(26, 255, 255, 0);
     }
 }
+
