@@ -66,7 +66,7 @@
                         <div class="inner">
                             <div class="page">
                                 <input type="checkbox" id="temperature" class="active">
-                                <label for="temperature"><span>Temperature</span></label>
+                                <label for="temperature"><span class="page-name-temperature">Temperature</span></label>
                             </div>
                             <div class="page">
                                 <input type="checkbox" id="water-temperature" class="water-temperature active">
@@ -82,7 +82,7 @@
                             </div>
                             <div class="page">
                                 <input type="checkbox" id="temperature-2">
-                                <label for="temperature-2"><span>Temperature</span></label>
+                                <label for="temperature-2"><span class="page-name-temperature">Temperature</span></label>
                             </div>
                             <div class="page">
                                 <input type="checkbox" id="water-temperature-2" class="water-temperature">
@@ -637,6 +637,18 @@
         });
 
 
+    </script>
+    <script>
+        div = document.getElementById("main-menu")
+        div.onmousemove = function(e){
+            img = document.getElementById("myimg");
+            if((e.clientY+img.clientHeight/2 <= div.offsetTop+div.clientHeight)&&(e.clientY-img.clientHeight/2 >= div.offsetTop)){
+                img.style.top = (e.clientY-(img.clientHeight/2))+"px";
+            }
+            if((e.clientX+img.clientWidth/2 <= div.offsetLeft+div.clientWidth)&&(e.clientX-img.clientWidth/2 >= div.offsetLeft)){
+                img.style.left = (e.clientX-(img.clientWidth/2))+"px";
+            }
+        }
     </script>
 </body>
 </html>
