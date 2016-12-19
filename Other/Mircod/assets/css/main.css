@@ -276,7 +276,7 @@ input[type="checkbox"]:not(checked) + label {
 
 .page input[type="checkbox"]:not(checked) + label {
     position: relative;
-    top: 63px;
+    top: 61px;
     left: -15px;
     font-family: 'Proxima Nova Regular', Arial, sans-serif;
     font-size: 12px;
@@ -315,7 +315,7 @@ input[type="checkbox"]:not(checked) + label {
 
 .page-name-all {
     position: relative;
-    left: 5px;
+    left: 4px;
 }
 
 .page-name-temperature {
@@ -870,7 +870,7 @@ input[type="checkbox"]:not(checked) + label {
 }
 
 .slide-content h1 {
-    margin-bottom: 20px;
+    margin-bottom: 22px;
 }
 
 .final-product {
