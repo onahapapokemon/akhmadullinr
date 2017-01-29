@@ -7,7 +7,9 @@
     <link rel="stylesheet" href="assets/css/reset.css">
     <link rel="stylesheet" href="assets/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/mobile.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="modernizr-custom.js"></script>
 </head>
 <body>
     <header id="top">
@@ -27,12 +29,15 @@
     <nav class="topnav">
       <div class="grid">
         <ul id="main-menu" class="topnav-menu">
-            <li class="topnav-menu-items"><a href="#">Constructor</a></li>
-            <li class="topnav-menu-items"><a href="#">Help</a></li>
-            <li class="topnav-menu-items"><a href="#">User Panels</a></li>
-            <li class="topnav-menu-items"><a href="#">FAQ</a></li>
-            <li class="topnav-menu-items"><a href="#">About</a></li>
-            <li class="topnav-menu-items"><a href="#">Blog</a></li>
+            <li class="topnav-menu-items"><a class="topnav-menu-items-link" href="#">Constructor</a></li>
+            <li class="topnav-menu-items"><a class="topnav-menu-items-link" href="#">Help</a></li>
+            <li class="topnav-menu-items"><a class="topnav-menu-items-link" href="#">User Panels</a></li>
+            <li class="topnav-menu-items"><a class="topnav-menu-items-link" href="#">FAQ</a></li>
+            <li class="topnav-menu-items"><a class="topnav-menu-items-link" href="#">About</a></li>
+            <li class="topnav-menu-items"><a class="topnav-menu-items-link" href="#">Blog</a></li>
+            <li class="topnav-menu-icon">
+                <a href="javascript:void(0);" style="font-size:15px;" onclick="myFunction()"><img src="assets/img/sidebar-menu-respons.png"></a>
+            </li>
             <li class="topmenu-rightside">
                 <a class="topmenu-bookmark" href="#"><img src="assets/img/like.png"></a>
                 <a class="topmenu-search" href="#"><img src="assets/img/search.png"></a>
@@ -106,7 +111,7 @@
                             </div>
                             <a class="add-custom" href="#add-custom-modal">
                                 <input type="checkbox" id="add-custom">
-                                <label for="add-custom-modal"><span>Add</span> Custom</label>
+                                <label for="add-custom-modal"><span class="add-custom-span"><span>Add</span> Custom</span></label>
                             </a>
                         </div>
                     </div>
@@ -165,6 +170,7 @@
             </div>
             <div class="main">
                 <div id="main-slider">
+
                     <input type="radio" name="main-slider" id="main-slide1" checked="">
                     <input type="radio" name="main-slider" id="main-slide2">
                     <input type="radio" name="main-slider" id="main-slide3">
@@ -392,6 +398,9 @@
         <a class="modal-window-close" href="#close" ><img src="assets/img/close-button.png"></a>
     </div>
     <script>
+        /**
+         * Created by Rustam on 19.12.2016.
+         */
         document.getElementById('temperature').onclick = function() {
             // call toggleSub when checkbox clicked
             // toggleSub args: checkbox clicked on (this), id of element to show/hide
@@ -409,6 +418,7 @@
                 el.style.display = 'none';
             }
         }
+
         document.getElementById('water-temperature').onclick = function() {
             // call toggleSub when checkbox clicked
             // toggleSub args: checkbox clicked on (this), id of element to show/hide
@@ -637,6 +647,16 @@
         });
 
 
+    </script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("main-menu");
+            if (x.className === "topnav-menu") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav-menu";
+            }
+        }
     </script>
     <script>
         div = document.getElementById("main-menu")

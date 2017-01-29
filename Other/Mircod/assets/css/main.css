@@ -1,5 +1,5 @@
 body {
-    min-width: 500px;
+    min-width: 400px;
 }
 
 @font-face {
@@ -92,6 +92,10 @@ header {
     display: inline-block;
     position: relative;
     top: 40%;
+}
+
+.topnav-menu-icon img {
+    display: none;
 }
 
 .topnav-menu-items a {
@@ -321,6 +325,12 @@ input[type="checkbox"]:not(checked) + label {
 .page-name-temperature {
     position: relative;
     left: 3px;
+}
+
+.add-custom-span {
+    position: relative;
+    display: inline-block;
+    top: -14px;
 }
 
 #water-temperature:checked + label:after,
@@ -1837,16 +1847,11 @@ fieldset{
         left: -10px;
     }
     .order-button {
-        background-color: #cbcbcb;
-        color: #ff4500;
         font-weight: bold;
-        border: none;
         left: 30%;
         top: 4%;
     }
-    .order-button:hover {
-        background-color: #c3c3c3;
-    }
+
     #slides {
         width: 450px;
         left: 25%;
@@ -1930,9 +1935,6 @@ fieldset{
 }
 
 @media screen and (max-width:750px) {
-    .topmenu-rightside img {
-        display: none;
-    }
     .final-product-title {
         bottom: 100px;
     }
@@ -1948,11 +1950,7 @@ fieldset{
     #main-slides {
         background-position: -300px 0;
     }
-    .slide-content {
-        color: #000;
-        width: 70%;
-        float: left;
-    }
+
     .distance {
         margin-top: 10px;
         float: left;
@@ -1990,18 +1988,7 @@ fieldset{
     .newsletter {
 
     }
-    #main-slide1:checked ~ #next-step-button label:nth-child(2),
-    #main-slide2:checked ~ #next-step-button label:nth-child(3),
-    #main-slide3:checked ~ #next-step-button label:nth-child(4),
-    #main-slide4:checked ~ #next-step-button label:nth-child(5) {
-        /* кнопка снизу*/
-        width: 175px;
-        float: right;
-        bottom: 60px;
-        padding-top: 15px;
-        padding-bottom: 15px;
-        margin-right: 4%;
-    }
+
     .option2 {
         margin-left: 15px;
     }
@@ -2016,210 +2003,7 @@ fieldset{
 }
 
 
-@media screen and (max-width:700px) {
-    .connection {
-        width: 100%;
-        margin-left: 0;
-    }
-    .connection-title {
-        text-align: center;
-    }
-    #feedback-window,
-    #add-custom-modal,
-    .modal-window,
-    .modal-window-close{
-        display: none;
-        z-index:-1;
-    }
-}
 
-@media handheld, only screen and (max-width:700px) {
-    #feedback-window,
-    #add-custom-modal,
-    .modal-window,
-    .modal-window-close{
-        display: none;
-        z-index:-1;
-    }
-}
-
-@media screen and (max-width:650px) {
-    .topnav-menu-items a {
-        font-size: 10px;
-        padding: 8px 13px;
-        margin-left: 5px;
-    }
-    .topnav-menu-items a:hover {
-        padding: 7px 12px;
-    }
-
-    .footer-info-about-content,
-    .footer-info-categories-list{
-        font-size: 10px;
-    }
-
-    #slides {
-        width: 275px;
-    }
-
-    .inner {
-        width: 400%;
-    }
-
-    #slide1:checked ~ #controls label:nth-child(2),
-    #slide2:checked ~ #controls label:nth-child(3),
-    #slide3:checked ~ #controls label:nth-child(4),
-    #slide4:checked ~ #controls label:nth-child(5),
-    #slide5:checked ~ #controls label:nth-child(6),
-    #slide6:checked ~ #controls label:nth-child(7),
-    #slide7:checked ~ #controls label:nth-child(8),
-    #slide8:checked ~ #controls label:nth-child(9),
-    #slide9:checked ~ #controls label:nth-child(10),
-    #slide10:checked ~ #controls label:nth-child(1){
-        margin-right:15%;
-    }
-    .connection {
-        margin-top: -20px;
-    }
-    .slide-content {
-        width: 90%;
-    }
-    .product-item {
-        transform: rotateY(60deg) translateX(-180px) translateY(310px) scale(1.2);
-    }
-    .order-button {
-        left: 20px;
-        top: 775px;
-    }
-    .main {
-        width: 65%;
-    }
-    #main-slides {
-        background-position: -360px 0;
-    }
-    .final-product-title {
-        color: #f14921;
-        bottom: -180px;
-    }
-}
-
-@media screen and (max-width:660px) {
-    .distance {
-        margin-left: 0;
-    }
-    .topnav-menu-items a {
-        font-size: 10px;
-        padding: 8px 13px;
-        margin-left: 5px;
-    }
-}
-
-@media screen and (max-width:550px) {
-    .distance {
-        margin-left: 0;
-    }
-    .newsletter {
-        display: none;
-    }
-    .main {
-        height: 920px;
-        top: -89px;
-        left: -10px;
-        width: 60%;
-    }
-    #main-slider {
-        height: 920px;
-    }
-    .main-slides {
-        height: 920px;
-    }
-    #main-overflow {
-        height: 920px;
-    }
-    .main-inner {
-        height: 920px;
-    }
-    .chosen {
-        height: 930px;
-        width: 100px;
-        margin-top: -1000px;
-    }
-    .hero {
-        height: 1225px;
-    }
-    .order-button {
-        left: 27%;
-        top: 180px;
-        padding: 15px 15px;
-        display: inline-block;
-
-    }
-    .option2 {
-        margin-left: 15px;
-    }
-    #main-slides {
-        background-position: -430px 0;
-    }
-    .connection-title {
-        margin-left: 0;
-        text-align: left;
-    }
-    .slide-content h1:last-of-type {
-        display: none;
-    }
-    .distance-text {
-        font-size: 12px;
-    }
-    .distance-title {
-        margin-bottom: 10px;
-        margin-top: 40px;
-    }
-    #range + span {
-        font-size: 26px;
-        color: #2a2a2b;
-        position: relative;
-        float: right;
-        top: -35px;
-        margin-right: 9%;
-    }
-}
-
-@media screen and (max-width:525px) {
-    .distance {
-        width: 80%;
-        margin-bottom: 15px;
-    }
-    .distance-title {
-        padding-bottom: 20px;
-    }
-    #range + span {
-        font-size: 22px;
-        color: #2a2a2b;
-        position: relative;
-        float: right;
-        top: -32px;
-        margin-right: 12%;
-    }
-    .current-distance {
-        float: left;
-    }
-    .meter {
-        font-size: 16px;
-        position: relative;
-        top: 15px;
-    }
-}
-
-
-@media screen and (max-width:507px) {
-    .final-product-title {
-        bottom: -230px;
-        left: 10px;
-    }
-    .product-item {
-        transform: rotateY(60deg) translateX(-240px) translateY(310px) scale(1.2);
-    }
-}
 
 
 @keyframes r2 {
