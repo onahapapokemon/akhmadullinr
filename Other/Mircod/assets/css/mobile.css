@@ -15,6 +15,9 @@
         position: absolute;
         left: 0;
     }
+    .border {
+        display: none;
+    }
 
     .responsive .topnav-menu-items {
         float: none;
@@ -88,24 +91,30 @@
     }
 
     .main {
-        top: -263px;
+        top: -280px;
         width: 100%;
         left: 0;
         background-color: #fff;
+        height: 600px;
     }
+    .main-slider {
+
+    }
+
 
     #main-slides {
         background-image: url("../img/Mobile-bg.png");
         border-top-right-radius: 0;
         border-bottom-right-radius: 0;
-        height: 1075px;
     }
 
     .main-page,
-    .main-inner,
-    #main-overflow{
-        height: 100%;
-    }
+     .main-inner,
+     #main-overflow{
+         height: 100%;
+     }
+
+
 
     #main-controls,
     #main-active{
@@ -237,6 +246,16 @@
         padding-right: -35px;
     }
 
+    footer {
+        z-index: 200;
+        position: relative;
+    }
+    .chosen-wrapper {
+        height: 100px;
+    }
+    .chosen {
+        height: 100px;
+    }
 }
 
 @media screen and (max-width:660px) {

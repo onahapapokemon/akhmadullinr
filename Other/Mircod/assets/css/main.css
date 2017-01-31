@@ -86,12 +86,14 @@ header {
 .topnav-menu {
     ~outline: 1px solid deepskyblue;
     height: 100%;
+    position: relative;
 }
 
 .topnav-menu > li {
     display: inline-block;
     position: relative;
     top: 40%;
+    z-index: 200;
 }
 
 .topnav-menu-icon img {
@@ -108,13 +110,41 @@ header {
     margin-left: 15px;
     box-sizing: border-box;
     border: 1px solid transparent;
+    z-index: 200;
 }
 
-.topnav-menu-items a:hover {
-    border: 1px solid #717172;
-    border-radius: 8px;
+span.border {
+    height:30px;
+    border: 1px solid lightgray;
+    border-radius: 5px;
+    width:120px;
+    position:absolute;
+    bottom: 18px;
+    left:220px;
     transition: all 0.3s ease-in-out 0s, visibility 0s linear 0.3s, z-index 0s linear 0.01s;
+    z-index: 0;
 }
+
+.topnav-menu-items:nth-child(1):hover ~ span.border {
+    left:220px;
+}
+.topnav-menu-items:nth-child(2):hover ~ span.border {
+    left:340px;
+}
+.topnav-menu-items:nth-child(3):hover ~ span.border {
+    left:460px;
+}
+.topnav-menu-items:nth-child(4):hover ~ span.border {
+    left: 580px;
+}
+.topnav-menu-items:nth-child(5):hover ~ span.border {
+    left: 680px;
+}
+.topnav-menu-items:nth-child(6):hover ~ span.border {
+    left:780px;
+}
+
+
 
 .topmenu-rightside {
     float: right;
