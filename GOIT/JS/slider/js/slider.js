@@ -70,5 +70,9 @@ function Slider(selector, options) {
         this.__render();
     };
 
+    function addPagination() {
+        
+    };
+
     this.__init();
 }
