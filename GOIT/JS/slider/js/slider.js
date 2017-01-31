@@ -1,6 +1,7 @@
 function Slider(selector, options) {
 
     var __self = this;
+
     // DOM Nodes
     var sliderNode = document.querySelector(selector),
         sliderImagesNode = sliderNode.querySelector('.slider__images-wrap'),
@@ -10,16 +11,7 @@ function Slider(selector, options) {
 
     var currentSlideIndex = options.currentSlide || 0,
         imagesCount = sliderImagesNode.children.length,
-        slideSize = sliderImagesNode.offsetWidth;
-
-    this.nextSlide = function () {
-        if (currentSlideIndex === imagesCount - 1) {
-            currentSlideIndex = 0;
-            return;
-        }
-        currentSlideIndex++;
-        console.log(currentSlideIndex);
-    };
+        slideSize = sliderImagesNode[(options.direction === 'vertical') ? 'offsetHeight' : 'offsetWidth'];
 
     this.prevSlide = function () {
         if (currentSlideIndex === 0) {
@@ -27,20 +19,56 @@ function Slider(selector, options) {
             return;
         }
         currentSlideIndex--;
-        console.log(currentSlideIndex);
+    };
+
+    this.nextSlide = function () {
+        if (currentSlideIndex === imagesCount - 1) {
+            currentSlideIndex = 0;
+            return;
+        }
+        currentSlideIndex++;
     };
 
     this.__render = function () {
+        var directionStyle = (options.direction === 'vertical') ? 'marginTop' : 'marginLeft';
 
+        sliderImagesNode.style[directionStyle] = -(currentSlideIndex * slideSize) + 'px';
+
+        paginationNode.querySelector('.active').classList.remove('active');
+        paginationNode.children[currentSlideIndex].querySelector('a').classList.add('active');
     };
 
-    prevSliderNode.onclick = function() {
+    prevSliderNode.onclick = function(e) {
+        e.preventDefault();
         __self.prevSlide();
+        __self.__render();
     };
 
-    nextSliderNode.onclick = function() {
+    nextSliderNode.onclick = function(e) {
+        e.preventDefault();
         __self.nextSlide();
-    }
+        __self.__render();
+    };
 
+    paginationNode.onclick = function(e) {
+        e.preventDefault();
+
+        var link = e.target;
+
+        if (link.tagName !== 'A') { return; }
+
+        currentSlideIndex = +link.dataset['slider__item'];
+
+        __self.__render();
+    };
+
+    this.__init = function () {
+        if (options.direction === 'vertical') {
+            sliderImagesNode.style.whiteSpace = 'normal';
+        }
+
+        this.__render();
+    };
+
+    this.__init();
 }
-
