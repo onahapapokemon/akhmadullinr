@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test work</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div class="header"></div>
+    <div class="main">
+        <!--<div class="main_inner">123</div>
+        <div class="main_inner">123</div>
+        блок main всегда по центру, footer всегда внизу -->
+    </div>
+    <div class="footer"></div>
+    <script>
+        var main = document.querySelector('.main');
+        var header = document.querySelector('.header');
+        var footer = document.querySelector('.footer');
+        var headerHeight = header.clientHeight;
+        var footerHeight = footer.clientHeight;
+        var mainHeight = document.body.scrollHeight - headerHeight - footerHeight;
+        main.style.minHeight = mainHeight + 'px';
+    </script>
+</body>
+</html>

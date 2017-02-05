@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        body * {
+            margin: 10px;
+            border: 1px solid blue;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">FORM
+        <div id="div">DIV
+            <p id="p">P</p>
+        </div>
+    </form>
+<script>
+    function getRandomColor() {
+        var letters = '0123456789ABCDEF'.split('');
+        var color = '#';
+        for (var i=0;i<6;i++) {
+            color+=letters[Math.floor(Math.random()*16)];
+        }
+        return color;
+    }
+
+    function onClickElem(e) {
+        alert(e.currentTarget);
+        console.log(e.target);
+        console.log('------');
+        e.currentTarget.style.backgroundColor = getRandomColor();
+        // e.stopPropagation();
+    }
+
+
+    form.addEventListener('click',onClickElem, true);
+    div.addEventListener('click',onClickElem, true);
+    p.addEventListener('click',onClickElem, true);
+</script>
+</body>
+</html>
