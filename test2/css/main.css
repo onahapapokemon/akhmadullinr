@@ -1,0 +1,863 @@
+@charset "UTF-8";
+@font-face {
+  font-family: "asapregular";
+  src: url("../fonts/asap/Asap-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "asapmedium";
+  src: url("../fonts/asap/Asap-Medium.otf") format("opentype"); }
+@font-face {
+  font-family: "asapitalic";
+  src: url("../fonts/asap/Asap-Italic.otf") format("opentype"); }
+@font-face {
+  font-family: "asapbold";
+  src: url("../fonts/asap/Asap-Bold.otf") format("opentype");
+  src: url("../fonts/asap/Asap-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "FontAwesome";
+  src: url("../fonts/FontAwesome/fontawesome-webfont.svg") format("svg");
+  src: url("../fonts/FontAwesome/fontawesome-webfont.eot");
+  src: url("../fonts/FontAwesome/fontawesome-webfont.woff") format("woff");
+  src: url("../fonts/FontAwesome/fontawesome-webfont.ttf") format("truetype");
+  font-style: normal;
+  font-weight: normal; }
+@font-face {
+  font-family: "museosansregular";
+  src: url("../fonts/MuseoSans/MuseoSansRegular/MuseoSansRegular.ttf") format("truetype");
+  src: url("../fonts/MuseoSans/MuseoSansRegular/MuseoSansRegular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "museosansmedium";
+  src: url("../fonts/MuseoSans/MuseoSansMedium/MuseoSansMedium.ttf") format("truetype");
+  src: url("../fonts/MuseoSans/MuseoSansMedium/MuseoSansMedium.woff") format("woff"); }
+@font-face {
+  font-family: "museosansbold";
+  src: url("../fonts/MuseoSans/MuseoSansBold/MuseoSansBold.ttf") format("truetype");
+  src: url("../fonts/MuseoSans/MuseoSansBold/MuseoSansBold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "pacificoregular";
+  src: url("../fonts/Pacifico/Pacifico.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0; }
+
+html {
+  height: 100%;
+  width: 100%; }
+
+body {
+  background-color: #fff;
+  height: 100%;
+  max-width: 100%;
+  font-size: 14px;
+  line-height: 1.42em;
+  font-family: "museosansregular", serif; }
+
+.wrapper {
+  min-height: 100%;
+  position: relative; }
+
+p {
+  padding: 0;
+  margin: 0; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+  a:hover {
+    transition: ease-in-out 0.25s;
+    opacity: 0.7; }
+
+button {
+  cursor: pointer; }
+  button:focus, button:hover {
+    transition: ease-in-out 0.25s;
+    opacity: 0.7; }
+
+ul li {
+  list-style: none; }
+
+.container {
+  margin: 0 auto;
+  width: 1170px;
+  padding-left: 15px;
+  padding-right: 15px; }
+
+.header {
+  background-image: url("../img/bg1.png");
+  background-size: cover;
+  height: 750px; }
+
+.header__top {
+  padding-top: 34px;
+  height: 86px;
+  box-sizing: border-box;
+  border-bottom: 3px solid #ccc; }
+
+.header__top div {
+  float: left;
+  padding: 0; }
+
+.header__top:after, .header__top:before {
+  display: table;
+  content: ""; }
+.header__top:before {
+  clear: both; }
+
+.header__logo {
+  width: 488px;
+  padding-top: 0;
+  position: relative;
+  top: 0; }
+
+.logo {
+  display: inline-block; }
+
+.header__menu {
+  width: 487px; }
+
+.menu {
+  text-align: justify;
+  padding-left: 38px; }
+  .menu:after {
+    content: "";
+    display: inline-block;
+    width: 100%;
+    height: 0; }
+
+.menu__item {
+  display: inline-block;
+  padding-top: 3px;
+  margin-right: 2px; }
+
+.menu__link {
+  display: block; }
+
+.menu__link-text {
+  font-family: "asapregular", serif;
+  font-size: 17px;
+  color: #999;
+  text-transform: uppercase; }
+
+.header__social {
+  width: 165px; }
+
+.social {
+  display: inline-block;
+  float: right;
+  padding-left: 15px; }
+
+.social div {
+  height: 21px;
+  width: 21px; }
+
+.social__facebook {
+  background-image: url("../img/facebook.png"); }
+
+.social__twitter {
+  background-image: url("../img/twitter.png"); }
+
+.social__googleplus {
+  background-image: url("../img/google.png"); }
+
+.social__youtube {
+  background-image: url("../img/youtube.png"); }
+
+.header__bottom {
+  height: 663px;
+  padding-top: 120px;
+  background: url("../img/iphone.png") no-repeat -10px 115px;
+  overflow: hidden; }
+
+.header__slider, .header__hero {
+  float: left; }
+
+.header__slider {
+  width: 360px;
+  height: 543px; }
+
+.header__hero {
+  width: 780px;
+  height: 543px; }
+
+.header__hero-title {
+  height: 184px; }
+
+.hero-title {
+  font-weight: 300;
+  color: #003399;
+  font-size: 47px;
+  padding-left: 30px;
+  margin-top: -5px;
+  display: inline-block;
+  line-height: 58px;
+  word-spacing: 0;
+  letter-spacing: 0.0045em; }
+
+.hero-title__marked {
+  color: #99cc33;
+  word-spacing: 0.03em; }
+
+.hero-text__leftblock {
+  float: left;
+  width: 75%;
+  padding-left: 30px; }
+
+.hero-text__rightblock {
+  float: right;
+  width: 25%; }
+
+.hero-text__leftblock span {
+  margin-top: 4px;
+  color: #666;
+  font-size: 18px;
+  width: 410px;
+  display: block;
+  line-height: 31px; }
+
+.hero-text__leftblock button {
+  color: #fff;
+  background-color: #ff6633;
+  font-family: "museosansbold", Arial, serif;
+  font-weight: bold;
+  font-size: 22px;
+  border: none;
+  border-bottom: 3px solid transparent;
+  padding: 16px 34px 17px 39px;
+  text-transform: uppercase;
+  margin-top: 30px;
+  letter-spacing: -0.0055em;
+  outline: 0;
+  border-radius: 2px; }
+  .hero-text__leftblock button:active, .hero-text__leftblock button:focus {
+    border-bottom: 3px solid #cc6633;
+    outline: 0; }
+
+.hero-text__circle {
+  color: #ffffff;
+  font-family: "museosansbold", Arial, serif;
+  font-weight: bold;
+  font-size: 18px;
+  background-color: #ff6633;
+  border-radius: 50%;
+  height: 162px;
+  width: 162px;
+  border: 4px solid #cc6633;
+  margin-left: 33px;
+  margin-top: -3px; }
+
+.hero-text__circle span {
+  display: inline-block;
+  padding-top: 38px;
+  line-height: 25px;
+  text-align: center; }
+
+.header__hero-clients {
+  clear: both;
+  padding-left: 28px;
+  padding-top: 28px;
+  height: 140px; }
+
+.hero-clients__title {
+  color: #999;
+  font-size: 18px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding-bottom: 28px; }
+
+.hero-clients__content {
+  height: 65px; }
+
+.hero-clients__img {
+  display: inline-block;
+  height: 45px;
+  width: 108px;
+  float: left; }
+
+.hero-clients__img:last-of-type {
+  padding-right: 0; }
+
+.dior {
+  background: url("../img/dior.png") no-repeat; }
+
+.dyson {
+  background: url("../img/dyson.png") no-repeat 0 8px; }
+
+.boyer {
+  background: url("../img/boyer.png") no-repeat 3px 8px; }
+
+.swatch {
+  background: url("../img/swatch.png") no-repeat 0 10px;
+  width: 140px; }
+
+.obuv {
+  background: url("../img/obuv.png") no-repeat 21px 0;
+  height: 60px;
+  width: 88px; }
+
+.sportland {
+  background: url("../img/sportland.png") no-repeat 0 12px;
+  width: 194px; }
+
+.slider__wrapper {
+  height: 462px;
+  margin: 0 auto;
+  position: relative;
+  margin-top: 83px; }
+
+.slider__wrapper input {
+  display: none; }
+
+#slides {
+  position: relative;
+  height: 420px;
+  padding-left: 20px; }
+
+#slides__overflow {
+  overflow: hidden;
+  width: 300px;
+  display: inline-block;
+  height: 100%; }
+
+.slides__inner {
+  width: 300%;
+  height: 100%; }
+
+.slides__inner:after {
+  content: "";
+  display: block;
+  height: 0;
+  clear: both; }
+
+.slides__page {
+  float: left;
+  width: 280px;
+  height: 100%;
+  display: inline-block;
+  position: relative;
+  box-sizing: border-box;
+  margin-right: 20px;
+  z-index: 100;
+  background-color: #fff; }
+
+#slide1:checked ~ #slides .slides__inner {
+  margin-left: 0; }
+
+#slide2:checked ~ #slides .slides__inner {
+  margin-left: -300px; }
+
+#slide3:checked ~ #slides .slides__inner {
+  margin-left: -600px; }
+
+.page__header {
+  height: 60px;
+  background-color: #003399;
+  background-image: url("../img/iphone-header.png");
+  background-position: 2px 1px;
+  background-repeat: no-repeat;
+  padding-top: 26px; }
+
+.page__header-text {
+  font-weight: 500;
+  font-size: 18px;
+  color: #ffffff;
+  margin-left: 76px;
+  word-spacing: 0.11em; }
+
+.page__content-first {
+  height: 65px;
+  padding-left: 58px;
+  padding-right: 18px;
+  margin-top: 24px;
+  word-spacing: 0.07em;
+  line-height: 20px;
+  border-bottom: 1px solid #ccc; }
+
+#page1 .content-first {
+  font-weight: 500;
+  font-size: 14px;
+  position: relative; }
+
+#page1 .content-first:before {
+  content: url("../img/ok.png");
+  position: absolute;
+  left: -41px;
+  top: 7px; }
+
+.page__content-second {
+  margin-bottom: 64px; }
+
+.content-second__aim {
+  background-color: #ccc;
+  margin-top: 20px;
+  margin-left: 18px;
+  margin-right: 20px;
+  padding-left: 15px;
+  padding-top: 18px;
+  font-weight: 500;
+  font-size: 16px;
+  color: #333333;
+  height: 50px;
+  width: 239px;
+  position: relative;
+  word-spacing: 0.1em;
+  margin-bottom: 15px; }
+
+.content-second__aim:after {
+  content: "";
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 7px 7px 0 7px;
+  border-color: #ccc transparent transparent transparent;
+  position: absolute;
+  bottom: -7px;
+  left: 13px; }
+
+.content-second__img {
+  border-radius: 50%;
+  display: inline-block;
+  overflow: hidden;
+  margin-top: 2px;
+  margin-left: 18px;
+  height: 50px;
+  width: 50px; }
+
+.content-second__text {
+  display: inline-block;
+  margin-left: 12px; }
+
+.content-second__top {
+  display: block;
+  font-weight: 500;
+  font-size: 18px; }
+
+.content-second__bottom {
+  display: block;
+  color: #999;
+  font-size: 12px;
+  margin-top: 12px;
+  position: relative;
+  bottom: 9px; }
+
+.slide-btn {
+  font-family: "museosansbold", Arial, serif;
+  font-weight: bold;
+  color: #ff6633;
+  background-color: #ffffff;
+  font-size: 16px;
+  text-transform: uppercase;
+  outline: 0;
+  border: 1px solid #ccc;
+  border-radius: 3px;
+  padding: 16px 70px 10px;
+  margin-left: 18px; }
+
+#page2 .page__content-first,
+#page3 .page__content-first {
+  height: 55px;
+  padding-left: 49px;
+  padding-right: 18px;
+  margin-top: 12px;
+  word-spacing: 0.07em;
+  line-height: 20px;
+  border-bottom: 1px solid #ccc; }
+
+#page2 .content-first,
+#page3 .content-first {
+  font-weight: 500;
+  font-size: 12px;
+  position: relative; }
+
+#controls label {
+  background: url("../img/back.png") no-repeat;
+  cursor: pointer;
+  position: relative;
+  height: 20px;
+  width: 15px;
+  top: -335px;
+  left: 40px;
+  z-index: 100;
+  display: none; }
+
+#slide2:checked ~ #controls label:nth-child(1),
+#slide3:checked ~ #controls label:nth-child(2) {
+  /*╤Б╤В╤А╨╡╨╗╨║╨░ ╤Б╨╗╨╡╨▓╨░ */
+  display: block; }
+
+.page__content-diagram {
+  height: 210px; }
+
+.diagram {
+  border-radius: 50%;
+  border: 2px solid #99cc33;
+  height: 110px;
+  width: 110px;
+  margin-top: 20px;
+  margin-left: 86px;
+  position: relative;
+  overflow: hidden; }
+
+.diagram:before {
+  content: "";
+  width: 80px;
+  height: 0;
+  border-top: 70px solid transparent;
+  border-left: 70px solid #99cc33;
+  border-bottom: 310px solid transparent;
+  left: -103px;
+  top: -47px;
+  position: absolute;
+  transform: rotate(45deg); }
+
+.diagram-title {
+  margin-top: 21px;
+  font-size: 14px;
+  font-family: "museosansbold", Arial, serif;
+  font-weight: bold;
+  margin-left: 37px;
+  margin-right: 40px;
+  text-align: center;
+  letter-spacing: -0.05em;
+  line-height: 20px; }
+
+#page2 .slide-btn {
+  padding-left: 83px;
+  padding-right: 80px; }
+
+.page__content-range {
+  margin-top: 11px;
+  margin-left: 20px; }
+
+.content-range__title {
+  margin-top: 6px;
+  font-family: "museosansbold", Arial, serif;
+  font-weight: bold; }
+
+.content-range__bar {
+  margin-top: 5px;
+  margin-left: -2px;
+  width: 239px;
+  height: 20px;
+  border: 1px solid #ccc;
+  border-radius: 2px; }
+
+.range-bar__inner {
+  height: 20px;
+  opacity: 0.7;
+  margin-top: -1px;
+  margin-left: -1px; }
+
+.content-range__bar-first div {
+  width: 50px;
+  background-color: #ff6633; }
+
+.content-range__bar-second div {
+  width: 168px;
+  background-color: #ffcc33; }
+
+.content-range__bar-third div {
+  width: 207px;
+  background-color: #ed1c24; }
+
+.content-range__bar-fourth div {
+  width: 96px;
+  background-color: #ff6633; }
+
+#page3 .slide-btn {
+  margin-top: 24px;
+  padding-left: 72px;
+  padding-bottom: 16px;
+  background-color: #ff6633;
+  color: #ffffff; }
+
+#page3 .slide-btn:focus {
+  border-bottom: 3px solid #cc6633;
+  padding-bottom: 13px; }
+
+#bottom-controls {
+  position: absolute;
+  bottom: -2px;
+  z-index: 100;
+  left: 72px;
+  background-color: #fff;
+  height: 40px;
+  width: 160px;
+  padding-left: 55px; }
+
+#bottom-controls label {
+  background-color: #ccc;
+  height: 10px;
+  width: 10px;
+  border-radius: 50%;
+  margin-left: 7px;
+  display: inline-block;
+  z-index: 100;
+  cursor: pointer; }
+
+#slide1:checked ~ #bottom-controls label:nth-child(1),
+#slide2:checked ~ #bottom-controls label:nth-child(2),
+#slide3:checked ~ #bottom-controls label:nth-child(3) {
+  background-color: #ff6633; }
+
+.second-monitor {
+  height: 955px;
+  background: url("../img/background2.png") no-repeat -216px 0; }
+
+.services {
+  background: url("../img/services-bg.png") no-repeat;
+  margin-top: -84px;
+  padding-top: 100px; }
+
+.services__wrapper {
+  display: inline-block;
+  border-left: 2px solid #cccccc;
+  margin-left: 36px;
+  margin-top: 7px; }
+
+.services__first-block {
+  display: block; }
+
+.services__leftbar {
+  display: inline-block; }
+
+.services__leftbar {
+  width: 105px;
+  position: relative; }
+
+.leftbar__date {
+  border-radius: 50%;
+  border: 2px solid #cccccc;
+  height: 80px;
+  width: 80px;
+  z-index: 100px;
+  background: url("../img/services-bg.png") no-repeat;
+  display: inline-block;
+  text-align: center;
+  font-weight: 500;
+  font-size: 38px;
+  color: #003399;
+  padding-top: 29px;
+  margin-left: -39px; }
+
+.leftbar__month {
+  border: 2px solid #cccccc;
+  z-index: 100px;
+  background: url("../img/services-bg.png") no-repeat;
+  height: 28px;
+  width: 58px;
+  margin-top: 15px;
+  margin-left: -29px;
+  padding-left: 10px;
+  color: #003399;
+  font-family: "museosansbold", Arial, serif;
+  font-weight: bold; }
+
+.services__fourth-block .leftbar__month,
+.services__last-block .leftbar__month {
+  width: 75px;
+  margin-left: -36px; }
+
+.first-block__request,
+.second-block__prior,
+.third-block__decomposition,
+.fourth-block__plan,
+.last-block {
+  margin-left: 155px;
+  float: right;
+  margin-top: -132px; }
+
+.request__title,
+.prior__title,
+.decomposition__title,
+.last-block__title,
+.plan__title {
+  font-size: 32px;
+  margin-right: 24px;
+  color: #003399;
+  line-height: 45px;
+  display: block; }
+
+.request__title span,
+.prior__title span,
+.decomposition__title span,
+.plan__title span,
+.last-block__title span {
+  color: #99cc33; }
+
+.request__text,
+.prior__text,
+.decomposition__text-title,
+.plan__text-title,
+.last-block__text-title {
+  color: #666666;
+  font-size: 16px;
+  margin-top: 23px;
+  padding-left: 1px; }
+
+.request__text span {
+  color: #ff6633; }
+
+.first-block__bottom {
+  margin-top: 37px;
+  margin-left: 155px;
+  background-color: #003399;
+  color: #ffffff;
+  height: 200px;
+  width: 940px;
+  padding-top: 42px;
+  padding-left: 35px; }
+
+.firts-block__bottom-title {
+  font-size: 26px;
+  font-weight: 500;
+  margin-bottom: 26px;
+  word-spacing: 0.1em; }
+
+.firts-block__bottom-title span {
+  color: #99cc33; }
+
+.first-block__form {
+  padding-left: 6px; }
+
+.first-block__form-input {
+  width: 222px;
+  height: 66px;
+  border-radius: 3px;
+  border: 1px solid #003399;
+  margin-right: 15px; }
+
+.first-block__form-input::-webkit-input-placeholder {
+  font-family: "pacificoregular", Arial, sans-serif;
+  color: #999;
+  font-size: 18px;
+  padding-left: 14px; }
+
+.first-block__form-submit {
+  margin-top: 2px;
+  width: 380px;
+  height: 66px;
+  background-color: #99cc33;
+  color: #ffffff;
+  font-size: 22px;
+  font-family: "museosansbold", Arial, serif;
+  font-weight: bold;
+  border: none;
+  outline: 0;
+  border-radius: 3px;
+  text-transform: uppercase;
+  cursor: pointer; }
+  .first-block__form-submit:focus, .first-block__form-submit:hover {
+    transition: ease-in-out 0.25s;
+    opacity: 0.7; }
+
+.services__second-block {
+  margin-top: 84px;
+  margin-bottom: 88px; }
+
+.third-block__decomposition {
+  margin-bottom: 83px; }
+
+.decomposition__text-title {
+  margin-bottom: 12px; }
+
+.decomposition__text-title,
+.advantages,
+.plan__text-title,
+.last-block__text-title {
+  display: block; }
+
+.advantages {
+  font-weight: 500;
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 12px;
+  position: relative;
+  word-spacing: 0.05em; }
+
+.advantages:before {
+  content: url("../img/ok.png");
+  position: relative;
+  top: 5px;
+  left: -12px; }
+
+.services__fourth-block .leftbar__month {
+  padding-top: 4px; }
+
+.fourth-block__plan {
+  margin-top: -130px; }
+
+.services__fourth-block .leftbar__month {
+  margin-top: 18px; }
+
+.plan__text-title {
+  margin-bottom: 10px; }
+
+.services__fourth-block .plan__text {
+  margin-bottom: 93px; }
+
+.services__last-block .leftbar__date {
+  padding-top: 32px; }
+
+.services__last-block .leftbar__month {
+  padding-top: 5px;
+  margin-top: 18px; }
+
+.last-block {
+  margin-top: -4px;
+  margin-left: 53px; }
+
+.last-block__title {
+  width: 750px; }
+
+.services__last-block,
+.services__fourth-block {
+  display: inline-block; }
+
+.last-block__text-title {
+  margin-bottom: 10px; }
+
+.last-block__text-bottom {
+  color: #666666;
+  font-size: 16px;
+  margin-top: 30px;
+  margin-bottom: 37px; }
+
+.services__btn {
+  font-family: "museosansbold", Arial, serif;
+  font-weight: bold;
+  font-size: 22px;
+  color: #ffffff;
+  background-color: #ff6633;
+  outline: 0;
+  border: none;
+  text-transform: uppercase;
+  padding: 22px 57px 15px 55px;
+  border-radius: 3px;
+  margin-bottom: 15px; }
+  .services__btn:focus {
+    border-bottom: 3px solid #cc6633;
+    padding-bottom: 12px; }
+
+.services__btn-description {
+  color: #666666;
+  margin-bottom: 62px;
+  margin-left: 12px; }
+
+.leftbar__cover {
+  height: 358px;
+  position: absolute;
+  background: url("../img/services-bg.png") no-repeat;
+  width: 30px;
+  margin-left: -15px; }
+
+/*# sourceMappingURL=main.css.map */

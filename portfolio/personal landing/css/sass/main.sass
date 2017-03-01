@@ -1,0 +1,58 @@
+@import "bourbon/bourbon"
+
+body
+	font-family: "Raleway", sans-serif
+	font-weight: normal
+	font-size: 14px
+	min-width: 320px
+	position: relative
+	line-height: 1.42857
+	-webkit-font-smoothing: antialised
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+	color: red
+body input:required:valid,
+body textarea:required:valid
+	color: green
+
+
+
+header,
+section
+	position: relative
+
+.main_head
+	min-height: 620px
+	z-index: -1
+	padding-top: 20px
+
+.loader
+	background: none repeat scroll 0 0 #ffffff
+	bottom: 0
+	height: 100%
+	left: 0
+	position: fixed
+	right: 0
+	top: 0
+	width: 100%
+	z-index: 9999
+
+.loader .loader_inner
+	background-image: url("../../img/preloader.gif")
+	background-size: cover
+	background-repeat: no-repeat
+	background-position: center center
+	background-color: #fff
+	height: 260px
+	width: 360px
+	margin-top: -30px
+	margin-left: -30px
+	left: 35%
+	top: 40%
+	position: absolute
+	outline: red
+
+.logo_container
+	float: left
+

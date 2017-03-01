@@ -1,0 +1,1068 @@
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+
+html {
+    color: #222;
+    font-size: 1em;
+    line-height: 1.4;
+}
+
+/*
+ * Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+
+::selection {
+    background: #b3d4fc;
+    text-shadow: none;
+}
+
+/*
+ * A better looking default horizontal rule
+ */
+
+hr {
+    display: block;
+    height: 1px;
+    border: 0;
+    border-top: 1px solid #ccc;
+    margin: 1em 0;
+    padding: 0;
+}
+
+/*
+ * Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+    vertical-align: middle;
+}
+
+/*
+ * Remove default fieldset styles.
+ */
+
+fieldset {
+    border: 0;
+    margin: 0;
+    padding: 0;
+}
+
+/*
+ * Allow only vertical resizing of textareas.
+ */
+
+textarea {
+    resize: vertical;
+}
+
+/* ==========================================================================
+   Browser Upgrade Prompt
+   ========================================================================== */
+
+.browserupgrade {
+    margin: 0.2em 0;
+    background: #ccc;
+    color: #000;
+    padding: 0.2em 0;
+}
+
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+.container {
+    margin: 0 auto;
+    max-width: 1350px;
+    height: 100vh;
+    width: 100vw;
+    background-color: lightgray;
+    position: relative;
+    background-image: url("../img/vk-bg.png");
+    background-size: cover;
+}
+
+.container a {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+#add-custom-modal{
+    background-color: rgba(0,0,0, .5);
+    left:0;
+    right:0;
+    top:0;
+    bottom:0;
+    position: absolute;
+    z-index: 9;
+    display: none;
+    pointer-events: none;
+    overflow: auto;
+    width: 100%;
+}
+
+#add-custom-modal:target{
+    display: block;
+    pointer-events: auto;
+}
+
+.modal-window {
+    background: #fff;
+    width: auto;
+    max-width: 70%;
+    margin: 55px auto 0;
+    text-align: center;
+    height: 600px;
+}
+
+
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+
+
+#video-controls {
+    background-color: transparent;
+    height: 40px;
+    bottom: 0;
+    width: 760px;
+    position: absolute;
+    display: none;
+}
+
+#video_player {
+    display: flex;
+    background: #000;
+    text-align: center;
+    position: relative;
+    width: 100%;
+    max-height: 570px;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    z-index: 1000;
+}
+
+.video_screen_wrapper {
+    width: 70%;
+    overflow: hidden;
+    z-index: 1000;
+    height: auto;
+}
+
+#video_player video {
+    width: 100%;
+    height: auto;
+    max-height: 100%;
+    z-index: 1;
+    background-size: cover;
+    position: relative;
+    top: -2px;
+
+}
+
+#video_player video:after {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: #000;
+    opacity: 0;
+}
+
+
+#video_player video,
+#video_player figcaption {
+    display: block;
+    vertical-align: top;
+}
+#video_player figcaption {
+    width: 30%;
+    z-index: 200;
+    position: absolute;
+    right: 0;
+    background-color: #1e1e1e;
+    overflow: hidden;
+    height: 100%;
+}
+#video_player figcaption a,
+#video_player figcaption .video_playlist_title,
+.video_other-playlist a{
+    display: flex;
+    text-decoration: none;
+    color: #fff;
+    border: 5px solid transparent;
+    border-left-width: 10px;
+    position: relative;
+   /* opacity: .5;
+    transition: 1s opacity; */
+}
+
+#video_player figcaption a:hover{
+    background-color: rgba(250,250,250,0.1);
+}
+
+.video_img_wrapper,
+.video_img_description{
+    flex: 1;
+}
+
+#video_player figcaption a img
+ {
+    width: 100%;
+    height: 100%;
+}
+#video_player figcaption a:hover {
+    opacity: 1;
+}
+
+.video_name {
+    padding-left: 10px;
+    width: 100%;
+    float: left;
+    text-align: left;
+}
+
+.video_views {
+    padding-left: 10px;
+    width: 100%;
+    float: left;
+    text-align: left;
+    color: rgba(250,250,250,0.4);
+}
+
+
+.video_length {
+    position: absolute;
+    bottom: 4px;
+    left: 37%;
+    background-color: rgba(0,0,0,0.5);
+}
+
+.video_description {
+    display: inline-block;
+    width: 100%;
+    height: 50%;
+    position: relative;
+}
+
+.video_description_main {
+    display: inline-block;
+    width: 70%;
+    height: 100%;
+    position: relative;
+    padding-top: 20px;
+}
+
+.video_description_title {
+    font-size: 20px;
+    line-height: 23px;
+    color: #000;
+    width: 70%;
+    height: 46px;
+    max-height: 46px;
+    text-align: left;
+    padding-left: 20px;
+}
+
+.video_description_views {
+    position: absolute;
+    top: 20px;
+    left: 70%;
+    font-size: 17px;
+    line-height: 23px;
+    color: #939393;
+    width: 30%;
+}
+
+.video_other-playlist {
+    width: 30%;
+    margin-left:-1px;
+    z-index: 200;
+    background-color: #fff;
+    overflow-y: auto;
+    overflow-x: hidden;
+    height: 100%;
+    position: relative;
+    float: right;
+    border-left: 1px solid lightgrey;
+}
+
+.video_other-playlist span {
+    float: left;
+}
+
+.video_other-playlist a {
+    clear: both;
+}
+
+.video_other-playlist span{
+    display: flex;
+    text-decoration: none;
+    color: #000;
+    border-left-width: 10px;
+    position: relative;
+}
+
+.video_other-playlist .video_img_wrapper,
+.video_other-playlist .video_name{
+    text-align: left;
+}
+
+.video_other-playlist a img {
+    width: 95%;
+    height: 100%;
+}
+
+.video_other-playlist .video_name {
+    width: 100%;
+    float: left;
+    text-align: left;
+    display: inline-block;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.video_other-playlist .video_views {
+    width: 100%;
+    float: left;
+    text-align: left;
+    color: #656565;
+    margin-left: 0;
+    padding-left: 0;
+}
+
+.video_other-playlist .video_length {
+    position: absolute;
+    bottom: 0;
+    left: 30%;
+    color: #fff;
+    background-color: rgba(0,0,0,0.5);
+    display: block;
+}
+
+.video_other-playlist .video_img_description {
+    padding-left:0;
+    margin-left: 0;
+}
+
+.my-like {
+    background-color: #6888AD;
+    color: #fff;
+    padding: 7px 16px 8px 16px;
+    display: inline-block;
+    float: left;
+    margin-left: 20px;
+    border:none;
+    border-radius: 2px;
+}
+
+.my-like div {
+    display: inline-block;
+}
+
+.like-icon {
+    /* background: url("../img/common.png") 0 -190px; */
+    background: url("../img/video_actions.png") 0 0;
+    height: 10px;
+    width: 13px;
+}
+
+.my-like:active {
+    background-color: rgba(104,136,173,0.9);
+    border:none;
+}
+
+.share {
+    background-color: #fff;
+    color: #6888AD;
+    padding: 7px 16px 8px 16px;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    border:none;
+    border-radius: 2px;
+}
+
+.share div {
+    display: inline-block;
+}
+
+.share-icon {
+    /* background: url("../img/common.png") 0 -190px; */
+    background: url("../img/video_actions.png") -1px -42px;
+    height: 15px;
+    width: 15px;
+    position: relative;
+}
+
+.share:active,
+.share:hover{
+    background-color: rgba(104,136,173,0.1);
+    border:none;
+}
+
+.share-title {
+    position: relative;
+    bottom: 2px;
+}
+
+.add {
+    background-color: #fff;
+    color: #6888AD;
+    padding: 7px 16px 8px 16px;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    border:none;
+    border-radius: 2px;
+}
+
+.add div {
+    display: inline-block;
+}
+
+.add-icon {
+    /* background: url("../img/common.png") 0 -190px; */
+    background: url("../img/video_actions.png") 0 -27px;
+    height: 15px;
+    width: 15px;
+    position: relative;
+}
+
+.add:active,
+.add:hover{
+    background-color: rgba(104,136,173,0.1);
+    border:none;
+}
+
+.add-title {
+    position: relative;
+    bottom: 2px;
+}
+
+
+.other-playist_title {
+    padding-left: 10px;
+    padding-top: 20px;
+}
+
+
+/* Dropdown Button */
+
+.dropbtn {
+    background-color: #fff;
+    color: #6888AD;
+    padding: 7px 56px 8px 36px;
+    display: inline-block;
+    float: left;
+    margin-left: 10px;
+    border:none;
+    border-radius: 2px;
+    width: 100%;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+    position: relative;
+    display: inline-block;
+    bottom:-2px;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+    font-size: 15px;
+    line-height: 15px;
+    display: none;
+    position: absolute;
+    left:-5px;
+    top: 30px;
+    background-color: #fff;
+    color: #6888AD;
+    padding: 7px 16px 8px 16px;
+    width: 100%;
+    margin-top:0;
+
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+    color: #6888AD;
+    text-decoration: none;
+    display: block;
+    margin-bottom: 10px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+    background-color: rgba(104,136,173,0.3);
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+    background-color: rgba(104,136,173,0.1);
+}
+
+.video_description_icons {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 15px;
+}
+
+.mv_author_block, .mv_actions_block {
+    margin: 0 0 15px;
+    border-bottom: 1px solid lightgray;
+    display: block;
+    height: 50px;
+    padding-left: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.scroll_fix_wrap {
+    text-align: left;
+    direction: ltr;
+}
+
+.mv_author_photo_wrap {
+    display: block;
+    height: 50px;
+    width: 50px;
+}
+
+.mv_author_photo {
+    position: relative;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    -moz-force-broken-image-icon: 0;
+    background-color: #fafbfc;
+}
+
+.fl_l {
+    float: left;
+}
+
+.mv_author_block a {
+    color: #2a5885;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.mv_author_info {
+    margin: 9px 0 0 12px;
+}
+
+
+.mv_author_name {
+    line-height: 1.25em;
+    font-weight: 700;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.mv_info_date {
+    margin-top: 4px;
+    font-size: 12.5px;
+    color: #939393;
+}
+
+.wall_module .reply_form {
+    zoom: 1;
+    position: relative;
+    background-color: #fff;
+}
+
+.mv_comments_block {
+    line-height: 1.231;
+}
+
+input[type="hidden" ], input[type="image" ], input[type="file" ] {
+    -webkit-appearance: initial;
+    background-color: initial;
+    padding: initial;
+    border: initial;
+}
+input[type="hidden" ] {
+    display: none;
+}
+
+input {
+    -webkit-appearance: textfield;
+    background-color: white;
+    -webkit-rtl-ordering: logical;
+    user-select: text;
+    cursor: auto;
+    padding: 1px;
+    border-width: 2px;
+    border-style: inset;
+    border-color: initial;
+    border-image: initial;
+}
+input, textarea, keygen, select, button {
+    text-rendering: auto;
+    color: initial;
+    letter-spacing: normal;
+    word-spacing: normal;
+    text-transform: none;
+    text-indent: 0px;
+    text-shadow: none;
+    display: inline-block;
+    text-align: start;
+    margin: 0em 0em 0em 0em;
+    font: 13.3333px Arial;
+}
+
+input, textarea, keygen, select, button, meter, progress {
+    -webkit-writing-mode: horizontal-tb;
+}
+
+.post_field_group, .post_field_user {
+    float: left;
+    position: relative;
+}
+
+.post_field_user_link {
+    display: block;
+    height: 28px;
+}
+
+.reply_form a {
+    color: #2a5885;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.reply_field_wrap {
+    margin-left: 48px;
+    position: relative;
+}
+
+.submit_post_box .emoji_smile_wrap {
+    top: 11px;
+    right: 16px;
+}
+
+.emoji_smile_wrap {
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.emoji_smile_wrap .emoji_smile {
+    position: relative;
+}
+
+.submit_post_box .emoji_smile {
+    display: none;
+}
+
+.emoji_smile {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    right: 0;
+    opacity: 0.7;
+    filter: alpha(opacity=70);
+    z-index: 4;
+    -webkit-transform: translateZ(0);
+    transform: translateZ(0);
+    -o-transition: opacity 200ms ease-in-out;
+    transition: opacity 200ms ease-in-out;
+}
+
+.reply_box div.submit_post_field, .reply_box div.submit_post_field[contenteditable=true], .reply_box div.submit_post_field[contenteditable=true]~.placeholder .ph_input, .reply_box div.submit_post_field~.placeholder .ph_input {
+    padding-left: 16px;
+}
+
+div.submit_post_field, div.submit_post_field[contenteditable=true], div.submit_post_field[contenteditable=true]~.placeholder .ph_input, div.submit_post_field~.placeholder .ph_input {
+    vertical-align: top;
+    overflow: hidden;
+    width: 100%;
+    min-height: 48px;
+    max-height: 48px;
+    padding: 14px 20px 16px 12px;
+    border: 0;
+    border-radius: 2px;
+    line-height: 1.462;
+    word-wrap: break-word;
+    resize: none;
+}
+
+.fakeinput.dark, .fakeinput.dark~.placeholder .ph_input, div[contenteditable=true], div[contenteditable=true]~.placeholder .ph_input, input.dark, input.dark~.placeholder .ph_input, textarea.dark, textarea.dark~.placeholder .ph_input {
+    padding: 5px 9px 7px;
+    border-radius: 1px;
+    box-sizing: border-box;
+}
+
+.fakeinput, .fakeinput~.placeholder .ph_input, div[contenteditable=true], div[contenteditable=true]~.placeholder .ph_input, input.big_text, input.big_text~.placeholder .ph_input, input.dark, input.dark~.placeholder .ph_input, input.search, input.search~.placeholder .ph_input, input.text, input.text~.placeholder .ph_input, textarea, textarea~.placeholder .ph_input {
+    color: #000;
+    padding: 3px 5px;
+    margin: 0;
+    border: 1px solid #d3d9de;
+}
+
+.fakeinput, div[contenteditable=true], input.big_text, input.dark, input.search, input.text, textarea {
+    background: #fff;
+    -webkit-appearance: none;
+    border-radius: 0;
+}
+
+.fakeinput, div[contenteditable=true], input.big_text, input.file, input.search, input.text, input[type=button], input[type=password], input[type=search], input[type=submit], input[type=text], input[type~=email], input[type~=password], input[type~=search], input[type~=text], textarea {
+    font-size: 13px;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+    outline: none;
+    box-shadow: none;
+}
+div[Attributes Style] {
+    -webkit-user-modify: read-write;
+    word-wrap: break-word;
+    -webkit-line-break: after-white-space;
+}
+
+.placeholder {
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    position: relative;
+    top: -50px;
+    left: -30%;
+    z-index: 3;
+    cursor: text;
+    pointer-events: none;
+}
+
+.submit_post {
+    display: none;
+    background: #fafbfc;
+    border-top: 1px solid #e7e8ec;
+    padding: 15px 20px;
+    border-radius: 0 0 2px 2px;
+}
+
+.wall_module .reply_box .reply_warn {
+    padding-top: 0;
+    padding-bottom: 15px;
+}
+
+.wall_module .reply_warn {
+    padding: 0 0 7px;
+}
+
+div.media_preview:empty {
+    padding: 0;
+}
+
+div.media_preview {
+    padding: 0 0 10px;
+    display: none;
+}
+
+.submit_post .addpost_button_wrap, .submit_post .addpost_opt, .submit_post .addpost_popt {
+    float: right;
+}
+
+.submit_post .addpost_button_wrap {
+    position: relative;
+}
+
+.button_blue button, .button_gray button, .button_light_gray button, .flat_button {
+    padding: 7px 16px 8px;
+    margin: 0;
+    font-size: 12.5px;
+    display: inline-block;
+    zoom: 1;
+    cursor: pointer;
+    white-space: nowrap;
+    outline: none;
+    font-family: -apple-system,BlinkMacSystemFont,Roboto,Open Sans,Helvetica Neue,sans-serif;
+    vertical-align: top;
+    line-height: 15px;
+    text-align: center;
+    text-decoration: none;
+    background: none;
+    background-color: #5e81a8;
+    color: #fff;
+    border: 0;
+    border-radius: 2px;
+    box-sizing: border-box;
+}
+
+.mv_reply_cancel_button {
+    margin-right: 10px;
+}
+
+.button_gray button, .flat_button.secondary {
+    background-color: #e5ebf1;
+    color: #55677d;
+}
+
+.button_cancel {
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    color: #2a5885;
+}
+
+.post_field_user_image {
+    width: 28px;
+    height: 28px;
+    border-radius: 50%;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    transition: -webkit-transform 0.3s ease;
+    -o-transition: transform 0.3s ease, -o-transform 0.3s ease;
+    transition: transform 0.3s ease;
+    transition: transform 0.3s ease, -webkit-transform 0.3s ease, -o-transform 0.3s ease;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.reply_box .post_field_user_image, .reply_fakebox_wrap .post_field_user_image {
+    left: 20px;
+}
+
+.as_group .post_field_group .post_field_user_image, .post_field_user .post_field_user_image {
+    -webkit-transform: rotateY(0deg);
+    transform: rotateY(0deg);
+    z-index: 1;
+}
+
+.reply_box div.submit_post_field:focus~.placeholder .ph_content, .reply_box div.submit_post_field[contenteditable=true]:focus~.placeholder .ph_content {
+    opacity: 0;
+    filter: alpha(opacity=0);
+}
+
+.reply_box div.submit_post_field[contenteditable=true]~.placeholder .ph_content, .reply_box div.submit_post_field~.placeholder .ph_content {
+    -o-transition: opacity 0.1s ease;
+    transition: opacity 0.1s ease;
+}
+
+div.submit_post_field[contenteditable=true]~.placeholder .ph_content, div.submit_post_field~.placeholder .ph_content {
+    padding: 0;
+}
+
+.fakeinput:focus~.placeholder .ph_content, div[contenteditable=true]:focus~.placeholder .ph_content, input.big_text:focus~.placeholder .ph_content, input.dark:focus~.placeholder .ph_content, input.search:focus~.placeholder .ph_content, input.text:focus~.placeholder .ph_content, textarea:focus~.placeholder .ph_content {
+    color: #b8b9bb;
+}
+
+.fakeinput~.placeholder .ph_content, div[contenteditable=true]~.placeholder .ph_content, input.big_text~.placeholder .ph_content, input.dark~.placeholder .ph_content, input.search~.placeholder .ph_content, input.text~.placeholder .ph_content, textarea~.placeholder .ph_content {
+    color: #828282;
+    -o-transition: color 0.2s ease;
+    transition: color 0.2s ease;
+    padding: 1px;
+    opacity: 1;
+    -webkit-filter: none;
+    filter: none;
+}
+
+.mCS-my-theme.mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar{
+    background-color: #3d3d3d;
+    border-radius: 1px;
+}
+
+
+/* ==========================================================================
+       Helper classes
+       ========================================================================== */
+
+/*
+ * Hide visually and from screen readers
+ */
+
+.hidden {
+    display: none !important;
+}
+
+/*
+ * Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+
+.visuallyhidden {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+}
+
+/*
+ * Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static;
+    width: auto;
+}
+
+/*
+ * Hide visually and from screen readers, but maintain layout
+ */
+
+.invisible {
+    visibility: hidden;
+}
+
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+
+.clearfix:before,
+.clearfix:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+
+@media only screen and (min-width: 35em) {
+    /* Style adjustments for viewports that meet the condition */
+}
+
+@media print,
+       (min-resolution: 1.25dppx),
+       (min-resolution: 120dpi) {
+    /* Style adjustments for high resolution devices */
+}
+
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid the additional HTTP request:
+   http://www.phpied.com/delay-loading-your-print-css/
+   ========================================================================== */
+
+@media print {
+    *,
+    *:before,
+    *:after,
+    *:first-letter,
+    *:first-line {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster:
+                                   http://www.sanbeiji.com/archives/953 */
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    a[href]:after {
+        content: " (" attr(href) ")";
+    }
+
+    abbr[title]:after {
+        content: " (" attr(title) ")";
+    }
+
+    /*
+     * Don't show links that are fragment identifiers,
+     * or use the `javascript:` pseudo protocol
+     */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre,
+    blockquote {
+        border: 1px solid #999;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    img {
+        max-width: 100% !important;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        page-break-after: avoid;
+    }
+}

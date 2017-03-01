@@ -1,0 +1,23 @@
+@font-face {
+  font-family: "asapregular";
+  src: url("../fonts/asap/Asap-Regular.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "asapmedium";
+  src: url("../fonts/asap/Asap-Medium.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "asapitalic";
+  src: url("../fonts/asap/Asap-Italic.otf") format("opentype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "asapbold";
+  src: url("../fonts/asap/Asap-Bold.otf") format("opentype");
+  src: url("../fonts/asap/Asap-Bold.woff") format("woff");
+  font-weight: bold;
+  font-style: normal; }
+
+/*# sourceMappingURL=fonts.css.map */
