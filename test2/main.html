@@ -60,10 +60,10 @@
                     </div>
                     <div class="header__bottom">
                         <div class="header__slider">
-                                <div class="slider__wrapper">
-                                    <input type="radio" name="slider" id="slide1" >
+                                <div class="slider__wrapper" id="slider">
+                                    <input type="radio" name="slider" id="slide1" checked="">
                                     <input type="radio" name="slider" id="slide2" >
-                                    <input type="radio" name="slider" id="slide3" checked="">
+                                    <input type="radio" name="slider" id="slide3" >
 
 
                                     <div id="slides">
@@ -378,4 +378,16 @@
          </div>
          </div>
      </div>
+    <script>
+        window.onload = function() {
+            var i = 0;
+            window.timer = setInterval(function() {
+                var sliderInput = document.getElementById('slider');
+                var elements = sliderInput.getElementsByTagName('input');
+                elements[i].checked = true;
+                i++;
+                if (i==3) i = 0;
+            }, 2000)
+        };
+    </script>
 </body>
