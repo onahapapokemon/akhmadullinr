@@ -12,15 +12,14 @@ body
 	color: $main_color
 	+kerning(1)
 
-.main_color_bg
-	background-color: $main_color
-
-
 a
 	color: $color
 
-p
+p,
+body .main_footer,
+.s_about li
 	color: $text_color
+
 
 .color_element
 	color: $color
@@ -29,8 +28,108 @@ p
 .color_border
 	border-color: $color
 
-svg
-	height: 1%
-	z-index: 100
-	text
-		fill: $main_color
+
+
+.toggle_mnu
+	color: $main_color
+
+
+.top_mnu
+	a
+		&:hover
+			color: $color
+			background-color: rgba(255,255,255,.05)
+			transition: 0.6s
+			+kerning(4)
+
+.top_text
+	h1
+		color: #fff
+
+.bg_light
+	background-color: $bg_light
+
+.bg_dark
+	background-color: $main_color
+	color: #fff
+	.s_descr::after
+		background-color: #fff
+	a
+		color: #fff
+
+.s_descr
+	+kerning(5)
+	&::after
+		background-color: $main_color
+
+section
+	h3
+		+kerning(3)
+		color: $text_color
+
+.personal_header
+	+kerning(3)
+
+.resume_container
+	h3
+		color: $main_color
+		+kerning(1)
+		font-weight: 400
+		font-size: 16px
+
+.resume_item
+	.year
+		background-color: $color
+		color: #ffffff
+		font-style: italic
+	h3
+		+kerning(1)
+
+.resume_description
+	strong
+		font-weight: 600
+		font-style: normal
+		text-transform: uppercase
+
+.s_portfolio
+	li
+		color: $text_color
+		+kerning(2)
+	li.active
+		color: #ffffff
+		border-bottom: 1px solid $color
+
+.port_item_cont
+	a
+		color: $color
+
+.main_footer
+	color: $color
+	a
+		color: $color
+
+.contacts_icon
+	color: $color
+
+.text-danger
+	color: $color
+
+form
+	input:focus,
+	textarea:focus
+		border: 1px solid $color
+	input,
+	textarea
+		+kerning(2)
+	button
+		background-color: $color
+		+kerning(2)
+	.form-group
+		+kerning(2)
+		color: $text_color
+
+.popup_content
+	+kerning(1)
+
+
+

@@ -7,7 +7,8 @@ body
 	min-width: 320px
 	position: relative
 	line-height: 1.42857
-	-webkit-font-smoothing: antialised
+	-webkit-font-smoothing: antialiased
+	padding-bottom: 0
 
 body input:focus:required:invalid,
 body textarea:focus:required:invalid
@@ -17,15 +18,40 @@ body textarea:required:valid
 	color: green
 
 
-
 header,
 section
 	position: relative
 
 .main_head
 	min-height: 620px
-	z-index: -1
 	padding-top: 20px
+
+section
+	padding: 70px 0 80px
+	z-index: 20
+	h2
+		text-align: center
+		font-size: 24px
+		text-transform: uppercase
+		margin: 0 0 15px
+	h3
+		text-align: center
+		text-transform: uppercase
+		font-weight: 400
+		font-size: 13px
+		margin-top: 20px
+		margin-bottom: 30px
+	p
+		text-align: justify
+		margin-bottom: 30px
+
+
+
+
+.row
+	position: relative
+
+// прелоадер
 
 .loader
 	background: none repeat scroll 0 0 #ffffff
@@ -53,6 +79,429 @@ section
 	position: absolute
 	outline: red
 
+
+// стили логотипа
+
 .logo_container
 	float: left
+
+
+svg
+	height: 120px
+	width: 220px
+	position: relative
+	z-index: 20
+	padding-left: 0
+	text
+		z-index: 200
+
+
+
+// toggle menu
+
+.toggle_mnu
+	width: 60px
+	height: 60px
+	right: 5%
+	float: right
+	position: fixed
+	top: 46px
+	z-index: 100
+	border: none
+	background-color: rgba(0,0,0,.1)
+	&:focus
+		outline: none
+
+
+$w: 42px
+$h: 6px
+
+#sandwich
+	width: $w
+	height: $w
+	position: absolute
+	top: 0
+	bottom: 0
+	left: 0
+	right: 0
+	margin: auto
+	display: block
+	span
+		display: block
+
+
+.sw-topper
+	position: relative
+	top: 0
+	width: $w
+	height: $h
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+
+/* transition-delay: 0.2s, 0s; */
+
+
+
+.sw-bottom
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 2
+
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: transform 0.5s, top 0.2s
+	transition-delay: 0.2s, 0s
+
+.sw-footer
+	position: relative
+	width: $w
+	height: $h
+	top: $h * 4
+	background: rgb(255, 255, 255)
+	border: none
+	border-radius: 4px 4px 4px 4px
+	transition: all 0.5s
+	transition-delay: 0.1s
+
+#sandwich.active
+	.sw-topper
+		top: 18px
+		transform: rotate(140deg)
+	.sw-bottom
+		top: 12px
+		transform: rotate(-140deg)
+	.sw-footer
+		opacity: 0
+		top: 0
+		transform: rotate(180deg)
+
+
+// top menu
+
+.top_mnu
+	position: fixed
+	width: 100%
+	height: 100%
+	background: rgba(0,0,0,.95)
+	z-index: 50
+	right: 0
+	top: 0
+	display: none
+	ul,li
+		list-style-type: none
+		padding: 0
+		margin: 0
+	ul
+		margin-top: 150px
+		text-align: center
+		li
+			&:nth-child(1) a
+				+animation-duration(.5s)
+			&:nth-child(2) a
+				+animation-duration(1s)
+			&:nth-child(3) a
+				+animation-duration(1.5s)
+			&:nth-child(4) a
+				+animation-duration(2s)
+	a
+		color: #ffffff
+		display: block
+		padding: 20px 0
+		text-transform: uppercase
+		font-size: 16px
+		font-family: Pacifico, cursive
+
+
+
+
+// top title
+
+.top_wrapper
+	display: table
+	width: 100%
+	height: 100%
+	position: absolute
+	top: 0
+	left: 0
+	z-index: 10
+	font-family: Pacifico, cursive
+	.top_descr
+		display: table-row
+		.top_centered
+			display: table-cell
+			text-align: center
+			vertical-align: middle
+
+.top_text
+	display: inline-block
+	h1
+		padding: 10px 30px
+		border: 8px solid #fff
+		display: inline-block
+		text-transform: uppercase
+		font-size: 44px
+		font-weight: 600
+		background-color: rgba(0,0,0,0.5)
+		box-shadow: rgba(0,0,0,.5) 0 0 0 1000px
+		+animation-delay(1s)
+	p
+		color: #ffffff
+		font-size: 30px
+		+animation-delay(1s)
+
+
+.top_text .h1_opacify
+	opacity: .5
+	transition: all .2s ease
+
+// section properties
+
+.s_descr
+	display: inline-block
+	font-size: 12px
+	text-align: center
+	margin-bottom: 130px
+	text-transform: uppercase
+	&::after
+		content: ""
+		width: 150px
+		height: 1px
+		position: absolute
+		right: 45%
+		margin-left: -75px
+		margin-top: 60px
+
+.s_descr_wrap
+	text-align: center
+	position: relative
+
+// footer
+.main_footer
+	padding: 50px 0
+	margin-bottom: -20px
+	font-size: 13px
+	font-weight: 300
+	.social_wrap
+		float: right
+		ul
+			margin: 0
+
+
+// section about
+
+.person
+	text-align: center
+	margin-bottom: 30px
+	img
+		max-width: 220px
+		display: inline-block
+
+.personal_header
+	font-size: 13px
+	margin-bottom: 30px
+	text-align: left
+
+
+.s_about
+	ul, li
+		margin: 0
+		padding: 0
+		list-style-type: none
+	li
+		margin-bottom: 20px
+.social_wrap
+	margin-top: 25px
+	li
+		display: inline-block
+		font-size: 19px
+		padding: 0 5px 0
+
+// resume section
+
+.resume_container .left
+	text-align: left
+	h3
+		text-align: left
+
+.resume_container .right
+	text-align: right
+	border-right: #d2d2d2 solid 1px
+	h3
+		text-align: right
+
+.resume_container
+	.left .resume_description strong
+		margin-left: 10px
+	.right .resume_description strong
+		margin-right: 10px
+	.left
+		text-align: right
+		border-right: #d2d2d2 1px solid
+		h3
+			text-align: right
+	.right
+		text-align: left
+		h3
+			text-align: left
+	h3
+		margin-top: 30px
+	.year
+		font-weight: 600
+		font-style: italic
+		display: inline-block
+		padding: 0 15px
+		margin-bottom: 15px
+	strong
+		font-weight: 600
+		font-style: normal
+		text-transform: uppercase
+	.resume_description
+		font-style: italic
+	.resume_item
+		margin-bottom: 40px
+		p
+			margin-top: 10px
+		&:last-child
+			margin-bottom: 0
+			p
+				margin-bottom: 0
+
+.resume_icon
+	font-size: 40px
+	margin-bottom: 35px
+	.year
+		display: inline-block
+		margin-bottom: 15px
+		padding: 0 10px
+
+
+// section portfolio
+
+.s_portfolio
+	ul, li
+		list-style-type: none
+		padding: 0
+		margin: 0
+		text-align: center
+	li
+		display: inline-block
+		margin: 0 10px
+		text-transform: uppercase
+		font-size: 12px
+		cursor: pointer
+		line-height: 2
+	ul
+		margin-bottom: 50px
+
+.portfolio_item
+	display: none
+	padding: 0
+	img
+		width: 100%
+	.port_item_cont
+		position: absolute
+		top: 0
+		left: 0
+		width: 100%
+		height: 100%
+		background-color: rgba(0,0,0,.8)
+		text-align: center
+		padding-top: 15%
+		opacity: 0
+		transition: all .5s
+		p
+			text-align: center
+	&:hover .port_item_cont
+		opacity: 1
+		padding-top: 20%
+	h3
+		color: #fff
+		margin-bottom: 0
+	a
+		background-color: transparent
+		border: #fff 1px solid
+		padding: 2px 10px
+		display: inline-block
+
+.podrt_descr
+	background-color: #fff
+	max-width: 500px
+	margin: auto
+	position: relative
+	p,
+	h3
+		padding: 20px
+		padding-bottom: 0
+	h3
+		margin-bottom: 0
+		text-align: center
+		text-transform: uppercase
+		font-weight: 400
+		margin-top: 20px
+		padding-top: 25px
+	p
+		margin-top: 0
+	img
+		width: 100%
+		margin-top: 10px
+
+.modal-box-content
+	position: relative
+
+// section contacts
+
+.contact_box
+	margin-bottom: 30px
+	h3
+		text-align: left
+		color: #000
+		margin-bottom: 0
+		font-size: 14px
+	.contacts_icon
+		font-size: 30px
+	p
+		margin-top: 5px
+
+.main_form
+	button
+		border: none
+		color: #fff
+		line-height: 40px
+		padding: 0 25px
+		font-size: 13px
+		text-transform: uppercase
+		font-weight: 600
+		margin-top: 10px
+		float: right
+.form-group
+	display: block
+	margin-bottom: 20px
+	.color_element
+		font-weight: 700
+		font-size: 18px
+	.text-danger
+		font-size: 11px
+		margin-top: 5px
+		display: block
+		ul,
+		li
+			margin: 0
+			padding: 0
+			list-style-type: none
+	input,
+	textarea
+		display: block
+		width: 100%
+		border: 1px solid #ccc
+		margin-top: 5px
+		line-height: 40px
+		text-indent: 12px
+		font-size: 12px
+		background-color: transparent
+
+
 
