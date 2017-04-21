@@ -1,0 +1,71 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        .tree li span{
+            cursor: pointer;
+        }
+
+        .tree li span:hover {
+            font-weight: bold;
+        }
+    </style>
+</head>
+
+<body>
+
+<ul class="tree" id="tree">
+    <li><span>Животные</span>
+        <ul>
+            <li><span>Млекопитающие</span>
+                <ul>
+                    <li><span>Коровы</span></li>
+                    <li><span>Ослы</span></li>
+                    <li><span>Собаки</span></li>
+                    <li><span>Тигры</span></li>
+                </ul>
+            </li>
+            <li><span>Другие</span>
+                <ul>
+                    <li><span>Змеи</span></li>
+                    <li><span>Птицы</span></li>
+                    <li><span>Ящерицы</span></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+    <li><span id="span">Рыбы</span>
+        <ul>
+            <li><span>Аквариумные</span>
+                <ul>
+                    <li><span>Гуппи</span></li>
+                    <li><span>Скалярии</span></li>
+                </ul>
+
+            </li>
+            <li><span>Морские</span>
+                <ul>
+                    <li><span>Морская форель</span></li>
+                </ul>
+            </li>
+        </ul>
+    </li>
+</ul>
+<script>
+    var tree = document.getElementsByTagName('ul')[0];
+    tree.onclick = function(event) {
+        var target = event.target;
+        if (target.tagName != 'SPAN') return;
+        var li = target.parentNode;
+        var childrenContainer = li.getElementsByTagName('ul')[0];
+        if (!childrenContainer) return; // потомков нет -- ничего не надо делать
+        childrenContainer.hidden = !childrenContainer.hidden;
+    }
+</script>
+
+
+</body>
+
+</html>

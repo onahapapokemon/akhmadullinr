@@ -1,24 +1,42 @@
-.header {
-    height: 150px;
+.chat {
+    width: 100vw;
+    height: 100vh;
+}
+
+p {
+    text-align: left;
+}
+
+.chat_header {
+    height: 50px;
     background-color: bisque;
 }
 
-.main {
+.chat_window {
     background-color: aliceblue;
+    height: calc(100vh - 100px - 50px);
+    width: calc(100vw - 200px);
+    overflow-y: auto;
+    float: left;
 }
 
-.footer {
+.chat_window > p {
+    font-size: 32px;
+}
+
+.chat_leftbar {
+    width: 200px;
+    height: calc(100vh - 100px - 50px);
+    overflow-y: auto;
+    background-color: aqua;
+    float: left;
+
+}
+
+.chat_footer {
+    clear: both;
     background-color: aquamarine;
-    height: 150px;
+    height: 100px;
 }
 
-/* если добавить внутренние блоки иерархия сохраняется */
-
-/*.main_inner {
-    height: 1000px;
-    border: 1px solid red;
-    background-color: black;
-    width: 100%;
-}
-*/
 

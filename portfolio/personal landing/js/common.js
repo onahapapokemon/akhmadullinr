@@ -1,5 +1,35 @@
 $(document).ready(function() {
 
+    // toggle-menu button function
+    $("#sandwich, .menu_item").click(function() {
+        $("#sandwich").toggleClass("active");
+    });
+
+    // toggle-menu button click
+    $(".top_mnu li a").click(function(){
+        $(".top_mnu").fadeOut(600);
+        $("#sandwich").toggleClass("active");
+        $(".toggle_mnu").css("background-color","rgba(0,0,0,.1)");
+    });
+
+
+    $(".toggle_mnu").click(function(){
+        if ($(".top_mnu").is(":visible")) {
+            $(".top_text").removeClass("h1_opacify");
+            $(".top_mnu").fadeOut(600);
+            $(".toggle_mnu").css("background-color","rgba(0,0,0,.1)");
+            $(".top_mnu li a").removeClass("fadeInUp animated");
+        }
+        else {
+            $(".top_mnu").fadeIn();
+            $(".top_text").addClass("h1_opacify");
+            $(".toggle_mnu").css("background-color","rgba(0,0,0,.7)");
+            $(".top_mnu li a").addClass("fadeInUp animated");
+        }
+    });
+
+
+
     // magnific popup plugim
     $(".popup").magnificPopup({type:'image'});
 

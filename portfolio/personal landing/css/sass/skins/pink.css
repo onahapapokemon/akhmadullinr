@@ -1,0 +1,112 @@
+body {
+  color: #222;
+  letter-spacing: 1px; }
+
+a {
+  color: pink; }
+
+p,
+body .main_footer,
+.s_about li {
+  color: #888; }
+
+.color_element {
+  color: pink; }
+
+.color_bg {
+  background-color: pink; }
+
+.color_border {
+  border-color: pink; }
+
+.toggle_mnu {
+  color: #222; }
+
+.top_mnu a:hover {
+  color: pink;
+  background-color: rgba(255, 255, 255, 0.05);
+  transition: 0.6s;
+  letter-spacing: 4px; }
+
+.top_text h1 {
+  color: #fff; }
+
+.bg_light {
+  background-color: #FAFAFA; }
+
+.bg_dark {
+  background-color: #222;
+  color: #fff; }
+  .bg_dark .s_descr::after {
+    background-color: #fff; }
+  .bg_dark a {
+    color: #fff; }
+
+.s_descr {
+  letter-spacing: 5px; }
+  .s_descr::after {
+    background-color: #222; }
+
+section h3 {
+  letter-spacing: 3px;
+  color: #888; }
+
+.personal_header {
+  letter-spacing: 3px; }
+
+.resume_container h3 {
+  color: #222;
+  letter-spacing: 1px;
+  font-weight: 400;
+  font-size: 16px; }
+
+.resume_item .year {
+  background-color: pink;
+  color: #ffffff;
+  font-style: italic; }
+.resume_item h3 {
+  letter-spacing: 1px; }
+
+.resume_description strong {
+  font-weight: 600;
+  font-style: normal;
+  text-transform: uppercase; }
+
+.s_portfolio li {
+  color: #888;
+  letter-spacing: 2px; }
+.s_portfolio li.active {
+  color: #ffffff;
+  border-bottom: 1px solid pink; }
+
+.port_item_cont a {
+  color: pink; }
+
+.main_footer {
+  color: pink; }
+  .main_footer a {
+    color: pink; }
+
+.contacts_icon {
+  color: pink; }
+
+.text-danger {
+  color: pink; }
+
+form input:focus,
+form textarea:focus {
+  border: 1px solid pink; }
+form input,
+form textarea {
+  letter-spacing: 2px; }
+form button {
+  background-color: pink;
+  letter-spacing: 2px; }
+form .form-group {
+  letter-spacing: 2px;
+  color: #888; }
+
+.popup_content {
+  letter-spacing: 1px; }
+
+/*# sourceMappingURL=pink.css.map */
