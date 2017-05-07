@@ -175,128 +175,145 @@ body{
         width:300px !important;
     }
     #spec{
-        height:972px !important;
         background-size: 1440px 972px !important;
+        background:url(../images/spec-new3.png) no-repeat top center !important;
+        height:972px !important;
     }
     #spec h2{
         font-size:40px !important;
-        padding:45px 0 85px !important;
+        padding:45px 0 35px !important;
+        top: 0 !important;
+        /* изменения */
     }
     #spec .left{
         width:700px !important;
     }
-    #spec ul li{
+    /*#spec .right_outer_item{
         font-size:21px !important;
     }
-    #spec ul li:nth-child(2) {
-        padding:23px 0 23px 100px !important;
-    }
-    #spec ul li:nth-child(3) {
-        padding:23px 0 23px 100px !important;
-    }
-    #spec h3{
-        padding: 300px 0 0 85px !important;
-        font-size:33px !important;
+    #spec .right_outer_item:nth-child(2) {
+        padding:23px 0 23px 180px !important;
+        /* изменения */
+
+
+#spec h3{
+    padding: 0 0 0 0 !important;
+    font-size:21px !important;
+    transform: rotate(-30deg);
+    position: relative;
+    top: 55px !important;
+    left: -20px !important;
+    /* изменения */
+}
+
+    #spec .right{
+        width:460px;
+        float:right;
+        margin-top: -53px !important;
+        /* изменения */
     }
     #spec h4{
-        padding:65px 0 30px !important;
-        font-size:40px !important;
+        padding:30px 0 30px !important;
+        /* изменения */
     }
-    #spec table{
-        width:740px !important;
-    }
-    #spec table th{
-        font-size:26px !important;
-    }
-    #spec table td:nth-child(1){
-        font-size:26px !important;
-    }
-    #spec table td:nth-child(2){
-        font-size:40px !important;
-    }
-    #spec table td{
-        height:60px !important;
-    }
-    #usl{
-        height:800px !important;
-    }
-    #usl h2{
-        font-size:40px !important;
-        padding:35px 0 30px 0 !important;
-    }
-    #usl h3{
-        font-size:22px !important;
-    }
-    #usl ul li{
-        width:160px !important;
-        font-size:21px !important;
-        height:200px !important;
-    }
-    #usl ul li img{
-        width:100px !important;
-    }
-    #reviews h2{
-        font-size:40px !important;
-        padding:35px 0 !important;
-    }
-    #reviews .left{
-        width:200px !important;
-    }
-    #reviews .right{
-        width:605px !important;
-        font-size:18px !important;
-        height:275px !important;
-        padding:50px 0 0 0 !important;
-    }
-    #reviews .right1 ul li{
-        font-size:26px !important;
-    }
-    #reviews .right1 ul li img{
-        width:44px !important;
-    }
-    #map{
-        height:650px !important;
-    }
-    #map h2{
-        font-size:40px !important;
-        padding:35px 0 !important;
-    }
-    #map .map_info{
-        top:200px !important;
-    }
-    #map .map_info h3{
-        font-size:21px !important;
-    }
-    #map .map_info p{
-        font-size:18px !important;
-    }
-    #footer h2{
-        font-size:21px !important;
-    }
-    #footer ul li{
-        width:195px !important;
-        font-size:16px !important;
-    }
-    #footer .left{
-        font-size:16px !important;
-        padding:80px 0 0 0 !important;
-    }
-    #footer a{
-        font-size:16px !important;
-    }
-    #footer{
-        height:510px !important;
-    }
-    #footer ul li:nth-child(1){
-        padding:21px 0 21px 70px !important;
-    }
-    #footer ul li:nth-child(2){
-        padding:21px 0 21px 70px !important;
-    }
-    #footer ul li:nth-child(3){
-        width:300px !important
-    }
+
+#spec table{
+    width:740px !important;
 }
+#spec table th{
+    font-size:26px !important;
+}
+#spec table td:nth-child(1){
+    font-size:26px !important;
+}
+#spec table td:nth-child(2){
+    font-size:40px !important;
+}
+#spec table td{
+    height:60px !important;
+}
+#usl{
+    height:800px !important;
+}
+#usl h2{
+    font-size:40px !important;
+    padding:35px 0 30px 0 !important;
+}
+#usl h3{
+    font-size:22px !important;
+}
+#usl ul li{
+    width:160px !important;
+    font-size:21px !important;
+    height:200px !important;
+}
+#usl ul li img{
+    width:100px !important;
+}
+#reviews h2{
+    font-size:40px !important;
+    padding:35px 0 !important;
+}
+#reviews .left{
+    width:200px !important;
+}
+#reviews .right{
+    width:605px !important;
+    font-size:18px !important;
+    height:275px !important;
+    padding:50px 0 0 0 !important;
+}
+#reviews .right1 ul li{
+    font-size:26px !important;
+}
+#reviews .right1 ul li img{
+    width:44px !important;
+}
+#map{
+    height:650px !important;
+}
+#map h2{
+    font-size:40px !important;
+    padding:35px 0 !important;
+}
+#map .map_info{
+    top:200px !important;
+}
+#map .map_info h3{
+    font-size:21px !important;
+}
+#map .map_info p{
+    font-size:18px !important;
+}
+#footer h2{
+    font-size:21px !important;
+}
+#footer ul li{
+    width:195px !important;
+    font-size:16px !important;
+}
+#footer .left{
+    font-size:16px !important;
+    padding:80px 0 0 0 !important;
+}
+#footer a{
+    font-size:16px !important;
+}
+#footer{
+    height:510px !important;
+}
+#footer ul li:nth-child(1){
+    padding:21px 0 21px 70px !important;
+}
+#footer ul li:nth-child(2){
+    padding:21px 0 21px 70px !important;
+}
+#footer ul li:nth-child(3){
+    width:300px !important
+}
+}
+
+
 #header .logo{
     float:left;
     width:256px;
@@ -486,9 +503,11 @@ height:674px;
 }
 #spec{
     height:1072px;
-    background:url(../images/spec.jpg) no-repeat top center;
+    background:url(../images/spec-new3.png) no-repeat top center;
     min-width:1170px;
-}
+} /* изменения */
+
+
 #spec .left{
     width:860px;
     float:left;
@@ -497,43 +516,94 @@ height:674px;
     font-size:50px;
     color:#fff;
     text-align:center;
-    padding:55px 0 75px;
+    padding:55px -20px 75px;
     font-weight:500;
+    position: relative;
+    top: 30px;
 }
 #spec h3{
-    font-size:45px;
+    font-size:22px;
     font-weight:500;
-    padding:335px 0 0 45px;
     color:#fff;
+    width: 170px;
+    text-align: center;
+    padding: 0 0 0 0 !important;
+    transform: rotate(-20deg);
+    position: relative;
+    top: 130px;
+    left: 65px;
+    /* изменения */
 }
 #spec .right{
-    width:290px;
+    width:460px;
     float:right;
+    margin-top: 30px;
+    /* изменения */
 }
-#spec ul li{
+#spec .right_outer_item{
     color:#fff;
     font-size:24px;
-    padding:0 0 0 100px;
-    margin:0 0 30px;
+    display: inline-block;
+    padding-bottom: 15px;
+    /* изменения */
 }
-#spec ul li:nth-child(1){
-    background:url(../images/spec1.png) no-repeat left top;
-    padding:35px 0 35px 100px;
+
+#spec img, .right_content {
+    float: left;
 }
-#spec ul li:nth-child(2){
-    background:url(../images/spec2.png) no-repeat left top;
-    padding:10px 0 10px 100px;
+
+#spec img{
+    width: 140px;
+    height: 125px;
+    padding-top: 3px;
+
+    /* изменения */
 }
-#spec ul li:nth-child(3){
-    background:url(../images/spec3.png) no-repeat left top;
-    padding:20px 0 20px 100px;;
+
+#spec .right_content {
+    font-size: 19px;
+    width: 280px;
+    padding-left: 15px;
 }
+
+#spec #right_content_first
+#spec #right_content_third {
+    padding-top: 20px;
+}
+
+
+#spec .condition {
+    font-size: 16px;
+    padding-top: 10px;
+}
+
+#spec .right_inner {
+    list-style-type: disc;
+    padding-left: 17px;
+}
+
+/*
+#spec .right_outer_item:nth-child(3){
+    background:url(../images/spec2-new.jpg) no-repeat left top;
+    padding:10px 0 10px 80px;
+    background-size: 120px 120px;
+    /* изменения */ /*
+}
+#spec .right_outer_item:nth-child(5){
+    background:url(../images/spec3-new.jpg) no-repeat left top;
+    padding:20px 0 20px 80px;
+    background-size: 120px 120px;
+    /* изменения */  /*
+}
+*/
+
 #spec h4{
     font-size:50px;
     color:#fff;
     text-align:center;
-    padding:100px 0 30px;
+    padding:0px 0 30px;
     font-weight:500;
+    /* изменения */
 }
 #spec table{
     width:940px;
@@ -571,6 +641,10 @@ height:674px;
 #spec table td:nth-child(2) span i{
     font-size:23px;
 }
+
+
+
+
 #usl{
     /*height:867px;*/
     height:1040px;

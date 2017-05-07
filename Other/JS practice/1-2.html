@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+</head>
+<body>
+<button id="add-li">Add</button>
+<ul id="ul">
+    <li>тест</li>
+    <li>тест </li>
+</ul>
+<script>
+    var ul = document.getElementById('ul');
+    var button = document.querySelector('button');
+    button.onclick = function() {
+        var elem = document.createElement('li');
+        elem.innerHTML = 'пункт';
+        ul.appendChild(elem);
+    }
+
+</script>
+</body>
+</html>

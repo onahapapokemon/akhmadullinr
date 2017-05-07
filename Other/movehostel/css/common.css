@@ -176,24 +176,17 @@ body{
     }
     #spec{
         background-size: 1440px 972px !important;
-        background:url(../images/spec-new3.png) no-repeat top center !important;
+        background:url(../images/spec-bg-original.png) no-repeat top center !important;
         height:972px !important;
     }
     #spec h2{
         font-size:40px !important;
         padding:45px 0 35px !important;
+        margin-bottom: 0 !important;
         top: 0 !important;
         /* изменения */
     }
-    #spec .left{
-        width:700px !important;
-    }
-    /*#spec .right_outer_item{
-        font-size:21px !important;
-    }
-    #spec .right_outer_item:nth-child(2) {
-        padding:23px 0 23px 180px !important;
-        /* изменения */
+
 
 
 #spec h3{
@@ -206,20 +199,13 @@ body{
     /* изменения */
 }
 
-    #spec .right{
-        width:460px;
-        float:right;
-        margin-top: -53px !important;
-        /* изменения */
-    }
+
     #spec h4{
-        padding:30px 0 30px !important;
+        font-size:38px !important;
+        padding:42px 0 30px !important;
         /* изменения */
     }
 
-#spec table{
-    width:740px !important;
-}
 #spec table th{
     font-size:26px !important;
 }
@@ -312,6 +298,8 @@ body{
     width:300px !important
 }
 }
+
+/* основные стили */
 
 
 #header .logo{
@@ -503,7 +491,7 @@ height:674px;
 }
 #spec{
     height:1072px;
-    background:url(../images/spec-new3.png) no-repeat top center;
+    background:url(../images/spec-bg-original.png) no-repeat top center;
     min-width:1170px;
 } /* изменения */
 
@@ -516,10 +504,11 @@ height:674px;
     font-size:50px;
     color:#fff;
     text-align:center;
-    padding:55px -20px 75px;
+    padding:75px -20px 75px;
     font-weight:500;
     position: relative;
     top: 30px;
+    margin-bottom: 100px;
 }
 #spec h3{
     font-size:22px;
@@ -534,23 +523,6 @@ height:674px;
     left: 65px;
     /* изменения */
 }
-#spec .right{
-    width:460px;
-    float:right;
-    margin-top: 30px;
-    /* изменения */
-}
-#spec .right_outer_item{
-    color:#fff;
-    font-size:24px;
-    display: inline-block;
-    padding-bottom: 15px;
-    /* изменения */
-}
-
-#spec img, .right_content {
-    float: left;
-}
 
 #spec img{
     width: 140px;
@@ -560,55 +532,35 @@ height:674px;
     /* изменения */
 }
 
-#spec .right_content {
-    font-size: 19px;
-    width: 280px;
-    padding-left: 15px;
+#spec #box_tripaggregator923 {
+    width: 100%;
+    max-width: 940px;
+    margin: 0 auto;
 }
-
-#spec #right_content_first
-#spec #right_content_third {
-    padding-top: 20px;
-}
-
-
-#spec .condition {
-    font-size: 16px;
-    padding-top: 10px;
-}
-
-#spec .right_inner {
-    list-style-type: disc;
-    padding-left: 17px;
-}
-
-/*
-#spec .right_outer_item:nth-child(3){
-    background:url(../images/spec2-new.jpg) no-repeat left top;
-    padding:10px 0 10px 80px;
-    background-size: 120px 120px;
-    /* изменения */ /*
-}
-#spec .right_outer_item:nth-child(5){
-    background:url(../images/spec3-new.jpg) no-repeat left top;
-    padding:20px 0 20px 80px;
-    background-size: 120px 120px;
-    /* изменения */  /*
-}
-*/
 
 #spec h4{
-    font-size:50px;
+    font-size:40px;
     color:#fff;
     text-align:center;
-    padding:0px 0 30px;
+    padding:60px 0 40px;
     font-weight:500;
     /* изменения */
 }
 #spec table{
     width:940px;
-    margin:0 auto;
+    margin:13px auto 0;
+    border-radius: 7px;
+    border-top: 5px solid orange;
 }
+
+#spec table thead {
+    background-color: orange;
+}
+
+#spec table tbody {
+    background-color: #fff;
+}
+
 #spec table th{
     color:#fff;
     font-size:30px;
@@ -617,14 +569,24 @@ height:674px;
     text-align:center;
     font-weight:500;
 }
+
+#spec table tbody tr:nth-of-type(2n-1) {
+    background-color: whitesmoke;
+}
+
 #spec table td{
     height:70px;
     vertical-align:middle;
 }
 #spec table td:nth-child(1){
     font-size:30px;
-    text-align:center;
+    padding-left: 25px;
 }
+
+#spec table tbody th:nth-child(1) {
+    text-align: left;
+}
+
 #spec table td:nth-child(2){
     color:#f58500;
     font-size:48px;
@@ -633,11 +595,7 @@ height:674px;
 #spec table td:nth-child(2) i{
     font-size:32px;
 }
-#spec table td:nth-child(2) span{
-    font-size:30px;
-    color:#858585;
-    text-decoration:line-through;
-}
+
 #spec table td:nth-child(2) span i{
     font-size:23px;
 }

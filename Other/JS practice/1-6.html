@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>JS Bin</title>
+    <style>
+        table {
+            outline: 1px solid black;
+            margin: 20px 0 20px 20px;
+        }
+        thead {
+            font-weight: bold;
+        }
+        td {
+            width: 175px;
+            text-align: center;
+        }
+        td:hover {
+            transition: ease .5s;
+            background-color: rgba(0,0,0,0.1);
+        }
+        #name,
+        #surname {
+            display: block;
+            margin-left: 20px;
+            margin-bottom: 5px;
+        }
+        button {
+            margin-left: 20px;
+        }
+        .deleteRow {
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+<table id="table">
+    <thead>
+    <tr class="head">
+        <td>Имя</td>
+        <td>Фамилия</td>
+        <td>Удалить</td>
+    </tr>
+    </thead>
+    <tbody>
+    <tr>
+        <td>Петя</td>
+        <td>Иванов</td>
+        <td class="deleteRow">Удалить</td>
+    </tr>
+    <tr>
+        <td>Вася</td>
+        <td>Петров</td>
+        <td class="deleteRow">Удалить</td>
+    </tr>
+    </tbody>
+</table>
+<input type="text" id="name" placeholder="введите имя" value="" >
+<input type="text" id="surname" placeholder="введите фамилию" value="" >
+<button id="button" onclick="addTrInTable()">Добавить</button>
+<script>
+
+    var table = document.querySelector('table');
+    var input = document.querySelectorAll('input');
+    var name = document.getElementById('name');
+    var surname = document.getElementById('surname');
+    var tr = document.createElement('tr');
+    table.addEventListener('click',editNameSurName);
+
+    function editNameSurName(event) {
+        var target = event.target;
+        if (target.parentNode.className == 'head') return;
+        if(target.tagName == 'TD' && target.className != 'deleteRow') openingEditor(target);
+        else if(target.tagName == 'TD' && target.className == 'deleteRow') deleteTr(target);
+    }
+
+    function deleteTr(target) {
+        var parent = target.parentNode;
+        parent.parentNode.removeChild(parent);
+    }
+
+    function openingEditor(target) {
+        var input = document.createElement('input');
+        input.value = target.innerHTML;
+        target.innerHTML = '';
+        target.appendChild(input);
+        input.addEventListener('keypress',addChanges);
+        input.addEventListener('mouseleave',addChanges2);
+    }
+
+    function addChanges(event) {
+        var el = event.target;
+        var parent = el.parentNode;
+        if(event.keyCode == 13) parent.innerHTML = el.value;
+    }
+
+    function addChanges2(event) {
+        var el = event.target;
+        var parent = el.parentNode;
+        parent.innerHTML = el.value;
+    }
+
+    function definitions(name) {
+        var td = document.createElement('td');
+        td.innerHTML = name.value;
+        tr.appendChild(td);
+    }
+
+    function addTrInTable() {
+        if (input[0].value == '' || input[1].value == '') {
+            alert('please fill input');
+            return;
+        }
+        definitions(input[0]);
+        definitions(input[1]);
+        var td = document.createElement('td');
+        td.innerHTML = 'Удалить';
+        td.classList.add('deleteRow');
+        tr.appendChild(td);
+        table.appendChild(tr);
+        tr = document.createElement('tr');
+    }
+
+
+
+</script>
+</body>
+</html>
