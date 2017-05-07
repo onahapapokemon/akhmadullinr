@@ -20,43 +20,32 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="task21-todo.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/task21-todo.html">
+      <file leaf-file-name="blog.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lesson22/news/blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="337">
-              <caret line="73" column="70" lean-forward="false" selection-start-line="73" selection-start-column="70" selection-end-line="73" selection-end-column="70" />
-              <folding>
-                <element signature="e#1773#1779#1" expanded="true" />
-                <element signature="e#1805#1811#1" expanded="true" />
-              </folding>
+            <state relative-caret-position="-3156">
+              <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo.js" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/todo.js">
+      <file leaf-file-name="news.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/lesson22/news/js/news.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2261">
-              <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#43#0" expanded="false" />
-                <marker date="1494147512518" expanded="true" signature="2273:2280" ph="..." />
-                <marker date="1494147512518" expanded="true" signature="2350:2357" ph="..." />
-              </folding>
+            <state relative-caret-position="102">
+              <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="todo-backup.js" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/todo-backup.js">
+      <file leaf-file-name="tsconfig.json" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/lesson22/news/js/tsconfig.json">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="181">
-              <caret line="89" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#43#0" expanded="false" />
-                <marker date="1494144915673" expanded="true" signature="2273:2280" ph="..." />
-                <marker date="1494144915673" expanded="true" signature="2350:2357" ph="..." />
-              </folding>
+            <state relative-caret-position="1819">
+              <caret line="107" column="1" lean-forward="false" selection-start-line="107" selection-start-column="1" selection-end-line="107" selection-end-column="1" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -68,6 +57,7 @@
       <list>
         <option value="HTML File" />
         <option value="JavaScript File" />
+        <option value="tsconfig.json" />
       </list>
     </option>
   </component>
@@ -85,8 +75,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/task16 - class-test.html" />
-        <option value="$PROJECT_DIR$/../../Other/Mircod/index.html" />
         <option value="$PROJECT_DIR$/task16-1.html" />
         <option value="$PROJECT_DIR$/task16-2.html" />
         <option value="$PROJECT_DIR$/task16-3.js" />
@@ -136,6 +124,8 @@
         <option value="$PROJECT_DIR$/task21-todo.html" />
         <option value="$PROJECT_DIR$/todo-backup.js" />
         <option value="$PROJECT_DIR$/todo.js" />
+        <option value="$PROJECT_DIR$/lesson22/news/js/news.js" />
+        <option value="$PROJECT_DIR$/lesson22/news/js/tsconfig.json" />
       </list>
     </option>
   </component>
@@ -349,12 +339,12 @@
       <workItem from="1492276812485" duration="6627000" />
       <workItem from="1492690446878" duration="12303000" />
       <workItem from="1493581676700" duration="61532000" />
-      <workItem from="1494143860509" duration="4320000" />
+      <workItem from="1494143860509" duration="7518000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="239623000" />
+    <option name="totallyTimeSpent" value="242821000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -366,7 +356,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1362" height="728" extended-state="1" />
+    <frame x="0" y="0" width="1362" height="728" extended-state="0" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23886329" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
@@ -433,27 +423,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/task17-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="482">
-          <caret line="40" column="7" lean-forward="false" selection-start-line="40" selection-start-column="7" selection-end-line="40" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task17-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="459">
-          <caret line="27" column="7" lean-forward="false" selection-start-line="27" selection-start-column="7" selection-end-line="27" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task17-class-3.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="499">
-          <caret line="49" column="7" lean-forward="false" selection-start-line="49" selection-start-column="7" selection-end-line="49" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task17-6.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="412">
@@ -758,7 +727,7 @@
     <entry file="file://$PROJECT_DIR$/todo-backup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
-          <caret line="89" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <caret line="89" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
             <marker date="1494144915673" expanded="true" signature="2273:2280" ph="..." />
@@ -770,12 +739,36 @@
     <entry file="file://$PROJECT_DIR$/todo.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2261">
-          <caret line="135" column="0" lean-forward="true" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
+          <caret line="135" column="0" lean-forward="false" selection-start-line="135" selection-start-column="0" selection-end-line="135" selection-end-column="0" />
           <folding>
             <element signature="e#0#43#0" expanded="false" />
             <marker date="1494147512518" expanded="true" signature="2273:2280" ph="..." />
             <marker date="1494147512518" expanded="true" signature="2350:2357" ph="..." />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson22/news/blog.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3156">
+          <caret line="23" column="0" lean-forward="true" selection-start-line="23" selection-start-column="0" selection-end-line="23" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson22/news/js/news.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="43" lean-forward="true" selection-start-line="6" selection-start-column="43" selection-end-line="6" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/lesson22/news/js/tsconfig.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1819">
+          <caret line="107" column="1" lean-forward="false" selection-start-line="107" selection-start-column="1" selection-end-line="107" selection-end-column="1" />
+          <folding />
         </state>
       </provider>
     </entry>

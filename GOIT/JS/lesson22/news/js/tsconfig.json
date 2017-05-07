@@ -1,0 +1,108 @@
+{
+  "rss": {
+    "-xmlns:atom": "http://www.w3.org/2005/Atom",
+    "-version": "2.0",
+    "channel": {
+      "title": "YaleNews Articles",
+      "description": "Yale News Releases from Yale University",
+      "link": "http://news.yale.edu",
+      "atom:link": {
+        "-href": "http://news.yale.edu/news-rss",
+        "-rel": "self",
+        "-type": "application/rss+xml"
+      },
+      "item": [
+        {
+          "title": "Yale history meets ROTC excellence at President’s Review",
+          "description": "Cadets and midshipmen in Yale’s Air Force and Navy ROTC programs donned their dress uniforms and their best military manner as they paraded in formation before friends and family members at the President’s Review held on May 3. After the ceremony, Yale’s military past and its present came together for a brief moment.",
+          "link": "http://news.yale.edu/2017/05/05/yale-history-meets-rotc-excellence-president-s-review",
+          "author": "news@yale.edu (Yale News)",
+          "category": "Yale News",
+          "guid": "http://news.yale.edu/2017/05/05/yale-history-meets-rotc-excellence-president-s-review",
+          "pubDate": "Fri, 05 May 2017 15:36:00 EDT"
+        },
+        {
+          "title": "Multi-generational drama set in the Everglades wins the Yale Drama Series Prize",
+          "description": "One of the theater world’s most prestigious playwriting prizes, the Yale Drama Series Prize, will be given to Jacqueline Goldfinger for her play “Bottle Fly.”",
+          "link": "http://news.yale.edu/2017/05/05/multi-generational-drama-set-everglades-wins-yale-drama-series-prize",
+          "author": "news@yale.edu (Yale News)",
+          "category": "Yale News",
+          "guid": "http://news.yale.edu/2017/05/05/multi-generational-drama-set-everglades-wins-yale-drama-series-prize",
+          "pubDate": "Fri, 05 May 2017 15:28:00 EDT"
+        },
+        {
+          "title": "New biomarkers help predict outcomes in diabetic kidney disease",
+          "description": "A team of researchers led by professor of medicine Dr. Chirag Parikh in collaboration a group at Icahn School of Health at Mount Sinai has recently made strides that could lead to improved diagnostics and treatment plans for diabetic kidney disease.",
+          "link": "http://news.yale.edu/2017/05/05/new-biomarkers-help-predict-outcomes-diabetic-kidney-disease",
+          "author": "news@yale.edu (Yale News)",
+          "category": "Yale News",
+          "guid": "http://news.yale.edu/2017/05/05/new-biomarkers-help-predict-outcomes-diabetic-kidney-disease",
+          "pubDate": "Fri, 05 May 2017 11:31:00 EDT"
+        },
+        {
+          "title": "Interpreting Maya myths through art: Q&A with Oswaldo Chinchilla Mazariegos",
+          "description": "In “Art and Myth of the Ancient Maya,” Chinchilla Mazariegos uses sources from across Mesoamerica to fill gaps between written sources and ancient Maya artworks.",
+          "link": "http://news.yale.edu/2017/05/05/interpreting-maya-myths-through-art-qa-oswaldo-chinchilla-mazariegos",
+          "author": "news@yale.edu (Yale News)",
+          "category": "Yale News",
+          "guid": "http://news.yale.edu/2017/05/05/interpreting-maya-myths-through-art-qa-oswaldo-chinchilla-mazariegos",
+          "pubDate": "Fri, 05 May 2017 11:29:00 EDT"
+        },
+        {
+          "title": "Yale historian Paul Freedman on the history of American restaurants and the ‘paradox’ of food",
+          "description": "How we eat is both ubiquitous and semi-invisible — it is everywhere around us, but we usually don’t think about it as a social marker. Food, however, lets us see who we are and who we are in the process of becoming, according to Yale historian Paul Freedman.",
+          "link": "http://news.yale.edu/2017/05/05/yale-historian-paul-freedman-history-american-restaurants-and-paradox-food",
+          "author": "news@yale.edu (Yale News)",
+          "category": "Yale News",
+          "guid": "http://news.yale.edu/2017/05/05/yale-historian-paul-freedman-history-american-restaurants-and-paradox-food",
+          "pubDate": "Fri, 05 May 2017 10:47:00 EDT"
+        },
+        {
+          "title": "Scientist Enrique M. De La Cruz to be next head of Branford College",
+          "description": "Enrique M. De La Cruz, professor of molecular biophysics and biochemistry, will serve as Branford’s next head of college for a five-year term, effective July 1, President Peter Salovey announced.",
+          "link": "http://news.yale.edu/2017/05/04/scientist-enrique-m-de-la-cruz-be-next-head-branford-college",
+          "author": "news@yale.edu (Yale News)",
+          "category": "Yale News",
+          "guid": "http://news.yale.edu/2017/05/04/scientist-enrique-m-de-la-cruz-be-next-head-branford-college",
+          "pubDate": "Thu, 04 May 2017 19:00:10 EDT"
+        },
+        {
+          "title": "Retiring tutors helped shape a 'generation of writers'",
+          "description": "With a combined total of 50 years of experience as residential college writing tutors for Yale College, Diane Charney and Bill Storandt have witnessed the evolution of split infinitives, prepositions, and online schedules.",
+          "link": "http://news.yale.edu/2017/05/04/retiring-tutors-helped-shape-generation-writers",
+          "author": "news@yale.edu (Yale News)",
+          "category": "Yale News",
+          "guid": "http://news.yale.edu/2017/05/04/retiring-tutors-helped-shape-generation-writers",
+          "pubDate": "Thu, 04 May 2017 17:24:00 EDT"
+        },
+        {
+          "title": "Researchers catch up on each other’s work at forum",
+          "description": "From neutrinos to fly vision to follicle regeneration, university researchers talked about a wide array of research at the Yale Science and Engineering Forum on May 3.",
+          "link": "http://news.yale.edu/2017/05/04/researchers-catch-each-other-s-work-forum",
+          "author": "news@yale.edu (Yale News)",
+          "category": "Yale News",
+          "guid": "http://news.yale.edu/2017/05/04/researchers-catch-each-other-s-work-forum",
+          "pubDate": "Thu, 04 May 2017 16:30:00 EDT"
+        },
+        {
+          "title": "The Week Ender: Happenings May 5-7",
+          "description": "The Week Ender appears every Thursday in Yale News and offers highlights of the many activities taking place at the university Friday-Sunday.",
+          "link": "http://news.yale.edu/2017/05/04/week-ender-happenings-may-5-7",
+          "author": "news@yale.edu (Yale News)",
+          "category": "Yale News",
+          "guid": "http://news.yale.edu/2017/05/04/week-ender-happenings-may-5-7",
+          "pubDate": "Thu, 04 May 2017 08:00:11 EDT"
+        },
+        {
+          "title": "Update on graduate student unionization",
+          "description": "President Peter Salovey sent the following message to the campus community on May 3. I write to provide an update on the activities of UNITE HERE-Local 33, which seeks to represent the graduate student teaching fellows in 8 of the 56 departments in Yale’s Graduate School of Arts and Sciences.",
+          "link": "http://news.yale.edu/2017/05/03/update-graduate-student-unionization",
+          "author": "news@yale.edu (Yale News)",
+          "category": "Yale News",
+          "guid": "http://news.yale.edu/2017/05/03/update-graduate-student-unionization",
+          "pubDate": "Wed, 03 May 2017 17:54:00 EDT"
+        }
+      ]
+    }
+  }
+}
