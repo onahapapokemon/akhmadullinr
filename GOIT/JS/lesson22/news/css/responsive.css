@@ -395,8 +395,8 @@ px      68    160    252    344    436    */
   
     left: 50%;
   }
-  #posts-list .page-navigation div {
-    right: 50%;
+  #posts-list .page-navigation {
+    left: -2%;
   }
   /* WIDE MOBILE SIDEBAR  ----------------------------------------------------*/#sidebar {
     width: 436px;

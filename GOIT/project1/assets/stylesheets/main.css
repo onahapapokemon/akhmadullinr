@@ -575,7 +575,7 @@ body {
 /* добавляем псевдоэлемент before в виде галочки спереди в списках */
 
 .body_advert li:before {
-    content: url(http://www.imageup.ru/img104/2449119/image5-2.gif);
+    content: url(../images/image5-2.gif);
     position: relative;
     top: 5px;
     right: 10px;
@@ -593,7 +593,7 @@ body {
 .feedback {
     max-width: 1400px;
     background-repeat: repeat;
-    background-image: url(http://www.imageup.ru/img9/2450504/task6-2-bg-imagejpg.jpg);
+    background-image: url(../images/task6-2-bg-image.jpg);
     text-align: center;
     padding-top: 60px;
 

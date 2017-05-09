@@ -496,6 +496,7 @@ nav #nav > li ul a:hover {
   margin-left: 30px;
   margin-bottom: 40px;
   float: left;
+  min-height: 860px;
 }
 #posts-list article {
   position: relative;
@@ -562,17 +563,14 @@ nav #nav > li ul a:hover {
 /*	PAGE NAVIGATION
 /*-----------------------------------------------------------------------------------*/
 #posts-list .page-navigation {
-  position: relative;
-  left: 50%;
+  position: absolute;
+  left: 30%;
   display: block;
-  margin-bottom: 100px;
-  float: left;
+  bottom: 0;
+  width: 460px;
 }
-#posts-list .page-navigation div {
-  position: relative;
-  right: 50%;
-}
-#posts-list .page-navigation div span {
+
+#posts-list .page-navigation li {
   margin-bottom: 15px;
   display: inline-block;
 }

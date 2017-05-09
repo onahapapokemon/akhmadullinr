@@ -171,7 +171,7 @@ ul {
 /* добавляем псевдоэлемент before в виде галочки спереди в списках */
 
 li:before {
-    content: url(http://www.imageup.ru/img104/2449119/image5-2.gif);
+    content: url(image5-2.gif);
     position: relative;
     top: 5px;
     right: 10px;

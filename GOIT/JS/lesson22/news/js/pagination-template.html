@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h2 id="pageHeader"></h2>
+    <div id="pageItems"></div>
+    <div id="pageButtons"></div>
+    <script>
+        var list = ["Alpha", "Beta", "Gamma", "Delta", "Epsilon", "Zeta", "Eta", "Theta", "Iota", "Kappa", "Lambda", "Mu", "Nu", "Xi", "Omicron", "Pi", "Rho", "Sigma", "Tau", "Upsilon", "Phi", "Chi", "Psi", "Omega"];
+
+        var pages = paginate(4, list);
+
+        function paginate(n, list) {
+            return divide(n, list).map(function (items) {
+                return {
+                    //start: number + 1,
+                    //end: number + items.length,
+                    items: items
+                };
+            });
+        }
+
+        var items = document.getElementById("pageItems");
+        var buttons = document.getElementById("pageButtons");
+
+        appendChildren(buttons, pages.map(function (page, index) {
+            var button = document.createElement("button");
+            button.addEventListener("click", display);
+            button.innerHTML = index + 1;
+            return button;
+
+            function display() {
+                displayPage(page);
+            }
+        }));
+
+        displayPage(pages[0]);
+
+        function displayPage(page) {
+
+            items.innerHTML = "";
+
+            appendChildren(items, page.items.map(function (item) {
+                var li = document.createElement("div");
+                li.innerHTML = item;
+                return li;
+            }));
+        }
+
+        function appendChildren(element, children) {
+            children.forEach(function (child) {
+                console.log(element);
+                element.appendChild(child);
+            });
+        }
+
+        function take(n, list) {
+            return list.slice(0, n);
+        }
+
+        function drop(n, list) {
+            return list.slice(n);
+        }
+
+        function concat(lists) {
+            return Array.prototype.concat.apply(this, lists);
+        }
+
+        function divide(n, list) {
+            if (list.length) {
+                var head = take(n, list);
+                var tail = drop(n, list);
+                return concat.call([head], [divide(n, tail)]);
+            } else return [];
+        }
+    </script>
+</body>
+</html>

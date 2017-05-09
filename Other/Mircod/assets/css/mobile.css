@@ -147,7 +147,7 @@
         border-bottom-left-radius: 0;
         border-top-left-radius: 0;
         overflow-y: hidden;
-        margin-top: -1380px;
+        /*margin-top: -1380px; */
     }
 
     .main {
@@ -290,6 +290,7 @@
     .hero {
         height: 1610px;
     }
+
     #main-slide1:checked ~ #next-step-button label:nth-child(2),
     #main-slide2:checked ~ #next-step-button label:nth-child(3),
     #main-slide3:checked ~ #next-step-button label:nth-child(4),

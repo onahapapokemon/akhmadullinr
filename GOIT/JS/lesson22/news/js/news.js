@@ -2,7 +2,7 @@ $(function() {
 
     var RSSReader = function () {
 
-        this.feedUrl = 'http://news.yale.edu/news-rss;' // адрес по которому получаем нащи данные
+        this.feedUrl = 'http://akhmadullinr.github.io/GOIT/JS/lesson22/news/js/tsconfig.json'; // адрес по которому получаем нащи данные
 
         this.articlesList = $('.articles');
 
@@ -42,7 +42,7 @@ $(function() {
     RSSReader.prototype.getFeed = function (feedId) {
         $.ajax({
             url: this.feedUrl,
-            //data: { kind: feedId },
+            data: { kind: feedId },
             method: 'GET',
             dataType: 'json'
         })
