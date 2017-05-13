@@ -1,7 +1,7 @@
 $(function () {
     function Cart () {
         var __self = this;
-
+       // this.cartArray = [];
         this.lsFieldId = 'cart';
 
         this.domElems = {
@@ -42,12 +42,14 @@ $(function () {
         return this.cartArray;
     };
 
+    //
     Cart.prototype.getCartSize = function () {
         console.log(this.getCartItems.length);
 
         return this.getCartItems().length;
     };
 
+    // общая стоимость товаров
     Cart.prototype.getTotalPrice = function () {
         var items = this.getCartItems(),
             totalPrice = 0;
@@ -59,8 +61,11 @@ $(function () {
         return totalPrice;
     };
 
+
+    // отображение карточки товара
     Cart.prototype.viewCart = function () {
         // TODO: make viewCartSize
+
         this.getCartSize();
 
         this.viewTotalPrice();

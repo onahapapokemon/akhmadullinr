@@ -16,7 +16,7 @@
         <a class="navbar-brand" href="#">Your online store</a>
 
         <div class="navbar-right">
-            <div class="container minicart"></div>
+            <div class="container minicart"><span class="total-position"></span></div>
         </div>
     </div>
 </nav>
@@ -63,7 +63,9 @@
         <li class="row cart__item cart__item_tmpl">
             <span class="quantity">1</span>
             <span class="itemName">Birthday Cake</span>
-            <span class="popbtn"><a class="arrow"></a></span>
+            <span class="popbtn">
+                <button type="button" class="btn btn-info btn-remove">X</button>
+            </span>
             <span class="price">$49.95</span>
         </li>
     </div>
@@ -83,7 +85,7 @@
 <script src="assets/js/bootstrap.min.js"></script>
 <script src="assets/js/customjs.js"></script>
 <script src="assets/js/localstorage.js"></script>
-<script src="assets/js/cart.js"></script>
+<script src="assets/js/cart-test.js"></script>
 
 </body>
 </html>
