@@ -1,0 +1,315 @@
+/*! HTML5 Boilerplate v5.3.0 | MIT License | https://html5boilerplate.com/ */
+/* What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+ *   Base styles: opinionated defaults
+ *   ========================================================================== */
+@font-face {
+  font-family: "Roboto-Regular";
+  src: url("../../fonts/Roboto-Regular.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal; }
+@font-face {
+  font-family: "Roboto-Black";
+  src: url("../../fonts/Roboto-black.ttf") format("truetype"); }
+@font-face {
+  font-family: "Roboto-Italic";
+  src: url("../../fonts/Roboto-italic.ttf") format("truetype"); }
+@font-face {
+  font-family: "Roboto-Bold";
+  src: url("../../fonts/Roboto-Bold.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal; }
+@font-face {
+  font-family: "Roboto-Thin";
+  src: url("../../fonts/Roboto-Thin.ttf") format("truetype"); }
+@font-face {
+  font-family: "Roboto-Mediun";
+  src: url("../../fonts/Roboto-Medium.ttf") format("truetype"); }
+html {
+  color: #222;
+  line-height: 1.4; }
+
+/* Remove text-shadow in selection highlight:
+ * https://twitter.com/miketaylr/status/12228805301
+ *
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+::selection {
+  background: #b3d4fc;
+  text-shadow: none; }
+
+/* A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0; }
+
+/* Remove the gap between audio, canvas, iframes,
+ * images, videos and the bottom of their containers:
+ * https://github.com/h5bp/html5-boilerplate/issues/440
+ */
+audio,
+canvas,
+iframe,
+img,
+svg,
+video {
+  vertical-align: middle; }
+
+/* Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0; }
+
+/* Allow only vertical resizing of textareas.
+ */
+a {
+  cursor: pointer; }
+
+textarea {
+  resize: vertical; }
+
+/* ==========================================================================
+ * Browser Upgrade Prompt
+ * ========================================================================== */
+.browserupgrade {
+  margin: 0.2em 0;
+  background: #ccc;
+  color: #000;
+  padding: 0.2em 0; }
+
+/* ==========================================================================
+ * Mixins and variables
+ * ========================================================================== */
+/* ==========================================================================
+ * Author's custom styles
+ * ========================================================================== */
+html {
+  font-size: 13px;
+  font-family: "Roboto-Regular", Arial, serif; }
+
+body {
+  width: 100%; }
+
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+  outline: 1px solid red;
+  height: 100%; }
+
+.header__info-block {
+  background-color: #17a8f7;
+  background: url("../../img/heade-info-bg.png");
+  background-size: cover;
+  font-size: 13px;
+  height: 40px; }
+
+.info-block__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center; }
+
+.info-block__name {
+  color: #333;
+  font-size: 12px;
+  text-decoration: underline; }
+
+.info-block__hours {
+  color: #ffffff; }
+
+.info-block__call {
+  z-index: 100;
+  color: #ffffff;
+  font-size: 1.4rem; }
+
+.info-block__call-number {
+  display: inline-block;
+  margin-right: 23px; }
+
+.info-block__button {
+  background-color: #ffc400;
+  border-radius: 5px;
+  text-align: center;
+  display: inline-block;
+  text-decoration: none; }
+
+.info-block__button span {
+  padding: 8px 20px;
+  color: #333;
+  display: inline-block;
+  font-family: "Roboto-Bold", Arial, serif;
+  font-weight: bold;
+  font-size: 0.93rem; }
+
+.header-nav__wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center; }
+
+.header-logo {
+  flex: 1;
+  width: 120px;
+  height: 35px; }
+
+.header-nav ul {
+  flex: 6;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: nowrap;
+  align-items: center;
+  height: 58px;
+  margin: 0;
+  padding: 0;
+  width: 100%; }
+
+.header-nav__list {
+  display: flex;
+  align-items: stretch;
+  list-style-type: none;
+  height: 100%;
+  margin: 0;
+  width: 12.5%; }
+
+.header-nav__link {
+  width: 100%;
+  display: flex;
+  text-align: center;
+  justify-content: space-around;
+  align-items: center;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Roboto-Mediun", Arial, serif;
+  color: #999; }
+
+.header-nav__link-main {
+  color: #333;
+  font-family: "Roboto-Bold", Arial, serif;
+  font-weight: bold; }
+
+.header-nav__link:hover {
+  background-color: #17a8f7;
+  color: #ffffff; }
+
+/* ==========================================================================
+ * Helper classes
+ * ========================================================================== */
+/* Hide visually and from screen readers
+ */
+.hidden {
+  display: none !important; }
+
+/* Hide only visually, but have it available for screen readers:
+ * http://snook.ca/archives/html_and_css/hiding-content-for-accessibility
+ */
+.visuallyhidden {
+  border: 0;
+  clip: rect(0 0 0 0);
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  padding: 0;
+  position: absolute;
+  width: 1px; }
+
+/* Extends the .visuallyhidden class to allow the element
+ * to be focusable when navigated to via the keyboard:
+ * https://www.drupal.org/node/897638
+ */
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
+  clip: auto;
+  height: auto;
+  margin: 0;
+  overflow: visible;
+  position: static;
+  width: auto; }
+
+/* Hide visually and from screen readers, but maintain layout
+ */
+.invisible {
+  visibility: hidden; }
+
+/* Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  display: table; }
+
+.clearfix:after {
+  clear: both; }
+
+/* ==========================================================================
+ * EXAMPLE Media Queries for Responsive Design.
+ * These examples override the primary ('mobile first') styles.
+ * Modify as content requires.
+ * ========================================================================== */
+/* ==========================================================================
+ * Print styles.
+ * Inlined to avoid the additional HTTP request:
+ * http://www.phpied.com/delay-loading-your-print-css/
+ * ========================================================================== */
+@media print {
+  *,
+  *:before,
+  *:after,
+  *:first-letter,
+  *:first-line {
+    background: transparent !important;
+    color: #000 !important;
+    box-shadow: none !important;
+    text-shadow: none !important; }
+
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid; }
+
+  thead {
+    display: table-header-group; }
+
+  tr,
+  img {
+    page-break-inside: avoid; }
+
+  img {
+    max-width: 100% !important; }
+
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3; }
+
+  h2,
+  h3 {
+    page-break-after: avoid; } }
+
+/*# sourceMappingURL=main.css.map */

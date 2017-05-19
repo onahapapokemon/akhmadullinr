@@ -1,0 +1,224 @@
+@import "main"
+
+@media only screen and (max-width : 1100px)
+    .hero
+        height: auto
+    .hero__offer
+        margin-left: 0
+        margin-right: 0
+    .hero__title
+        width: inherit
+
+@media only screen and (max-width : 950px)
+    .hero__offer-right
+        padding: 40px 20px
+    .hero__form
+        flex-wrap: wrap
+        justify-content: space-between
+        flex-direction: row
+    .hero__form input[type="text"]
+        margin-bottom: 15px
+
+@media only screen and (max-width : 800px)
+    html
+        font-size: $remFontSize - 3
+    .info-block__wrapper
+        flex-wrap: wrap
+        justify-content: space-around
+        align-content: center
+    .info-block__call:before
+        display: none
+    .header__info-block
+        height: auto
+    .info-block__wrapper div
+        margin: 5px auto
+    .hero__form
+        flex-direction: column
+    .testimonials__item
+        width: 100%
+    .slider .slide
+        margin-right: 1rem
+    .slide-content
+        width: 12.3rem
+        height: 12.3rem
+    .slides
+        margin-left: -200%
+    .control
+        top: 20%
+    .footer-top
+        flex-direction: column
+    .map__wrapper
+        width: 100%
+    .footer-contacts
+        width: 70%
+    .schedule,
+    .footer-number,
+    .footer-post,
+    .address,
+    .address-descr2,
+    .address2,
+    .address-descr1
+        display: table
+    footer
+        padding-top: 0
+
+
+
+
+
+
+
+@media only screen and (max-width : 550px)
+    .header-nav__toggle
+        display: flex
+    .header-nav__toggle img
+        width: 28px
+        height: 30px
+
+    .header-nav__list
+        display: none
+
+    .header-nav__list-main
+        display: flex
+        justify-content: center
+        padding: 0
+        margin: 0
+        width: 25%
+
+    .header-nav__link-main
+        font-size: 1.5rem
+        width: 100%
+        padding: 0
+        margin: 0
+
+    .header-nav .main-ul
+        flex: 4
+        z-index: 100
+        justify-content: space-between
+        margin: auto 20px auto 40px
+
+    .header-nav__toggle-list
+        display: flex
+        font-size: 1rem
+        justify-content: center
+        align-items: flex-end
+        width: 100%
+        margin: 0
+        padding: 0
+        color: $mainGrey
+
+    #menu
+        border: 1px solid white
+        border-radius: 3px
+        text-align: center
+        margin: auto
+        display: none
+        transition: .4s
+
+    #menu ul
+        display: flex
+        flex-direction: row
+        justify-content: center
+        align-items: center
+        margin: 0
+        padding: 0
+
+    .header-nav__inner-link
+        display: flex
+        align-items: center
+        justify-content: center
+        padding: 0
+        margin: 0
+        width: 100%
+    .header-nav__inner-link:hover
+        background-color: $mainBlue
+        color: #fff
+    .hero__offer
+        flex-direction: column
+        width: 100%
+    .hero__title
+        padding: auto 10px
+    .diagnostics__wrapper
+        flex-direction: column
+    .diagnostics__content
+        padding-right: 0
+        order: 3
+    .diagnostics__content-title
+        display: none
+    .diagnostics__mobile-title
+        display: flex
+        justify-content: center
+        align-items: center
+        @include roboto(light)
+        color: $mainDark
+        font-size: 2.15rem
+        padding-top: 20px
+        padding-bottom: 20px
+    .diagnostics__content-wrapper
+        margin-top: 0
+    .advice-title
+        display: flex
+        justify-content: center
+        font-size: 1.5rem
+    .testimonials__item-content
+        flex: 1.5
+        padding: 20px
+    .slider .slide
+        margin-right: 1rem
+    .slide-content
+        width: 12.3rem
+        height: 12.3rem
+    .slides
+        margin-left: -165%
+    .control
+        top: 20%
+    .footer-contacts
+        width: 60%
+    .footer-bottom
+        flex-wrap: wrap
+        flex-direction: column
+        align-items: center
+    .footer-bottom > div
+        font-size: 2rem
+        width: auto
+        align-items: center
+    .footer-logo,
+    .footer-logo img
+        display: none
+    .footer-bottom .title
+        font-size: 2.38rem
+
+@media only screen and (max-width : 400px)
+    #menu ul
+        flex-wrap: wrap
+    #menu ul li
+        font-size: 2rem
+    .header-nav .main-ul
+        justify-content: flex-end
+    .header-nav__list-main
+        display: none
+    .hero__title
+        font-size: 3.5rem
+    .diagnostics__mobile-title
+        font-size: 1.7rem
+    .testimonials__item-content
+        flex: 1
+    .slides
+        margin-left: -130%
+    .footer-contacts
+        width: 50%
+
+@media only screen and (max-width : 300px)
+    .header__info-block
+        min-width: 250px
+    .info-block__wrapper
+        justify-content: center
+    .info-block__call
+        text-align: center
+    .info-block__call-number
+        display: inline-block
+        margin: 0 auto
+    .slides
+        margin-left: -145%
+
+

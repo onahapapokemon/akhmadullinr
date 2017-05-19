@@ -1,0 +1,484 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <!-- Place favicon.ico in the root directory -->
+
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/sass/main.css">
+        <link rel="stylesheet" href="css/sass/media.css">
+        <script src="js/vendor/modernizr-2.8.3.min.js"></script>
+    </head>
+    <body>
+        <!--[if lt IE 10]>
+            <div class="browserupgrade__wrapper">
+                <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+                <p class="browserupgrade">Извините, Вы используете устаревший браузер. Пожалуйста сделайте обновление или воспользуйтесь другим браузером </p>
+                <img src="img/sorry.jpg">
+            </div>
+        <![endif]-->
+        <header>
+            <section class="header__info-block">
+                <div class="info-block__wrapper grid">
+                    <div class="info-block__name">
+                        <span>Сеть автоцентров на Новорижском шоссе</span>
+                    </div>
+                    <div class="info-block__hours">
+                        <span>Без выходных с 9-00 до 18-00</span>
+                    </div>
+                    <div class="info-block__call">
+                        <span class="info-block__call-number">8(495)120-23-62</span>
+                        <a class="info-block__button" href="#">
+                            <span>Заказать звонок</span>
+                        </a>
+                    </div>
+                </div>
+            </section>
+            <nav class="header-nav">
+                <div class="grid header-nav__wrapper">
+                    <div class="header-logo">
+                        <a class="header-logo__anchor">
+                            <img class="header-logo__img" src="img/logo.png">
+                        </a>
+                    </div>
+                    <ul class="main-ul">
+                        <li class="header-nav__list header-nav__list-main">
+                         <a class="header-nav__link header-nav__link-main">Главная</a>
+                        </li>
+                        <li class="header-nav__list">
+                            <a class="header-nav__link">Новости</a>
+                        </li>
+                        <li class="header-nav__list">
+                            <a class="header-nav__link">Услуги</a>
+                        </li>
+                        <li class="header-nav__list">
+                                <a class="header-nav__link">Цены</a>
+                        </li>
+                        <li class="header-nav__list">
+                            <a class="header-nav__link">Мерседес</a>
+                        </li>
+                        <li class="header-nav__list">
+                            <a class="header-nav__link">Порше</a>
+                            <ul class="header-nav__drop-menu">
+                                <li class="drop-menu_list">
+                                    <a href="#" class="drop-menu_link">Диагностика</a>
+                                </li>
+                                <li class="drop-menu_list">
+                                    <a href="#" class="drop-menu_link">Ремонт</a>
+                                </li>
+                                <li class="drop-menu_list">
+                                    <a href="#" class="drop-menu_link">Кузовной ремонт</a>
+                                </li>
+                                <li class="drop-menu_list">
+                                    <a href="#" class="drop-menu_link">Ремонт АКПП</a>
+                                </li>
+                                <li class="drop-menu_list">
+                                    <a href="#" class="drop-menu_link">Ремонт двигателя</a>
+                                </li>
+                            </ul>
+                        </li>
+                        <li class="header-nav__list">
+                            <a class="header-nav__link">Советы</a>
+                        </li>
+                        <li class="header-nav__list">
+                            <a class="header-nav__link">Контакты</a>
+                        </li>
+                        <li class="header-nav__toggle">
+                            <a class="header-nav__toggle-link"  id="toggle">
+                                <img class="toggle-img" src="img/sidebar-menu-respons.png">
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+        </header>
+        <div id="menu"> <!-- mobile toggle menu -->
+                <ul>
+                    <li class="header-nav__list header-nav__toggle-list">
+                        <a class="header-nav__inner-link">Главная</a>
+                    </li>
+                    <li class="header-nav__list header-nav__toggle-list">
+                        <a class="header-nav__inner-link">Новости</a>
+                    </li>
+                    <li class="header-nav__list header-nav__toggle-list">
+                        <a class="header-nav__inner-link">Услуги</a>
+                    </li>
+                    <li class="header-nav__list header-nav__toggle-list">
+                        <a class="header-nav__inner-link">Цены</a>
+                    </li>
+                    <li class="header-nav__list header-nav__toggle-list">
+                        <a class="header-nav__inner-link">Мерседес</a>
+                    </li>
+                    <li class="header-nav__list header-nav__toggle-list">
+                        <a class="header-nav__inner-link">Порше</a>
+                    </li>
+                    <li class="header-nav__list header-nav__toggle-list">
+                        <a class="header-nav__inner-link">Советы</a>
+                    </li>
+                    <li class="header-nav__list header-nav__toggle-list">
+                        <a class="header-nav__inner-link">Контакты</a>
+                    </li>
+                </ul>
+            </div>
+        <section class="hero">
+            <div class="grid hero_wrapper">
+                <div class="hero__title">
+                    <span class="hero__title-text">
+                        Компьютерная диагностика Porsche на новой Риге
+                    </span>
+                </div>
+                <div class="hero__offer">
+                    <div class="hero__offer-left">
+                        <div class="offer-left__title">Акция</div>
+                        <div class="offer-left__descr">
+                            <span>Бесплатная</span>
+                            компьютерная диагностика и диагностика подвески
+                        </div>
+                    </div>
+                    <div class="hero__offer-right">
+                        <div class="offer-right__title">
+                                <span>Оставьте заявку</span>
+                                и получите скидку на обслуживание вашего автомобиля!
+                        </div>
+                        <form class="hero__form">
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="Номер для подтверждения">
+                            <input type="button" value="получить скидку">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="breadcrumbs">
+            <div class="grid breadcrumbs__wrapper">
+                <ul class="breadcrumb">
+                    <li><a href="#">Главная</a></li>
+                    <li>Порше</li>
+                </ul>
+            </div>
+        </section>
+        <section class="diagnostics">
+            <div class="grid diagnostics__wrapper">
+                <div class="diagnostics__mobile-title">Компьютерная диагностика Porsche</div>
+                <div class="diagnostics__content">
+                    <div class="diagnostics__content-title">Компьютерная диагностика Porsche</div>
+                    <div class="diagnostics__content-wrapper">
+                        <div class="diagnostics__content-inner">
+                            <div class="diagnostics__content-top" id="content-top-1">
+                                Когда слышишь слово «Porsche», волей-неволей,
+                                перед глазами появляется картинка дорогого,
+                                респектабельного автомобиля, идеального во всех отношениях.
+                            </div>
+                            <div class="diagnostics__content-top" id="content-top-2">
+                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                                Lorem Ipsum Lorem Ipsum
+                                Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum Lorem Ipsum
+                            </div>
+                            <div class="diagnostics__content-top" id="content-top-3">
+                                Когда слышишь слово «Porsche», волей-неволей,
+                                Ntvfdbmdfmb.dfmb.dkfmbmdf.bmdkbfmkd,f,b;ldf,b;,df;
+                                Test Test Test Test Test Test Test TEst
+                            </div>
+                            <div class="diagnostics__content-top" id="content-top-4">
+                                Блок 4
+                            </div>
+                            <div class="diagnostics__content-top" id="content-top-5">
+                                Блок 5
+                            </div>
+                            <div class="diagnostics__content-text" id="content-text-1">
+                                Машины подобного класса просто не позволят обращаться с ними неуважительно. Регулярная диагностика и техническое обслуживание автомобилей Porsche – обычное дело, привыкайте. Это не способ выудить из клиента как можно больше денег – это, в первую очередь, забота об автомобиле. Своевременная диагностика Porsche в 95% случаев исключает последующий капитальный ремонт. Это к вопросу о рациональном распределении средств. Да и в дорожных условиях нашей страны, разве что танк застрахован от всякого рода повреждений, поэтому разнообразные неприятные сюрпризы в виде поломок для машин любого класса – сегодня не редкость. Ремонт двигателя или АКПП – всего этого можно избежать, вовремя обратившись за помощью к профессионалам. Компьютерная диагностика Porsche Cayenne требует профессионального «родного» оборудования, запчастей, различных комплектующих и всего остального. В нашем техническом центре есть все необходимые условия для качественного обслуживания Порше в полном соответствии со всеми установленными стандартами.компьютерную диагностику вашего автомобиля. В нашем сервисе вы найдете все условия для проведения качественной компьютерной диагностики автомобилей Мерседес на самом высоком уровне.
+                                Если вам необходима диагностика автомобиля Mercedes-Benz, или вы нуждаетесь в подробной консультации по данному вопросу, команда профессиональных специалистов сервиса «Штутгарт Гараж» всегда к вашим услугам. Компьютерная диагностика Mercedes-Benz – одно из основных направлений нашего сервиса и, пожалуй, наилучший способ предупреждения и выявления поломок на самой ранней стадии их возникновения. Новейшее оборудование вкупе с лучшими современными методиками позволяют проводить диагностику на самом высоком уровне, выявлять и устранять мелкие неисправности, оберегая ваш автомобиль от дальнейших, гораздо более серьезных проблем.
+                            </div>
+                            <div class="diagnostics__content-text" id="content-text-2">
+                                Рыба 2 Машины подобного класса просто не позволят обращаться с ними неуважительно. Регулярная диагностика и техническое обслуживание автомобилей Porsche – обычное дело, привыкайте. Это не способ выудить из клиента как можно больше денег – это, в первую очередь, забота об автомобиле. Своевременная диагностика Porsche в 95% случаев исключает последующий капитальный ремонт. Это к вопросу о рациональном распределении средств. Да и в дорожных условиях нашей страны, разве что танк застрахован от всякого рода повреждений, поэтому разнообразные неприятные сюрпризы в виде поломок для машин любого класса – сегодня не редкость. Ремонт двигателя или АКПП – всего этого можно избежать, вовремя обратившись за помощью к профессионалам. Компьютерная диагностика Porsche Cayenne требует профессионального «родного» оборудования, запчастей, различных комплектующих и всего остального. В нашем техническом центре есть все необходимые условия для качественного обслуживания Порше в полном соответствии со всеми установленными стандартами.компьютерную диагностику вашего автомобиля. В нашем сервисе вы найдете все условия для проведения качественной компьютерной диагностики автомобилей Мерседес на самом высоком уровне.
+                                Если вам необходима диагностика автомобиля Mercedes-Benz, или вы нуждаетесь в подробной консультации по данному вопросу, команда профессиональных специалистов сервиса «Штутгарт Гараж» всегда к вашим услугам. Компьютерная диагностика Mercedes-Benz – одно из основных направлений нашего сервиса и, пожалуй, наилучший способ предупреждения и выявления поломок на самой ранней стадии их возникновения. Новейшее оборудование вкупе с лучшими современными методиками позволяют проводить диагностику на самом высоком уровне, выявлять и устранять мелкие неисправности, оберегая ваш автомобиль от дальнейших, гораздо более серьезных проблем.
+                            </div>
+                            <div class="diagnostics__content-text" id="content-text-3">
+                                Рыба 3 Машины подобного класса просто не позволят обращаться с ними неуважительно. Регулярная диагностика и техническое обслуживание автомобилей Porsche – обычное дело, привыкайте. Это не способ выудить из клиента как можно больше денег – это, в первую очередь, забота об автомобиле. Своевременная диагностика Porsche в 95% случаев исключает последующий капитальный ремонт. Это к вопросу о рациональном распределении средств. Да и в дорожных условиях нашей страны, разве что танк застрахован от всякого рода повреждений, поэтому разнообразные неприятные сюрпризы в виде поломок для машин любого класса – сегодня не редкость. Ремонт двигателя или АКПП – всего этого можно избежать, вовремя обратившись за помощью к профессионалам. Компьютерная диагностика Porsche Cayenne требует профессионального «родного» оборудования, запчастей, различных комплектующих и всего остального. В нашем техническом центре есть все необходимые условия для качественного обслуживания Порше в полном соответствии со всеми установленными стандартами.компьютерную диагностику вашего автомобиля. В нашем сервисе вы найдете все условия для проведения качественной компьютерной диагностики автомобилей Мерседес на самом высоком уровне.
+                                Если вам необходима диагностика автомобиля Mercedes-Benz, или вы нуждаетесь в подробной консультации по данному вопросу, команда профессиональных специалистов сервиса «Штутгарт Гараж» всегда к вашим услугам. Компьютерная диагностика Mercedes-Benz – одно из основных направлений нашего сервиса и, пожалуй, наилучший способ предупреждения и выявления поломок на самой ранней стадии их возникновения. Новейшее оборудование вкупе с лучшими современными методиками позволяют проводить диагностику на самом высоком уровне, выявлять и устранять мелкие неисправности, оберегая ваш автомобиль от дальнейших, гораздо более серьезных проблем.
+                            </div>
+                            <div class="diagnostics__content-text" id="content-text-4">
+                                Рыба 4 Машины подобного класса просто не позволят обращаться с ними неуважительно. Регулярная диагностика и техническое обслуживание автомобилей Porsche – обычное дело, привыкайте. Это не способ выудить из клиента как можно больше денег – это, в первую очередь, забота об автомобиле. Своевременная диагностика Porsche в 95% случаев исключает последующий капитальный ремонт. Это к вопросу о рациональном распределении средств. Да и в дорожных условиях нашей страны, разве что танк застрахован от всякого рода повреждений, поэтому разнообразные неприятные сюрпризы в виде поломок для машин любого класса – сегодня не редкость. Ремонт двигателя или АКПП – всего этого можно избежать, вовремя обратившись за помощью к профессионалам. Компьютерная диагностика Porsche Cayenne требует профессионального «родного» оборудования, запчастей, различных комплектующих и всего остального. В нашем техническом центре есть все необходимые условия для качественного обслуживания Порше в полном соответствии со всеми установленными стандартами.компьютерную диагностику вашего автомобиля. В нашем сервисе вы найдете все условия для проведения качественной компьютерной диагностики автомобилей Мерседес на самом высоком уровне.
+                                Если вам необходима диагностика автомобиля Mercedes-Benz, или вы нуждаетесь в подробной консультации по данному вопросу, команда профессиональных специалистов сервиса «Штутгарт Гараж» всегда к вашим услугам. Компьютерная диагностика Mercedes-Benz – одно из основных направлений нашего сервиса и, пожалуй, наилучший способ предупреждения и выявления поломок на самой ранней стадии их возникновения. Новейшее оборудование вкупе с лучшими современными методиками позволяют проводить диагностику на самом высоком уровне, выявлять и устранять мелкие неисправности, оберегая ваш автомобиль от дальнейших, гораздо более серьезных проблем.
+                            </div>
+                            <div class="diagnostics__content-text" id="content-text-5">
+                                Рыба 5 Машины подобного класса просто не позволят обращаться с ними неуважительно. Регулярная диагностика и техническое обслуживание автомобилей Porsche – обычное дело, привыкайте. Это не способ выудить из клиента как можно больше денег – это, в первую очередь, забота об автомобиле. Своевременная диагностика Porsche в 95% случаев исключает последующий капитальный ремонт. Это к вопросу о рациональном распределении средств. Да и в дорожных условиях нашей страны, разве что танк застрахован от всякого рода повреждений, поэтому разнообразные неприятные сюрпризы в виде поломок для машин любого класса – сегодня не редкость. Ремонт двигателя или АКПП – всего этого можно избежать, вовремя обратившись за помощью к профессионалам. Компьютерная диагностика Porsche Cayenne требует профессионального «родного» оборудования, запчастей, различных комплектующих и всего остального. В нашем техническом центре есть все необходимые условия для качественного обслуживания Порше в полном соответствии со всеми установленными стандартами.компьютерную диагностику вашего автомобиля. В нашем сервисе вы найдете все условия для проведения качественной компьютерной диагностики автомобилей Мерседес на самом высоком уровне.
+                                Если вам необходима диагностика автомобиля Mercedes-Benz, или вы нуждаетесь в подробной консультации по данному вопросу, команда профессиональных специалистов сервиса «Штутгарт Гараж» всегда к вашим услугам. Компьютерная диагностика Mercedes-Benz – одно из основных направлений нашего сервиса и, пожалуй, наилучший способ предупреждения и выявления поломок на самой ранней стадии их возникновения. Новейшее оборудование вкупе с лучшими современными методиками позволяют проводить диагностику на самом высоком уровне, выявлять и устранять мелкие неисправности, оберегая ваш автомобиль от дальнейших, гораздо более серьезных проблем.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="diagnostics__advice">
+                    <div class="advice-title">
+                        Популярные советы
+                    </div>
+                    <div class="advice-menu">
+                        <input type="radio" name="tabs" id="tab1" checked>
+                        <label for="tab1">Обслуживание автокондиционера: необходимость или лишние затраты?</label>
+                        <input type="radio" name="tabs" id="tab2">
+                        <label for="tab2">Контроль уровня и замена жидкостей в автомобиле</label>
+                        <input type="radio" name="tabs" id="tab3">
+                        <label for="tab3">Обслуживание автокондиционера: необходимость или лишние затраты?</label>
+                        <input type="radio" name="tabs" id="tab4">
+                        <label for="tab4">Контроль уровня и замена жидкостей в автомобиле</label>
+                        <input type="radio" name="tabs" id="tab5">
+                        <label for="tab5">Обслуживание автокондиционера: необходимость или лишние затраты?</label>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="testimonials">
+            <div class="grid testimonials__wrapper">
+                <div class="testimonials__title">
+                    Отзывы клиентов
+                </div>
+                <div class="testimonials__box">
+                    <div class="testimonials__item">
+                        <div class="testimonials__item-img">
+                        </div>
+                        <div class="testimonials__item-content">
+                            <div class="testimonials__item-title">
+                                <span>Евгений Малинин</span>
+                                <span>Mercedes C200</span>
+                            </div>
+                            <div class="testimonials__item-text">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__item-img">
+                        </div>
+                        <div class="testimonials__item-content">
+                            <div class="testimonials__item-title">
+                                <span>Рулон Обоев</span>
+                                <span>Porsche 911</span>
+                            </div>
+                            <div class="testimonials__item-text">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
+                            </div>
+                        </div>
+                    </div>
+                    <div class="testimonials__item">
+                        <div class="testimonials__item-img">
+                        </div>
+                        <div class="testimonials__item-content">
+                            <div class="testimonials__item-title">
+                                <span>Алексей Серов</span>
+                                <span>Mercedes C200</span>
+                            </div>
+                            <div class="testimonials__item-text">
+                                This is Photoshop's version  of Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin, lorem quis bibendum auctor, nisi elit consequat ipsum, nec sagittis sem nibh id elit. Duis sed odio sit amet nibh vulputate cursus a sit amet mauris. Morbi accumsan ipsum velit. Nam nec tellus a odio tincidunt auctor a ornare odio. Sed non
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="testimonials__button-wrapper">
+                    <input type="button" href="#" value="Еще Отзывы">
+                </div>
+            </div>
+        </section>
+        <section class="team">
+            <div class="grid team__wrapper">
+
+                <div class="team__title">Наша команда</div>
+
+                <div class="slider">
+
+                    <div class="fade-left"></div>
+                    <div class="fade-right"></div>
+                    <!-- Hidden input for state followed by the back and next buttons for the interface -->
+                    <input type="radio" name="slider" id="slide-1" hidden>
+                    <label class="control back" for="slide-5">&#9001;</label>
+                    <label class="control next" for="slide-2">&#9002;</label>
+                    <input type="radio" name="slider" id="slide-2" hidden>
+                    <label class="control back" for="slide-1">&#9001;</label>
+                    <label class="control next" for="slide-3">&#9002;</label>
+                    <input type="radio" name="slider" id="slide-3" hidden checked>
+                    <label class="control back" for="slide-2">&#9001;</label>
+                    <label class="control next" for="slide-4">&#9002;</label>
+                    <input type="radio" name="slider" id="slide-4" hidden>
+                    <label class="control back" for="slide-3">&#9001;</label>
+                    <label class="control next" for="slide-5">&#9002;</label>
+                    <input type="radio" name="slider" id="slide-5" hidden>
+                    <label class="control back" for="slide-4">&#9001;</label>
+                    <label class="control next" for="slide-1">&#9002;</label>
+
+                    <div class="slides">
+                        <!-- The amount of offsets per side should be one less than the total number of slides -->
+                        <span class="offset"></span>
+                        <span class="offset"></span>
+                        <span class="offset"></span>
+                        <span class="offset"></span>
+
+                        <!-- Content slides -->
+                        <div class="slide">
+                            <div class="slide-content"></div>
+                            <div class="slide-name">
+                                <span>Сергей Михайлов</span>
+                                <span>ремонт двигателей</span>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content"></div>
+                            <div class="slide-name">
+                                <span>Евгений Малинин</span>
+                                <span>мастер кузовных работ</span>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content"></div>
+                            <div class="slide-name">
+                                <span>Олег Никитин</span>
+                                <span>директор</span>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content"></div>
+                            <div class="slide-name">
+                                <span>Мария Соколова</span>
+                                <span>администратор</span>
+                            </div>
+                        </div>
+                        <div class="slide">
+                            <div class="slide-content"></div>
+                            <div class="slide-name">
+                                <span>Рыба Рыба</span>
+                                <span>ремонт двигателей</span>
+                            </div>
+                        </div>
+                        <div class="offset"></div>
+                        <div class="offset"></div>
+                        <div class="offset"></div>
+                        <div class="offset"></div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <section class="special-offer">
+            <div class="grid">
+                <div class="hero__offer">
+                    <div class="hero__offer-left">
+                        <div class="offer-left__title">Акция</div>
+                        <div class="offer-left__descr">
+                            <span>Бесплатная</span>
+                            компьютерная диагностика и диагностика подвески
+                        </div>
+                    </div>
+                    <div class="hero__offer-right">
+                        <div class="offer-right__title">
+                            <span>Оставьте заявку</span>
+                            и получите скидку на обслуживание вашего автомобиля!
+                        </div>
+                        <form class="hero__form">
+                            <input type="text" placeholder="Ваше имя">
+                            <input type="text" placeholder="Номер для подтверждения">
+                            <input type="button" value="получить скидку">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer>
+            <div class="footer-top">
+                <div class="map__wrapper">
+                    <img src="img/map.png">
+                </div>
+                <div class="footer-contacts">
+                    <div class="schedule">
+                        <div>График работы</div>
+                        <div>9:00 – 21:00, без выходных</div>
+                    </div>
+                    <div class="footer-number">
+                        <div>Контактные телефоны </div>
+                        <div class="footer-number__text">
+                            <span>+7 (495) 120-23-62</span>
+                            <span>+7 (916) 380-05-99</span>
+                            <button>Заказать звонок</button>
+                        </div>
+                    </div>
+                    <div class="footer-post">
+                        <div>Почта</div>
+                        <div>info@s-gar.ru</div>
+                    </div>
+                    <div class="address">
+                        <div>Адрес-1:</div>
+                        <div>3-ий км Новорижского ш.,<br/> г. Красногорск. Ильинский тупик, д.1</div>
+                    </div>
+                    <div class="address-descr1">
+                        Заезд с кругового движения (пересечие<br/>  Ильинского и Новорижского шоссе, от АЗС направо)
+                    </div>
+                    <div class="address2">
+                        <div>Адрес-2:</div>
+                        <div>Новорижское шоссе, 17-й километр, с1</div>
+                    </div>
+                    <div class="address-descr2">
+                        Пересечение МКАД и Новорижского шоссе
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom grid">
+                <div class="footer-logo">
+                    <img src="img/logo.png">
+                </div>
+                <div class="footer-services">
+                    <div class="footer-services__div title">Услуги</div>
+                    <div class="footer-services__div">Кузовной ремонт</div>
+                    <div class="footer-services__div">Слесарный ремонт</div>
+                    <div class="footer-services__div">Установка оборудования</div>
+                </div>
+                <div class="footer-mercedes">
+                    <div class="title">Мерседес</div>
+                    <div>Диагностика</div>
+                    <div>Ремонт</div>
+                    <div>Кузовной ремонт</div>
+                    <div>Ремонт АКПП</div>
+                    <div>Ремонт двигателя</div>
+                </div>
+                <div class="footer-porsche">
+                    <div class="title">Порше</div>
+                    <div>Диагностика</div>
+                    <div>Ремонт</div>
+                    <div>Кузовной ремонт</div>
+                    <div>Ремонт АКПП</div>
+                    <div>Ремонт двигателя</div>
+                </div>
+                <div class="footer-about">
+                    <div class="title">О компании</div>
+                    <div>Отзывы</div>
+                    <div>Команда</div>
+                    <div>Контакты</div>
+                </div>
+            </div>
+        </footer>
+        <section class="bottom-info">
+            <div class="grid bottom-info__wrapper">
+                <div>ООО "Штутгарт" ©2017. Все права защищены.</div>
+                <div>Информация на сайте носит информационный характер и не является публичной офертой, определяемой ст.473(2)ГК РФ</div>
+            </div>
+        </section>
+
+
+        <script src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+        <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.12.0.min.js"><\/script>')</script>
+        <script src="js/plugins.js"></script>
+        <script src="js/main.js"></script>
+
+        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
+        <script>
+            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
+            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
+            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
+            e.src='https://www.google-analytics.com/analytics.js';
+            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
+            ga('create','UA-XXXXX-X','auto');ga('send','pageview');
+        </script>
+    </body>
+</html>
