@@ -28,6 +28,9 @@ body {
     -webkit-overflow-scrolling: touch;
     min-height: 100vh;
     background-color: #ebeff2;
+    height: inherit;
+    outline: 1px solid red;
+    position: relative;
 }
 
 a {
@@ -679,6 +682,18 @@ label.login > i{
     .back-img__wrapper img, .save-img__wrapper img {
         left: 0;
     }
+    log {
+		margin-bottom: 50px;
+	}
+}
+
+@media screen and (max-width: 770px) {
+	.log {
+		margin-bottom: 100px;
+	}
+	.footer .row > div {
+    text-align: center;
+	}
 }
 
 @media screen and (max-width: 600px) {
