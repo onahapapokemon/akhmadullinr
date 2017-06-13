@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <style>
+        body,
+        html {
+            height: 100%;
+            width: 100%;
+            padding: 0;
+            margin: 0;
+        }
+
+        #matrix {
+            width: 400px;
+            margin: auto;
+            overflow: auto;
+            text-align: justify;
+        }
+        .arrow-up,
+        .arrow-down {
+            position: absolute;
+            top: 0;
+            display: none;
+            cursor: pointer;
+        }
+        .active {
+            display: block;
+            position: fixed;
+            left: 0;
+            top: 0;
+        }
+    </style>
+    <meta charset="utf-8">
+</head>
+
+<body>
+
+<div class="arrow-up">▲</div>
+<div class="arrow-down">▼</div>
+<div id="matrix">
+    <script>
+        for (var i = 0; i < 2000; i++) document.writeln(i)
+    </script>
+</div>
+
+<script>
+    // ... ваш код
+    // при необходимости, в документ можно добавить элементы и стили
+    var btnUp = document.querySelector('.arrow-up');
+    var btnDown = document.querySelector('.arrow-down');
+    var memory;
+    window.onscroll = function () {
+        if (btnUp.classList.contains('active') && document.documentElement.clientHeight > window.pageYOffset) {
+            btnUp.classList.remove('active');
+        }
+        else if ( document.documentElement.clientHeight < window.pageYOffset) {
+            btnUp.classList.add('active');
+            btnDown.classList.remove('active');
+        }
+    };
+    btnUp.onclick = function () {
+        memory = window.pageYOffset;
+        window.scrollTo(0,0);
+        btnUp.classList.remove('active');
+        btnDown.classList.add('active');
+    };
+
+    btnDown.onclick = function () {
+        window.scrollTo(0,memory);
+        btnUp.classList.add('active');
+        btnDown.classList.remove('active');
+    }
+
+</script>
+</body>
+
+</html>

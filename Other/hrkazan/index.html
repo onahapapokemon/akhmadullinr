@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+    <div class="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-2 col-sm-3 col-xs-12 header-logo">
+                    <div class="toggle-menu">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                    </div>
+                    <div class="logo">
+                        <a href="#" title="logo">
+                            <img src="img/logo.png" alt="logo">
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-7 col-sm-5 col-xs-12 search-bar">
+                    <div class="container-1">
+                        <span class="icon"><i class="fa fa-search"></i></span>
+                        <input type="search" id="search" placeholder="Поиск по программе" />
+                    </div>
+                </div>
+                <div class="col-md-3 col-sm-4 col-xs-12 right-panel">
+                    <div class="icons-panel">
+                        <div class="settings">
+                            <a>
+                                <img src="img/settings.png">
+                            </a>
+                        </div>
+                        <div class="notification">
+                            <a>
+                                <img src="img/icon1.png">
+                            </a>
+                        </div>
+                        <div class="calendar">
+                            <a>
+                                <img src="img/date.png">
+                            </a>
+                        </div>
+                        <div class="message">
+                            <a>
+                                <img src="img/message.png">
+                            </a>
+                        </div>
+                    </div>
+                    <div class="user-box">
+                        <div class="user">
+                            <img src="img/user.png">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main">
+        <div class="container">
+            <div class="main__title">
+                <span>Добавить контрагента</span>
+                <i class="fa fa-cog" aria-hidden="true"></i>
+            </div>
+            <div class="row">
+                <div class="col-md-5">
+                    <div class="main__information">
+                        <a href="#" data-toggle="collapse" data-target="#form1" role="button" aria-haspopup="true" aria-expanded="false">
+                            <span class="information__title">Основная информация </span><span><img class="form-caret rotate-caret" src="img/caret.png"></span>
+                        </a>
+                        <form action="#" method="post" class="collapse" id="form1">
+                            <label for="name" class="name"> Название
+                                <input type="text" id="name">
+                            </label>
+                            <label for="address" class="address"> Адрес
+                                <input type="text" id="address">
+                            </label>
+                            <label for="phone" class="phone"> Телефон
+                                <input type="text" id="phone">
+                            </label>
+                            <label for="email" class="email"> E-MAIL
+                                <input type="email" id="email">
+                            </label>
+                            <label for="contact" class="contact"> Контактное лицо
+                                <i class="fa fa-question" aria-hidden="true"></i>
+                                <span><img class="select-caret" src="img/select-caret.png"></span>
+                                <button type="button" class="add-option">
+                                    <i class="fa fa-plus" aria-hidden="true"></i>
+                                </button>
+                                <select name="contact" id="contact">
+                                    <option class="caret"></option>
+                                    <option>Option 1</option>
+                                    <option>Option 2</option>
+                                </select>
+                            </label>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="main__additional">
+                    <a href="#" data-toggle="collapse" data-target="#form2" role="button" aria-haspopup="true" aria-expanded="false" aria-checked="true">
+                        <span class="information__title">Дополнительно </span><span><img class="form-caret rotate-caret" src="img/caret.png"></span>
+                    </a>
+                    <form action="#" method="post" class="collapse" id="form2">
+                        <label for="site" class="site"> Сайт
+                            <input type="text" id="site">
+                        </label>
+                        <label for="activity" class="activity"> Деятельность
+                            <i class="fa fa-question" aria-hidden="true"></i>
+                            <input type="text" id="activity">
+                        </label>
+                        <div class="client-access__title">
+                            <span>Клиентский доступ в систему</span>
+                        </div>
+                        <label for="client-access" class="client-access">Группа доступа
+                            <span><img class="select-caret" src="img/select-caret.png"></span>
+                            <select id="client-access" name="client-access">
+                                <option></option>
+                                <option></option>
+                            </select>
+                        </label>
+                        <label for="login" class="login"> Логин
+                            <i class="fa fa-question" aria-hidden="true"></i>
+                            <input type="text" id="login">
+                        </label>
+                    </form>
+                    </div>
+                </div>
+                <div class="main__buttons col-md-2">
+                    <div class="buttons">
+                        <div class="buttons__back">
+                            <div class="back-img__wrapper">
+                                <img src="img/back.png">
+                            </div>
+                            <div class="back-image__description">
+                                <span>Назад в таблицу</span>
+                            </div>
+                        </div>
+                        <div class="buttons__save">
+                            <div class="save-img__wrapper">
+                                <img src="img/save.png">
+                            </div>
+                            <div class="save-image__description">
+                                <span>Сохранить</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="log">
+                        <i class="fa fa-bars" aria-hidden="true"></i>
+                        <span>Лог записи</span>
+                    </div>
+                </div>
+            </div>
+            <div class="add-button">
+                <button type="button">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+            </div>
+        </div>
+        <footer class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="footer-left">
+                            <span> &#169; </span>
+                            <a>ClientBase.ru</a>
+                            <span> Версия 2.0.5</span>
+                        </div>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="footer-right">
+                            <a>Мобильная версия</a>
+                            <a>Написать разработчику</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </div>
+    <script
+            src="https://code.jquery.com/jquery-3.2.1.min.js"
+            integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+            crossorigin="anonymous"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $('.collapse').on('shown.bs.collapse', function(){
+            $(this).parent().find(".form-caret").removeClass("rotate-caret");
+        }).on('hidden.bs.collapse', function(){
+            $(this).parent().find(".form-caret").addClass("rotate-caret");
+        });
+    </script>
+</body>
+</html>

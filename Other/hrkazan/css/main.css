@@ -1,0 +1,693 @@
+@font-face {
+    font-family: "ubuntu-bold";
+    src: url("../fonts/Ubuntu-B.ttf") format("truetype");
+    font-weight: bold;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "ubuntu";
+    src: url("../fonts/Ubuntu-R.ttf") format("truetype"); }
+
+@font-face {
+    font-family: "ubuntu-light";
+    src: url("../fonts/Ubuntu-L.ttf") format("truetype"); }
+
+@font-face {
+    font-family: "ubuntu-medium";
+    src: url("../fonts/Ubuntu-M.ttf") format("truetype"); }
+
+html {
+    font-size: 11px;
+}
+
+body {
+    font-family: ubuntu-medium, Arial, sans-serif;
+    color: #333;
+    -webkit-font-smoothing: antialiased;
+    -webkit-overflow-scrolling: touch;
+    min-height: 100vh;
+    background-color: #ebeff2;
+}
+
+a {
+    text-decoration: none;
+}
+
+hr {
+    height: 1px;
+    display: block;
+    border: 0;
+    border-top: 1px solid #000;
+    margin: 1em 0;
+    padding: 0;
+}
+
+.header {
+    background-color: #3495ee;
+    min-height: 64px;
+}
+
+.header-logo {
+    background-color: #3b9efc;
+    min-height: 64px;
+    padding-top: 10px;
+}
+
+.header-logo > div {
+    display: inline-block;
+}
+
+.logo img {
+    height: 64px;
+}
+
+.toggle-menu {
+    width: 18px;
+    height: 13px;
+    margin-right: 12.6%;
+}
+
+.toggle-menu i {
+    color: #fff;
+    transform: scale(1.5,1.2);
+    display: inline-block;
+    padding-left: 2px;
+    cursor: pointer;
+}
+
+.logo img {
+    height: 100%;
+    width: 80%;
+}
+
+/* search bar */
+.search-bar {
+}
+
+
+.container-1{
+    margin-top: 7px;
+    width: 100%;
+    vertical-align: middle;
+    white-space: nowrap;
+    position: relative;
+}
+
+.container-1 input#search{
+    width: 100%;
+    height: 50px;
+    background: #3399cc;
+    border: none;
+    font-size: 14px;
+    float: left;
+    color: #333;
+    padding-left: 55px;
+    -webkit-border-radius: 25px;
+    -moz-border-radius: 25px;
+    border-radius: 25px;
+
+    -webkit-transition: background .55s ease;
+    -moz-transition: background .55s ease;
+    -ms-transition: background .55s ease;
+    -o-transition: background .55s ease;
+    transition: background .55s ease;
+}
+
+.container-1 input#search::-webkit-input-placeholder {
+    color: rgba(255,255,255,0.5)
+}
+
+.container-1 input#search:-moz-placeholder { /* Firefox 18- */
+    color: #fff;
+}
+
+.container-1 input#search::-moz-placeholder {  /* Firefox 19+ */
+    color: #fff;
+}
+
+.container-1 input#search:-ms-input-placeholder {
+    color: #fff;
+}
+
+.container-1 .icon{
+    position: absolute;
+    top: 50%;
+    font-size: 17px;
+    margin-left: 23px;
+    margin-top: 14px;
+    z-index: 1;
+    color: rgba(255,255,255,0.5)
+}
+
+.container-1 input#search:hover, .container-1 input#search:focus, .container-1 input#search:active{
+    outline:none;
+    background: #ffffff;
+}
+
+/* right panel */
+.right-panel {
+    height: 64px;
+}
+
+
+.right-panel > div {
+    display: inline-block;
+    margin: 0;
+}
+
+.icons-panel {
+    width: 78%;
+    text-align: justify;
+}
+
+.icons-panel > div {
+    display: inline-block;
+    margin: 0 auto;
+    text-align: justify;
+    margin-right: 15%;
+    width: 16px;
+    height: 16px;
+    cursor: pointer;
+}
+
+.icons-panel > div:last-of-type {
+    margin-right: 0;
+}
+
+.icons-panel a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.icons-panel img {
+    width: 100%;
+    height: 100%;
+}
+
+.user-box {
+    width: 20%;
+}
+
+.user {
+    width: 40px;
+    height: 40px;
+    background-color: #57b0ff;
+    border-radius: 50%;
+    position: relative;
+    top: 15px;
+    cursor: pointer;
+    right: 0;
+    float: right;
+}
+
+.user img {
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+
+.user:after {
+    content: url("../img/arrow.png");
+    position: absolute;
+    right: -15px;
+    top: 30%;
+    cursor: pointer;
+}
+
+/* main block */
+
+.main .container {
+    text-align: center;
+}
+
+.main__title {
+    display: inline-block;
+    color: #333;
+    font-size: 20px;
+    font-family: ubuntu-medium, Arial, sans-serif;
+    margin: 40px auto;
+    cursor: pointer;
+}
+
+.main__title i {
+    color: #cdd1d4;
+    position: relative;
+    top: 2px;
+    margin-left: 4px;
+}
+
+.main__additional, .main__information {
+    background-color: #fff;
+    display: block;
+    padding-right: 0;
+    padding-left: 0;
+    border-radius: 5px;
+    margin-bottom: 30px;
+}
+
+.main__information > a, .main__additional > a {
+    display: block;
+    height: 61px;
+    width: 100%;
+}
+
+
+.main__information > a > span,
+.main__additional > a > span{
+    padding-bottom: 20px;
+    padding-top: 20px;
+    display: inline-block;
+}
+
+.information__title {
+    color: #333;
+    font-family: ubuntu-medium, Arial, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+    float: left;
+    padding-left: 20px;
+}
+
+.information__title + span {
+    float: right;
+    margin-right: 20px;
+}
+
+.rotate-caret {
+    transform: rotate(180deg);
+}
+
+.main__information form,
+.main__additional form{
+    width: 100%;
+    border-top: 1px solid #ededed;
+    margin: 0;
+    padding: 30px 0 35px 0;
+}
+
+.main__information form > label,
+.main__additional form > label{
+    text-align: justify;
+    display: block;
+    clear: both;
+    color: #999;
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: ubuntu, Arial, sans-serif;
+    font-weight: 400;
+    padding-left: 6%;
+    padding-right: 6%;
+}
+
+.main__information form > label input,
+.main__additional form > label input {
+    float: right;
+    width: 60%;
+    border-radius: 25px;
+    outline: none;
+    height: 33px;
+    border: none;
+    margin-bottom: 12px;
+    background-color: #f4f4f4;
+    position: relative;
+    top: -5px;
+    padding-left: 5%;
+    box-shadow: 0 3px 3px #efefef inset;
+}
+
+label.contact {
+    position: relative;
+}
+
+label.contact > i,
+label.activity > i,
+label.login > i{
+    background-color: #d8e8f7;
+    border-radius: 50%;
+    font-size: 12px;
+    color: #000;
+    width: 15px;
+    height: 15px;
+    text-align: center;
+    padding-top: 2px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.main__information form > label select,
+.main__information form > label option{
+    float: right;
+    width: 50%;
+    border-radius: 25px;
+    outline: none;
+    height: 33px;
+    border: none;
+    margin-bottom: 12px;
+    background-color: #f4f4f4;
+    position: relative;
+    top: -5px;
+    padding-left: 5%;
+    box-shadow: 0 3px 3px #efefef inset;
+    cursor: pointer;
+}
+
+.main__information form > label select,
+.main__additional form > label select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    text-indent: 1px;
+    text-overflow: '';
+}
+
+.select-caret {
+    position: absolute;
+    right: 18%;
+    z-index: 100;
+    top: 10px;
+    cursor: pointer;
+}
+
+.add-option {
+    float: right;
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.add-option > i{
+    border-radius: 50%;
+    font-size: 10px;
+    color: #ccc;
+    border: 1px dashed #ccc;
+    width: 32px;
+    height: 32px;
+    text-align: center;
+    padding-top: 23%;
+    margin-left: 10px;
+    position: relative;
+    top: -5px;
+}
+
+.add-option > i:hover {
+    background-color: #ededed;
+}
+
+/* second form */
+
+.main__additional #form2 {
+    padding-bottom: 12px;
+}
+
+
+.client-access__title {
+    display: block;
+    margin: 23px 6% 35px 6%;
+    text-align: left;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ededed;
+    width: 88%;
+}
+
+.client-access__title > span {
+    display: inline-block;
+    color: #333;
+    font-family: ubuntu-medium, Arial, sans-serif;
+    font-size: 13px;
+    text-transform: uppercase;
+}
+
+.main__additional .client-access,
+.main__additional label.login {
+    display: inline-block;
+    margin: 0;
+    width: 49%;
+    padding: 12px 0 0 6%;
+    position: relative;
+}
+
+.main__additional label.login {
+    padding-right: 6%;
+    top: 1px;
+}
+
+.login input#login {
+    width: 60%;
+}
+
+.main__additional form > label select,
+.main__additional form > label option{
+    float: right;
+    border-radius: 25px;
+    outline: none;
+    width: 50%;
+    height: 33px;
+    border: none;
+    margin-bottom: 12px;
+    background-color: #f4f4f4;
+    position: relative;
+    top: -5px;
+    padding-left: 5%;
+    box-shadow: 0 3px 3px #efefef inset;
+    cursor: pointer;
+}
+
+.main__additional form .select-caret {
+    top: 20px;
+    right: 8%;
+}
+
+
+/* buttons */
+
+.main__buttons {
+    margin: 0;
+    padding: 0;
+}
+
+.buttons {
+    background-color: #dfe3e6;
+    border-radius: 5px;
+    padding-left: 5%;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.buttons__save,
+.buttons__back {
+    width: 100%;
+    display: block;
+    text-align: left;
+}
+
+.buttons__back > div,
+.buttons__save > div {
+    display: inline-block;
+}
+
+.back-img__wrapper {
+    background-color: #fff;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    position: relative;
+    margin-right: 10px;
+    vertical-align: 50%;
+    margin-bottom: 15px;
+    cursor: pointer;
+}
+
+.back-img__wrapper img {
+    position: relative;
+    top: 25%;
+    left: 30%;
+    width: 15px;
+    height: 15px;
+}
+
+.save-img__wrapper {
+    background-color: #66cc66;
+    border-radius: 50%;
+    height: 44px;
+    width: 44px;
+    position: relative;
+    margin-right: 10px;
+    vertical-align: 50%;
+    cursor: pointer;
+}
+
+.save-img__wrapper img {
+    position: relative;
+    top: 25%;
+    left: 30%;
+    width: 20px;
+    height: 15px;
+}
+
+.buttons span {
+    color: #333;
+    font-family: ubuntu, Arial, sans-serif;
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.log {
+    margin-top: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding-top: 23px;
+    padding-bottom: 23px;
+}
+
+.log span {
+    margin-left: 12px;
+    font-size: 13px;
+    font-family: ubuntu, Arial, sans-serif;
+    color: #2c2f34;
+}
+
+.log > i {
+    cursor: pointer;
+}
+
+.add-button {
+    position: absolute;
+    bottom: 5%;
+    right: 7%;
+}
+
+.add-button button {
+    outline: none;
+    border: none;
+    background-color: transparent;
+}
+
+.add-button button > i{
+    background-color: #4397e0;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 25px;
+    font-weight: 100;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    padding-top: 23%;
+    margin-left: 10px;
+    position: relative;
+    top: -5px;
+}
+
+/* footer */
+
+.footer {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding-bottom: 30px;
+}
+
+.footer a {
+    cursor: pointer;
+}
+
+.footer .row > div {
+    text-align: left;
+}
+
+.footer-left {
+    display: inline-block;
+    padding-left: 20px;
+}
+
+.footer-left a {
+    margin-right: 25px;
+}
+
+.footer-right {
+    padding-left: 10%;
+}
+
+.footer-right a:first-of-type {
+    margin-right: 25px;
+}
+
+
+
+@media screen and (max-width:1200px) {
+    html {
+        font-size: 10px;
+    }
+    .toggle-menu {
+        margin-right: auto;
+    }
+
+    .header-logo {
+         padding-right: 0;
+     }
+
+    .main__information form > label select{
+        width: 40%;
+    }
+    .main__information .select-caret {
+        right: 20%;
+    }
+    .client-access__title {
+        margin-bottom: 15px;
+    }
+    .main__additional .client-access,
+    .main__additional label.login {
+        display: block;
+        width: 100%;
+    }
+    .main__additional .client-access {
+        padding-top: 0;
+    }
+    .main__additional label.login {
+        margin-bottom: 17px;
+    }
+    .main__additional form > label select {
+        margin-right: 7%;
+        width: 55%;
+        margin-bottom: 0;
+    }
+    .main__additional form .select-caret {
+        top: 10px;
+        right: 10%;
+    }
+}
+
+@media screen and (max-width: 992px) {
+    .main__information .select-caret {
+        right: 15%;
+    }
+
+    .buttons__save,
+    .buttons__back {
+        text-align: center;
+        position: relative;
+        right: 5%;
+    }
+
+    .buttons__back {
+        right: 3%;
+    }
+
+    .back-img__wrapper img, .save-img__wrapper img {
+        left: 0;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .buttons__back {
+        right: 1.5%;
+    }
+    .main__information .select-caret {
+        right: 20%;
+    }
+}
+
+
+

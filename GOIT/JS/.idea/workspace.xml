@@ -51,9 +51,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/task17-6(1).html" />
-        <option value="$PROJECT_DIR$/task17-7.html" />
-        <option value="$PROJECT_DIR$/task17-8.html" />
         <option value="$PROJECT_DIR$/task17-9.js" />
         <option value="$PROJECT_DIR$/task17-9.html" />
         <option value="$PROJECT_DIR$/task17-10.html" />
@@ -102,6 +99,9 @@
         <option value="$PROJECT_DIR$/lesson23/index.html" />
         <option value="$PROJECT_DIR$/lesson23/assets/css/custom.css" />
         <option value="$PROJECT_DIR$/lesson23/assets/js/cart-test.js" />
+        <option value="$PROJECT_DIR$/task20-11.html" />
+        <option value="$PROJECT_DIR$/task20-12.html" />
+        <option value="$PROJECT_DIR$/task20-13.html" />
       </list>
     </option>
   </component>
@@ -113,7 +113,7 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="1" />
-    <option name="width" value="1356" />
+    <option name="width" value="1358" />
     <option name="height" value="727" />
   </component>
   <component name="ProjectView">
@@ -145,14 +145,14 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
     <property name="settings.editor.splitter.proportion" value="0.2" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Other/LandingPager" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../Other/hrkazan" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="nodejs_interpreter_path" value="C:\Program Files\nodejs\node" />
     <property name="js-jscs-nodeInterpreter" value="C:\Program Files\nodejs\node.exe" />
@@ -165,20 +165,20 @@
       <recent name="C:\Akhmadullin.github.io\GOIT\JS\slider" />
     </key>
   </component>
-  <component name="RunManager" selected="JavaScript Debug.index.html">
-    <configuration default="false" name="20-11.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/20-11.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="task21-todo.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/task21-todo.html">
-      <method />
-    </configuration>
-    <configuration default="false" name="blog.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/lesson22/news/blog.html">
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JavaScript Debug.task20-13.html">
     <configuration default="false" name="pagination-template.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/lesson22/news/js/pagination-template.html">
       <method />
     </configuration>
     <configuration default="false" name="index.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/lesson23/index.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="task20-11.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/task20-11.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="task20-12.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/task20-12.html">
+      <method />
+    </configuration>
+    <configuration default="false" name="task20-13.html" type="JavascriptDebugType" factoryName="JavaScript Debug" temporary="true" nameIsGenerated="true" uri="http://localhost:63342/JS/task20-13.html">
       <method />
     </configuration>
     <configuration default="true" type="DartCommandLineRunConfigurationType" factoryName="Dart Command Line Application">
@@ -241,19 +241,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.20-11.html" />
-      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.task21-todo.html" />
-      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.blog.html" />
-      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.pagination-template.html" />
-      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.pagination-template.html" />
+      <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+      <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.task20-11.html" />
+      <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.task20-12.html" />
+      <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.task20-13.html" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
-        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.pagination-template.html" />
-        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.blog.html" />
-        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.task21-todo.html" />
-        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.20-11.html" />
+        <item index="0" class="java.lang.String" itemvalue="JavaScript Debug.task20-13.html" />
+        <item index="1" class="java.lang.String" itemvalue="JavaScript Debug.task20-12.html" />
+        <item index="2" class="java.lang.String" itemvalue="JavaScript Debug.task20-11.html" />
+        <item index="3" class="java.lang.String" itemvalue="JavaScript Debug.index.html" />
+        <item index="4" class="java.lang.String" itemvalue="JavaScript Debug.pagination-template.html" />
       </list>
     </recent_temporary>
   </component>
@@ -320,11 +320,12 @@
       <workItem from="1494265996187" duration="3778000" />
       <workItem from="1494271329450" duration="15554000" />
       <workItem from="1494435458738" duration="21108000" />
+      <workItem from="1495867653811" duration="14379000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="294630000" />
+    <option name="totallyTimeSpent" value="309009000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -336,10 +337,10 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="1" width="1356" height="727" extended-state="0" />
+    <frame x="0" y="1" width="1358" height="727" extended-state="0" />
     <editor active="false" />
     <layout>
-      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2507716" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="true" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2550077" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3270869" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="true" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -403,27 +404,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/task17-15.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="41" column="5" lean-forward="false" selection-start-line="41" selection-start-column="5" selection-end-line="41" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task17-17.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="68">
-          <caret line="4" column="16" lean-forward="false" selection-start-line="4" selection-start-column="11" selection-end-line="4" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/task17-class-1.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="10" column="28" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="46" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task17-9.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
@@ -500,13 +480,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/task20-2.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1241">
-          <caret line="73" column="5" lean-forward="false" selection-start-line="69" selection-start-column="4" selection-end-line="73" selection-end-column="5" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/task20-1.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="221">
@@ -577,27 +550,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://G:/Новая папка/WWW/javascript_online-master/javascript_online-master/lesson20/todo.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="27" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/Новая папка/WWW/javascript_online-master/javascript_online-master/lesson20/todo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://G:/Новая папка/WWW/tech skills/goit-master/goit-master/TODO/todo.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1700">
-          <caret line="100" column="62" lean-forward="true" selection-start-line="100" selection-start-column="62" selection-end-line="100" selection-end-column="62" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://G:/Новая папка/WWW/javascript_online-master/javascript_online-master/lesson20/todo.css" />
+    <entry file="file://G:/Новая папка/WWW/javascript_online-master/javascript_online-master/lesson20/todo.js" />
+    <entry file="file://G:/Новая папка/WWW/tech skills/goit-master/goit-master/TODO/todo.js" />
     <entry file="file://$PROJECT_DIR$/todo-backup.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="181">
@@ -697,19 +652,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://G:/Новая папка/WWW/javascript_online-master/javascript_online-master/lesson23/assets/js/localstorage.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://G:/Новая папка/WWW/javascript_online-master/javascript_online-master/lesson23/assets/js/localstorage.js" />
     <entry file="file://$PROJECT_DIR$/lesson23/assets/js/cart.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="234">
           <caret line="62" column="0" lean-forward="false" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -717,7 +664,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="442">
           <caret line="26" column="0" lean-forward="true" selection-start-line="26" selection-start-column="0" selection-end-line="26" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -725,10 +671,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="409">
           <caret line="89" column="0" lean-forward="true" selection-start-line="89" selection-start-column="0" selection-end-line="89" selection-end-column="0" />
-          <folding>
-            <marker date="1494147512518" expanded="true" signature="2273:2280" ph="..." />
-            <marker date="1494147512518" expanded="true" signature="2350:2357" ph="..." />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -736,7 +678,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2499">
           <caret line="147" column="6" lean-forward="true" selection-start-line="147" selection-start-column="6" selection-end-line="147" selection-end-column="6" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -744,7 +685,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="55">
           <caret line="232" column="17" lean-forward="false" selection-start-line="232" selection-start-column="17" selection-end-line="232" selection-end-column="17" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -752,7 +692,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="338">
           <caret line="75" column="20" lean-forward="true" selection-start-line="75" selection-start-column="20" selection-end-line="75" selection-end-column="80" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -760,6 +699,37 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
           <caret line="63" column="43" lean-forward="true" selection-start-line="63" selection-start-column="43" selection-end-line="63" selection-end-column="43" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task20-2.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="362">
+          <caret line="73" column="5" lean-forward="true" selection-start-line="73" selection-start-column="5" selection-end-line="73" selection-end-column="5" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task20-13.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="48">
+          <caret line="115" column="0" lean-forward="true" selection-start-line="115" selection-start-column="0" selection-end-line="115" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task20-12.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="118">
+          <caret line="53" column="35" lean-forward="true" selection-start-line="53" selection-start-column="4" selection-end-line="53" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/task20-11.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="413">
+          <caret line="128" column="7" lean-forward="true" selection-start-line="128" selection-start-column="7" selection-end-line="128" selection-end-column="7" />
           <folding />
         </state>
       </provider>
